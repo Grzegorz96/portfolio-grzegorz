@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "theme": {
+    "select": "Select theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "common": {
+    "getStarted": "Get Started",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "close": "Close"
+  },
+  "home": {
+    "title": "Welcome to my portfolio",
+    "subtitle": "Professional developer",
+    "description": "I create modern web applications using the latest technologies",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "viewLoaders": "View Loaders"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I am a passionate programmer with several years of experience in creating web applications"
+  },
+  "projects": {
+    "title": "My projects",
+    "description": "Here are some of my best works"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contact me",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send"
+  }
+}

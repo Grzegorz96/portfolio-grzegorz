@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Chi sono",
+    "projects": "Progetti",
+    "contact": "Contatti"
+  },
+  "theme": {
+    "select": "Seleziona tema",
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema"
+  },
+  "common": {
+    "getStarted": "Inizia",
+    "loading": "Caricamento...",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "view": "Visualizza",
+    "close": "Chiudi"
+  },
+  "home": {
+    "title": "Benvenuto nel mio portfolio",
+    "subtitle": "Sviluppatore professionale",
+    "description": "Creo applicazioni web moderne utilizzando le tecnologie più recenti"
+  },
+  "about": {
+    "title": "Chi sono",
+    "description": "Sono un programmatore appassionato con diversi anni di esperienza nella creazione di applicazioni web"
+  },
+  "projects": {
+    "title": "I miei progetti",
+    "description": "Ecco alcuni dei miei migliori lavori"
+  },
+  "contact": {
+    "title": "Contatti",
+    "description": "Contattami",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia"
+  }
+}

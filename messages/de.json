@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "theme": {
+    "select": "Theme auswählen",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "system": "System"
+  },
+  "common": {
+    "getStarted": "Loslegen",
+    "loading": "Lädt...",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Anzeigen",
+    "close": "Schließen"
+  },
+  "home": {
+    "title": "Willkommen in meinem Portfolio",
+    "subtitle": "Professioneller Entwickler",
+    "description": "Ich erstelle moderne Webanwendungen mit den neuesten Technologien"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Ich bin ein leidenschaftlicher Programmierer mit mehrjähriger Erfahrung in der Entwicklung von Webanwendungen"
+  },
+  "projects": {
+    "title": "Meine Projekte",
+    "description": "Hier sind einige meiner besten Arbeiten"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Kontaktieren Sie mich",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Senden"
+  }
+}

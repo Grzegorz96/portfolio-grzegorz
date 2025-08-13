@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "私について",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ"
+  },
+  "theme": {
+    "select": "テーマを選択",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "common": {
+    "getStarted": "始める",
+    "loading": "読み込み中...",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "view": "表示",
+    "close": "閉じる"
+  },
+  "home": {
+    "title": "私のポートフォリオへようこそ",
+    "subtitle": "プロフェッショナル開発者",
+    "description": "最新のテクノロジーを使用してモダンなWebアプリケーションを作成しています"
+  },
+  "about": {
+    "title": "私について",
+    "description": "私はWebアプリケーション作成に数年の経験を持つ情熱的なプログラマーです"
+  },
+  "projects": {
+    "title": "私のプロジェクト",
+    "description": "これらは私の最高の作品の一部です"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "お問い合わせください",
+    "email": "メール",
+    "message": "メッセージ",
+    "send": "送信"
+  }
+}

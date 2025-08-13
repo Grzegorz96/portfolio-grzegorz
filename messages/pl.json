@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "theme": {
+    "select": "Wybierz motyw",
+    "light": "Jasny",
+    "dark": "Ciemny",
+    "system": "Systemowy"
+  },
+  "common": {
+    "getStarted": "Rozpocznij",
+    "loading": "Ładowanie...",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "delete": "Usuń",
+    "edit": "Edytuj",
+    "view": "Zobacz",
+    "close": "Zamknij"
+  },
+  "home": {
+    "title": "Witaj w moim portfolio",
+    "subtitle": "Profesjonalny programista",
+    "description": "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii"
+  },
+  "about": {
+    "title": "O mnie",
+    "description": "Jestem pasjonatem programowania z wieloletnim doświadczeniem w tworzeniu aplikacji webowych"
+  },
+  "projects": {
+    "title": "Moje projekty",
+    "description": "Oto niektóre z moich najlepszych prac"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Skontaktuj się ze mną",
+    "email": "Email",
+    "message": "Wiadomość",
+    "send": "Wyślij"
+  }
+}
