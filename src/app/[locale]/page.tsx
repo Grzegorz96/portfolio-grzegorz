@@ -1,9 +1,25 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function Home() {
   const t = useTranslations("home");
-  console.log(t("title"));
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center space-y-8">
@@ -14,11 +30,11 @@ export default function Home() {
           {t("description")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+          {/* <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
             {t("viewProjects")}
-          </button>
+          </button> */}
           <button className="px-8 py-3 border border-input bg-background text-foreground rounded-lg font-medium hover:bg-accent hover:text-accent-foreground transition-colors">
-            {t("contactMe")}
+            {/* {t("contactMe")} */}
           </button>
           <Link
             href="/loader-demo"

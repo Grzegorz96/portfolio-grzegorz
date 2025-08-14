@@ -1,9 +1,12 @@
 {
-  "navigation": {
-    "home": "ホーム",
-    "about": "私について",
-    "projects": "プロジェクト",
-    "contact": "お問い合わせ"
+  "Header": {
+    "logo": "ポートフォリオ",
+    "navigation": {
+      "home": "ホーム",
+      "about": "私について",
+      "projects": "プロジェクト",
+      "contact": "お問い合わせ"
+    }
   },
   "theme": {
     "select": "テーマを選択",
@@ -40,5 +43,13 @@
     "email": "メール",
     "message": "メッセージ",
     "send": "送信"
+  },
+  "Metadata": {
+    "title": "ポートフォリオ - プロフェッショナル開発者",
+    "description": "プロフェッショナル開発者のポートフォリオ、スキルとプロジェクトを紹介します"
+  },
+  "LocaleSwitcher": {
+    "label": "言語を変更",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {不明}}"
   }
 }

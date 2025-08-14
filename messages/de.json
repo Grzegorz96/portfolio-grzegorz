@@ -1,9 +1,12 @@
 {
-  "navigation": {
-    "home": "Startseite",
-    "about": "Über mich",
-    "projects": "Projekte",
-    "contact": "Kontakt"
+  "Header": {
+    "logo": "Portfolio",
+    "navigation": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "contact": "Kontakt"
+    }
   },
   "theme": {
     "select": "Theme auswählen",
@@ -40,5 +43,13 @@
     "email": "E-Mail",
     "message": "Nachricht",
     "send": "Senden"
+  },
+  "Metadata": {
+    "title": "Portfolio - Professional Developer",
+    "description": "Professional developer portfolio showcasing skills and projects"
+  },
+  "LocaleSwitcher": {
+    "label": "Sprache ändern",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unbekannt}}"
   }
 }

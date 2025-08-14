@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Moon, Sun, Monitor } from "lucide-react";
+import { Moon, Sun, Monitor, Check } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,33 +29,33 @@ export function ThemeToggle() {
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={() => setTheme("light")}
-          className="cursor-pointer"
+          className="cursor-pointer flex items-center justify-between"
         >
-          <Sun className="h-4 w-4 mr-2" />
-          <span>Light</span>
-          {theme === "light" && (
-            <span className="ml-auto text-xs text-muted-foreground">✓</span>
-          )}
+          <div className="flex items-center space-x-2">
+            <Sun className="h-4 w-4" />
+            <span>Light</span>
+          </div>
+          {theme === "light" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("dark")}
-          className="cursor-pointer"
+          className="cursor-pointer flex items-center justify-between"
         >
-          <Moon className="h-4 w-4 mr-2" />
-          <span>Dark</span>
-          {theme === "dark" && (
-            <span className="ml-auto text-xs text-muted-foreground">✓</span>
-          )}
+          <div className="flex items-center space-x-2">
+            <Moon className="h-4 w-4" />
+            <span>Dark</span>
+          </div>
+          {theme === "dark" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => setTheme("system")}
-          className="cursor-pointer"
+          className="cursor-pointer flex items-center justify-between"
         >
-          <Monitor className="h-4 w-4 mr-2" />
-          <span>System</span>
-          {theme === "system" && (
-            <span className="ml-auto text-xs text-muted-foreground">✓</span>
-          )}
+          <div className="flex items-center space-x-2">
+            <Monitor className="h-4 w-4" />
+            <span>System</span>
+          </div>
+          {theme === "system" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

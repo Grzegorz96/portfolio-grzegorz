@@ -1,9 +1,12 @@
 {
-  "navigation": {
-    "home": "Strona główna",
-    "about": "O mnie",
-    "projects": "Projekty",
-    "contact": "Kontakt"
+  "Header": {
+    "logo": "Portfolio",
+    "navigation": {
+      "home": "Strona główna",
+      "about": "O mnie",
+      "projects": "Projekty",
+      "contact": "Kontakt"
+    }
   },
   "theme": {
     "select": "Wybierz motyw",
@@ -40,5 +43,13 @@
     "email": "Email",
     "message": "Wiadomość",
     "send": "Wyślij"
+  },
+  "Metadata": {
+    "title": "Portfolio - Profesjonalny Programista",
+    "description": "Portfolio profesjonalnego programisty, pokazujący umiejętności i projekty"
+  },
+  "LocaleSwitcher": {
+    "label": "Zmień język",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
   }
 }

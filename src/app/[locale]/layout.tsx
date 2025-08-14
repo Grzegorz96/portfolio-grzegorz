@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
 import { Header } from "@/components/header";
-import { ThemeProvider } from "@/components/theme-provider";
-import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { Providers } from "@/components/providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +31,7 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  console.log(locale);
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -41,17 +41,10 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            <main className="min-h-screen">{children}</main>
-          </ThemeProvider>
-        </NextIntlClientProvider>
+        <Providers>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+        </Providers>
       </body>
     </html>
   );

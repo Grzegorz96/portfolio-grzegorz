@@ -1,9 +1,12 @@
 {
-  "navigation": {
-    "home": "Accueil",
-    "about": "À propos",
-    "projects": "Projets",
-    "contact": "Contact"
+  "Header": {
+    "logo": "Portfolio",
+    "navigation": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "contact": "Contact"
+    }
   },
   "theme": {
     "select": "Sélectionner le thème",
@@ -40,5 +43,13 @@
     "email": "Email",
     "message": "Message",
     "send": "Envoyer"
+  },
+  "Metadata": {
+    "title": "Portfolio - Développeur Professionnel",
+    "description": "Portfolio d'un développeur professionnel, qui montre ses compétences et ses projets"
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Inconnu}}"
   }
 }
