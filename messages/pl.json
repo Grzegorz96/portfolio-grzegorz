@@ -4,52 +4,50 @@
     "navigation": {
       "home": "Strona główna",
       "about": "O mnie",
+      "skills": "Umiejętności",
       "projects": "Projekty",
       "contact": "Kontakt"
+    },
+    "actions": {
+      "theme": {
+        "select": "Wybierz motyw",
+        "light": "Jasny",
+        "dark": "Ciemny",
+        "system": "Systemowy"
+      },
+      "language": {
+        "label": "Zmień język",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
+      },
+      "resume": {
+        "label": "Curriculum"
+      }
     }
   },
-  "theme": {
-    "select": "Wybierz motyw",
-    "light": "Jasny",
-    "dark": "Ciemny",
-    "system": "Systemowy"
-  },
-  "common": {
-    "getStarted": "Rozpocznij",
-    "loading": "Ładowanie...",
-    "save": "Zapisz",
-    "cancel": "Anuluj",
-    "delete": "Usuń",
-    "edit": "Edytuj",
-    "view": "Zobacz",
-    "close": "Zamknij"
-  },
-  "home": {
-    "title": "Witaj w moim portfolio",
-    "subtitle": "Profesjonalny programista",
-    "description": "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii"
-  },
-  "about": {
-    "title": "O mnie",
-    "description": "Jestem pasjonatem programowania z wieloletnim doświadczeniem w tworzeniu aplikacji webowych"
-  },
-  "projects": {
-    "title": "Moje projekty",
-    "description": "Oto niektóre z moich najlepszych prac"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "description": "Skontaktuj się ze mną",
-    "email": "Email",
-    "message": "Wiadomość",
-    "send": "Wyślij"
+  "Sections": {
+    "home": {
+      "title": "Grzegorz Strzeszewski",
+      "subtitle": "Fullstack Developer",
+      "description": "Jestem pasjonatem programowania, który tworzy nowoczesne aplikacje web. Specjalizuję się w React, Node.js i TypeScript, budując skalowalne rozwiązania od frontend'u po backend."
+    },
+    "about": {
+      "title": "O mnie",
+      "description": "Jestem pasjonatem programowania z wieloletnim doświadczeniem w tworzeniu aplikacji webowych"
+    },
+    "projects": {
+      "title": "Moje projekty",
+      "description": "Oto niektóre z moich najlepszych prac"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się ze mną",
+      "email": "Email",
+      "message": "Wiadomość",
+      "send": "Wyślij"
+    }
   },
   "Metadata": {
-    "title": "Portfolio - Profesjonalny Programista",
-    "description": "Portfolio profesjonalnego programisty, pokazujący umiejętności i projekty"
-  },
-  "LocaleSwitcher": {
-    "label": "Zmień język",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
+    "title": "Grzegorz Strzeszewski - Fullstack Developer",
+    "description": "Portfolio programisty fullstack - nowoczesne rozwiązania"
   }
 }

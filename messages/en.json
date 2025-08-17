@@ -4,17 +4,27 @@
     "navigation": {
       "home": "Home",
       "about": "About",
+      "skills": "Skills",
       "projects": "Projects",
       "contact": "Contact"
+    },
+    "actions": {
+      "theme": {
+        "select": "Select theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "language": {
+        "label": "Change language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unknown}}"
+      },
+      "resume": {
+        "label": "Resume"
+      }
     }
   },
-  "theme": {
-    "select": "Select theme",
-    "light": "Light",
-    "dark": "Dark",
-    "system": "System"
-  },
-  "common": {
+  "Common": {
     "getStarted": "Get Started",
     "loading": "Loading...",
     "save": "Save",
@@ -24,35 +34,33 @@
     "view": "View",
     "close": "Close"
   },
-  "home": {
-    "title": "Welcome to my portfolio",
-    "subtitle": "Professional developer",
-    "description": "I create modern web applications using the latest technologies",
-    "viewProjects": "View Projects",
-    "contactMe": "Contact Me",
-    "viewLoaders": "View Loaders"
-  },
-  "about": {
-    "title": "About me",
-    "description": "I am a passionate programmer with several years of experience in creating web applications"
-  },
-  "projects": {
-    "title": "My projects",
-    "description": "Here are some of my best works"
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "Contact me",
-    "email": "Email",
-    "message": "Message",
-    "send": "Send"
+  "Pages": {
+    "home": {
+      "title": "Welcome to my portfolio",
+      "subtitle": "Professional developer",
+      "description": "I create modern web applications using the latest technologies",
+      "viewProjects": "View Projects",
+      "contactMe": "Contact Me",
+      "viewLoaders": "View Loaders"
+    },
+    "about": {
+      "title": "About me",
+      "description": "I am a passionate programmer with several years of experience in creating web applications"
+    },
+    "projects": {
+      "title": "My projects",
+      "description": "Here are some of my best works"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Contact me",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
   },
   "Metadata": {
-    "title": "Portfolio - Professional Developer",
-    "description": "Professional developer portfolio showcasing skills and projects"
-  },
-  "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unknown}}"
+    "title": "Grzegorz Strzeszewski - Fullstack Developer",
+    "description": "Fullstack developer portfolio - modern solutions"
   }
 }

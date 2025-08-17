@@ -4,17 +4,27 @@
     "navigation": {
       "home": "Startseite",
       "about": "Über mich",
+      "skills": "Fähigkeiten",
       "projects": "Projekte",
       "contact": "Kontakt"
+    },
+    "actions": {
+      "theme": {
+        "select": "Theme auswählen",
+        "light": "Hell",
+        "dark": "Dunkel",
+        "system": "System"
+      },
+      "language": {
+        "label": "Sprache ändern",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unbekannt}}"
+      },
+      "resume": {
+        "label": "Lebenslauf"
+      }
     }
   },
-  "theme": {
-    "select": "Theme auswählen",
-    "light": "Hell",
-    "dark": "Dunkel",
-    "system": "System"
-  },
-  "common": {
+  "Common": {
     "getStarted": "Loslegen",
     "loading": "Lädt...",
     "save": "Speichern",
@@ -24,32 +34,30 @@
     "view": "Anzeigen",
     "close": "Schließen"
   },
-  "home": {
-    "title": "Willkommen in meinem Portfolio",
-    "subtitle": "Professioneller Entwickler",
-    "description": "Ich erstelle moderne Webanwendungen mit den neuesten Technologien"
-  },
-  "about": {
-    "title": "Über mich",
-    "description": "Ich bin ein leidenschaftlicher Programmierer mit mehrjähriger Erfahrung in der Entwicklung von Webanwendungen"
-  },
-  "projects": {
-    "title": "Meine Projekte",
-    "description": "Hier sind einige meiner besten Arbeiten"
-  },
-  "contact": {
-    "title": "Kontakt",
-    "description": "Kontaktieren Sie mich",
-    "email": "E-Mail",
-    "message": "Nachricht",
-    "send": "Senden"
+  "Pages": {
+    "home": {
+      "title": "Willkommen in meinem Portfolio",
+      "subtitle": "Professioneller Entwickler",
+      "description": "Ich erstelle moderne Webanwendungen mit den neuesten Technologien"
+    },
+    "about": {
+      "title": "Über mich",
+      "description": "Ich bin ein leidenschaftlicher Programmierer mit mehrjähriger Erfahrung in der Entwicklung von Webanwendungen"
+    },
+    "projects": {
+      "title": "Meine Projekte",
+      "description": "Hier sind einige meiner besten Arbeiten"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie mich",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Senden"
+    }
   },
   "Metadata": {
-    "title": "Portfolio - Professional Developer",
-    "description": "Professional developer portfolio showcasing skills and projects"
-  },
-  "LocaleSwitcher": {
-    "label": "Sprache ändern",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unbekannt}}"
+    "title": "Grzegorz Strzeszewski - Fullstack Entwickler",
+    "description": "Fullstack Entwickler Portfolio - moderne Lösungen"
   }
 }

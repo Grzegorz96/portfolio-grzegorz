@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Moon, Sun, Monitor, Check } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -15,17 +16,19 @@ import {
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("Header.actions.theme");
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
           <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
           <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">{t("select")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">
-        <DropdownMenuLabel>Select theme</DropdownMenuLabel>
+        <DropdownMenuLabel>{t("select")}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem
           onClick={() => setTheme("light")}
@@ -33,7 +36,7 @@ export function ThemeToggle() {
         >
           <div className="flex items-center space-x-2">
             <Sun className="h-4 w-4" />
-            <span>Light</span>
+            <span>{t("light")}</span>
           </div>
           {theme === "light" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
@@ -43,7 +46,7 @@ export function ThemeToggle() {
         >
           <div className="flex items-center space-x-2">
             <Moon className="h-4 w-4" />
-            <span>Dark</span>
+            <span>{t("dark")}</span>
           </div>
           {theme === "dark" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
@@ -53,7 +56,7 @@ export function ThemeToggle() {
         >
           <div className="flex items-center space-x-2">
             <Monitor className="h-4 w-4" />
-            <span>System</span>
+            <span>{t("system")}</span>
           </div>
           {theme === "system" && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>

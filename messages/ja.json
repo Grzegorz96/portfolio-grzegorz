@@ -4,17 +4,27 @@
     "navigation": {
       "home": "ホーム",
       "about": "私について",
+      "skills": "スキル",
       "projects": "プロジェクト",
       "contact": "お問い合わせ"
+    },
+    "actions": {
+      "theme": {
+        "select": "テーマを選択",
+        "light": "ライト",
+        "dark": "ダーク",
+        "system": "システム"
+      },
+      "language": {
+        "label": "言語を変更",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {不明}}"
+      },
+      "resume": {
+        "label": "履歴書"
+      }
     }
   },
-  "theme": {
-    "select": "テーマを選択",
-    "light": "ライト",
-    "dark": "ダーク",
-    "system": "システム"
-  },
-  "common": {
+  "Common": {
     "getStarted": "始める",
     "loading": "読み込み中...",
     "save": "保存",
@@ -24,32 +34,30 @@
     "view": "表示",
     "close": "閉じる"
   },
-  "home": {
-    "title": "私のポートフォリオへようこそ",
-    "subtitle": "プロフェッショナル開発者",
-    "description": "最新のテクノロジーを使用してモダンなWebアプリケーションを作成しています"
-  },
-  "about": {
-    "title": "私について",
-    "description": "私はWebアプリケーション作成に数年の経験を持つ情熱的なプログラマーです"
-  },
-  "projects": {
-    "title": "私のプロジェクト",
-    "description": "これらは私の最高の作品の一部です"
-  },
-  "contact": {
-    "title": "お問い合わせ",
-    "description": "お問い合わせください",
-    "email": "メール",
-    "message": "メッセージ",
-    "send": "送信"
+  "Pages": {
+    "home": {
+      "title": "私のポートフォリオへようこそ",
+      "subtitle": "プロフェッショナル開発者",
+      "description": "最新のテクノロジーを使用してモダンなWebアプリケーションを作成しています"
+    },
+    "about": {
+      "title": "私について",
+      "description": "私はWebアプリケーション作成に数年の経験を持つ情熱的なプログラマーです"
+    },
+    "projects": {
+      "title": "私のプロジェクト",
+      "description": "これらは私の最高の作品の一部です"
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "description": "お問い合わせください",
+      "email": "メール",
+      "message": "メッセージ",
+      "send": "送信"
+    }
   },
   "Metadata": {
-    "title": "ポートフォリオ - プロフェッショナル開発者",
-    "description": "プロフェッショナル開発者のポートフォリオ、スキルとプロジェクトを紹介します"
-  },
-  "LocaleSwitcher": {
-    "label": "言語を変更",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {不明}}"
+    "title": "グジェゴシュ・ストルジェシェフスキ - フルスタック開発者",
+    "description": "フルスタック開発者ポートフォリオ - モダンなソリューション"
   }
 }

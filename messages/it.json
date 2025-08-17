@@ -4,17 +4,27 @@
     "navigation": {
       "home": "Home",
       "about": "Chi sono",
+      "skills": "Competenze",
       "projects": "Progetti",
       "contact": "Contatti"
+    },
+    "actions": {
+      "theme": {
+        "select": "Seleziona tema",
+        "light": "Chiaro",
+        "dark": "Scuro",
+        "system": "Sistema"
+      },
+      "language": {
+        "label": "Cambia lingua",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Sconosciuto}}"
+      },
+      "resume": {
+        "label": "Curriculum"
+      }
     }
   },
-  "theme": {
-    "select": "Seleziona tema",
-    "light": "Chiaro",
-    "dark": "Scuro",
-    "system": "Sistema"
-  },
-  "common": {
+  "Common": {
     "getStarted": "Inizia",
     "loading": "Caricamento...",
     "save": "Salva",
@@ -24,32 +34,30 @@
     "view": "Visualizza",
     "close": "Chiudi"
   },
-  "home": {
-    "title": "Benvenuto nel mio portfolio",
-    "subtitle": "Sviluppatore professionale",
-    "description": "Creo applicazioni web moderne utilizzando le tecnologie più recenti"
-  },
-  "about": {
-    "title": "Chi sono",
-    "description": "Sono un programmatore appassionato con diversi anni di esperienza nella creazione di applicazioni web"
-  },
-  "projects": {
-    "title": "I miei progetti",
-    "description": "Ecco alcuni dei miei migliori lavori"
-  },
-  "contact": {
-    "title": "Contatti",
-    "description": "Contattami",
-    "email": "Email",
-    "message": "Messaggio",
-    "send": "Invia"
+  "Pages": {
+    "home": {
+      "title": "Benvenuto nel mio portfolio",
+      "subtitle": "Sviluppatore professionale",
+      "description": "Creo applicazioni web moderne utilizzando le tecnologie più recenti"
+    },
+    "about": {
+      "title": "Chi sono",
+      "description": "Sono un programmatore appassionato con diversi anni di esperienza nella creazione di applicazioni web"
+    },
+    "projects": {
+      "title": "I miei progetti",
+      "description": "Ecco alcuni dei miei migliori lavori"
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "Contattami",
+      "email": "Email",
+      "message": "Messaggio",
+      "send": "Invia"
+    }
   },
   "Metadata": {
-    "title": "Portfolio - Sviluppatore Professionale",
-    "description": "Portfolio di un sviluppatore professionale, che mostra le sue competenze e i suoi progetti"
-  },
-  "LocaleSwitcher": {
-    "label": "Cambia lingua",
-    "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Sconosciuto}}"
+    "title": "Grzegorz Strzeszewski - Sviluppatore Fullstack",
+    "description": "Portfolio sviluppatore fullstack - soluzioni moderne"
   }
 }

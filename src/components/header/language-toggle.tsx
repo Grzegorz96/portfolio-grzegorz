@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function LanguageToggle() {
-  const t = useTranslations("LocaleSwitcher");
+  const t = useTranslations("Header.actions.language");
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
