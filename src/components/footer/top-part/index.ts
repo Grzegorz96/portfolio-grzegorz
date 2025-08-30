@@ -1,1 +1,4 @@
-export { TopPart } from "./top-part";
+export { Contact } from "./contact";
+export { Profile } from "./profile";
+export { Services } from "./services";
+export { Technologies } from "./technologies";

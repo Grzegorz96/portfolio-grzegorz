@@ -6,6 +6,7 @@
       "about": "私について",
       "skills": "スキル",
       "projects": "プロジェクト",
+      "faq": "FAQ",
       "contact": "お問い合わせ"
     },
     "actions": {
@@ -19,8 +20,180 @@
         "label": "言語を変更",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {不明}}"
       },
-      "resume": {
-        "label": "履歴書"
+      "resume": "履歴書"
+    }
+  },
+  "Hero": {
+    "content": {
+      "badge": "プロジェクト対応可能",
+      "heading": "あなたの",
+      "headingWords": [
+        "アドバンテージ",
+        "プラットフォーム",
+        "アーキテクチャ",
+        "ビジョン",
+        "プレゼンス",
+        "イノベーション"
+      ],
+      "description": "革新的なデザインと最先端技術を通じて、卓越したデジタル体験を創造します."
+    },
+    "scrollDown": "下にスクロール"
+  },
+  "Home": {
+    "content": {
+      "badge": "新規プロジェクト対応可能",
+      "heading": "Grzegorz Strzeszewski",
+      "subHeading": "Fullstack Developer &",
+      "subHeadingWords": [
+        "UI/UX Enthusiast",
+        "Software Engineer",
+        "Problem Solver"
+      ],
+      "description": "最新技術を活用してモダンなWebアプリケーションを開発しています。React、Node.js、データベースを専門とし、未来的なUX/UIの視点で、フロントエンドからバックエンドまでスケーラブルなソリューションを構築しています。"
+    },
+    "actionButtons": {
+      "contact": "お問い合わせ",
+      "github": "GitHub"
+    },
+    "stats": {
+      "cards": {
+        "experience": {
+          "years": "3+",
+          "description": "年の経験",
+          "subDescription": "Full-Stack Dev"
+        },
+        "projects": {
+          "count": "15+",
+          "description": "完了したプロジェクト",
+          "subDescription": "成功"
+        }
+      },
+      "trustIndicators": {
+        "rating": "5.0 評価",
+        "successRate": "100% 成功率"
+      }
+    }
+  },
+  "Contact": {
+    "heading": "一緒に働きましょう",
+    "subHeading": "あなたのアイデアを実現する準備はできていますか？お問い合わせください。",
+    "info": {
+      "heading": "お問い合わせ",
+      "subHeading": "プロジェクトの開発者を探していますか？コラボレーションに関する質問はありますか？私にメールを送ってください。24時間以内に返信します。"
+    },
+    "form": {
+      "title": "メッセージを送信",
+      "name": "あなたの名前",
+      "email": "あなたのメールアドレス",
+      "subject": "件名",
+      "message": "あなたのメッセージ",
+      "send": "メッセージを送信"
+    }
+  },
+  "About": {
+    "title": "私について",
+    "mainTitle": "私について少し",
+    "description": "私は3年以上のスケーラブルなシステム構築経験を持つフルスタック開発者です。JavaScript/TypeScript、React、Node.js、Python技術を専門とし、PostgreSQL、MongoDB、Redisデータベースで作業し、本番プロジェクトでAWSとDockerを使用しています。私のアプローチは、クリーンで保守しやすいコードの作成とパフォーマンスの最適化に焦点を当てています。"
+  },
+  "Skills": {
+    "title": "技術スキル",
+    "description": "様々な技術分野における私の技術的専門知識と習熟度レベルの包括的な概要",
+    "categories": {
+      "frontend": "フロントエンド",
+      "backend": "バックエンド",
+      "database": "データベース",
+      "devops": "DevOps & クラウド",
+      "testing": "テスト",
+      "tools": "ツール"
+    },
+    "levels": {
+      "beginner": "初心者",
+      "intermediate": "中級",
+      "advanced": "上級",
+      "expert": "エキスパート"
+    }
+  },
+  "Projects": {
+    "title": "私の旅のチェンジログ",
+    "description": "フルスタック開発者としての私の道のりのタイムライン - 最初の実験から高度な本番アプリケーションまで。各プロジェクトは、フロントエンド、バックエンド、DevOpsのスキル開発における前進の一歩です。",
+    "years": {
+      "2024": {
+        "title": "2024",
+        "subtitle": "革新と先進技術の年",
+        "description": "2024年、私は最新技術を活用した高度なアプリケーションの作成に注力しました。各プロジェクトは、フルスタック開発者としての私のキャリアにおける前進の一歩です。"
+      },
+      "2023": {
+        "title": "2023",
+        "subtitle": "開発と実験の年",
+        "description": "2023年は、様々な技術による集中的な開発と実験の年でした。ユーザーの実際の問題を解決するアプリケーションを作成しました。"
+      },
+      "2022": {
+        "title": "2022",
+        "subtitle": "始まりと最初の一歩",
+        "description": "2022年は、フルスタック開発者としての私の最初の商業プロジェクトの時でした。各プロジェクトは教訓であり、卓越性への一歩でした。"
+      }
+    },
+    "projects": {
+      "ecommerce": {
+        "title": "Eコマースプラットフォーム",
+        "description": "決済システム、商品管理、管理パネルを備えた完全なEコマースプラットフォーム。"
+      },
+      "analytics": {
+        "title": "分析ダッシュボード",
+        "description": "データ可視化、レポート、様々な形式へのエクスポートを備えた分析ダッシュボード。"
+      },
+      "taskManagement": {
+        "title": "タスク管理アプリ",
+        "description": "チーム協力機能とレポート機能を備えたタスク管理アプリケーション。"
+      },
+      "chatApp": {
+        "title": "リアルタイムチャットアプリ",
+        "description": "ルーム、ファイル、通知をサポートするリアルタイムチャットアプリケーション。"
+      },
+      "portfolio": {
+        "title": "ポートフォリオサイト",
+        "description": "アニメーション、ダークモード、完全なレスポンシブ性を備えたモダンなポートフォリオサイト。"
+      },
+      "fitnessApp": {
+        "title": "モバイルフィットネスアプリ",
+        "description": "AI駆動の推奨事項とソーシャル機能を備えたモバイルフィットネスアプリケーション。"
+      }
+    },
+    "status": {
+      "completed": "完了",
+      "inProgress": "進行中"
+    },
+    "actions": {
+      "code": "コード",
+      "demo": "デモ"
+    },
+    "badges": {
+      "featured": "注目"
+    }
+  },
+  "FAQ": {
+    "title": "よくある質問",
+    "description": "私の仕事について知っておくべきことと、あなたのプロジェクトでどのようにお手伝いできるか",
+    "questions": {
+      "q1": {
+        "question": "プロジェクトでどのような技術を使用していますか？",
+        "answer": "JavaScript/TypeScript、React、Next.js、Node.js（NestJS、Express）、Pythonを専門としています。PostgreSQL、MongoDB、Redisデータベースで作業し、AWS、Docker、その他のDevOpsツールを使用しています。"
+      },
+      "q2": {
+        "question": "プロジェクトをリモートで作業できますか？",
+        "answer": "はい、リモートワークと国際チームとの協力の経験があります。現代的なコミュニケーションとプロジェクト管理ツールを使用しています。"
+      },
+      "q3": {
+        "question": "システムアーキテクチャでの経験はどの程度ありますか？",
+        "answer": "マイクロサービス、イベント駆動型、クリーンアーキテクチャ、ドメイン駆動設計のアーキテクチャの実装経験があります。パフォーマンスと保守性を考慮したスケーラブルなシステムを設計しています。"
+      },
+      "q4": {
+        "question": "デプロイ後のサポートを提供していますか？",
+        "answer": "もちろんです！完全な技術サポート、システム監視、セキュリティアップデート、アプリケーション開発に関するコンサルティングを提供しています。"
+      },
+      "q5": {
+        "question": "典型的なプロジェクトはどのくらい時間がかかりますか？",
+        "answer": "プロジェクトの期間は複雑さによって異なります。小さなアプリケーションは2-4週間、中程度のプロジェクトは1-3ヶ月、大きなシステムは3-6ヶ月かかります。協力の開始時に常に詳細なスケジュールを提供します。"
       }
     }
   },
@@ -34,30 +207,39 @@
     "view": "表示",
     "close": "閉じる"
   },
-  "Pages": {
-    "home": {
-      "title": "私のポートフォリオへようこそ",
-      "subtitle": "プロフェッショナル開発者",
-      "description": "最新のテクノロジーを使用してモダンなWebアプリケーションを作成しています"
+  "Footer": {
+    "profile": {
+      "name": "Grzegorz Strzeszewski",
+      "description": "モダンなWeb技術と未来的なユーザーインターフェースに特化したフルスタック開発者。"
     },
-    "about": {
-      "title": "私について",
-      "description": "私はWebアプリケーション作成に数年の経験を持つ情熱的なプログラマーです"
+    "services": {
+      "title": "サービス",
+      "webDevelopment": "Webアプリケーション開発",
+      "uiuxDesign": "UI/UXデザイン",
+      "technicalConsulting": "技術コンサルティング",
+      "performanceOptimization": "パフォーマンス最適化"
     },
-    "projects": {
-      "title": "私のプロジェクト",
-      "description": "これらは私の最高の作品の一部です"
+    "technologies": {
+      "title": "技術",
+      "reactNextjs": "React & Next.js",
+      "nodejsExpress": "Node.js & Express",
+      "typescript": "TypeScript",
+      "databases": "PostgreSQL & MongoDB"
     },
     "contact": {
       "title": "お問い合わせ",
-      "description": "お問い合わせください",
-      "email": "メール",
-      "message": "メッセージ",
-      "send": "送信"
+      "location": "ワルシャワ、ポーランド",
+      "phone": "+48 784 020 902",
+      "available": "プロジェクト対応可能"
+    },
+    "bottom": {
+      "copyright": "© 2025 Grzegorz Strzeszewski. 全著作権所有。",
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfService": "利用規約"
     }
   },
   "Metadata": {
-    "title": "グジェゴシュ・ストルジェシェフスキ - フルスタック開発者",
+    "title": "Grzegorz Strzeszewski - フルスタック開発者",
     "description": "フルスタック開発者ポートフォリオ - モダンなソリューション"
   }
 }

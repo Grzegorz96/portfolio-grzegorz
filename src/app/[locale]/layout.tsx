@@ -8,6 +8,11 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Providers } from "@/components/providers";
 
+type LayoutProps = Readonly<{
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}>;
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,23 +29,17 @@ export const metadata: Metadata = {
     "Professional developer portfolio showcasing skills and projects",
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+export default async function RootLayout({ children, params }: LayoutProps) {
   const { locale } = await params;
 
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  // if (!hasLocale(routing.locales, locale)) {
+  //   notFound();
+  // }
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning data-scroll-behavior="smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <Providers>
           <Header />

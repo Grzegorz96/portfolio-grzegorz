@@ -1,6 +1,11 @@
-import { MotionDiv } from "../../motion";
+import { MotionDiv } from "@/components/motion";
 
-export function Technologies() {
+interface TechnologiesProps {
+  title: string;
+  technologies: string[];
+}
+
+export function Technologies({ title, technologies }: TechnologiesProps) {
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 30 }}
@@ -8,16 +13,9 @@ export function Technologies() {
       transition={{ duration: 0.8, delay: 0.2 }}
       viewport={{ once: true }}
     >
-      <h3 className="text-lg font-semibold mb-4 text-foreground">
-        Technologie
-      </h3>
+      <h3 className="text-lg font-semibold mb-4 text-foreground">{title}</h3>
       <ul className="space-y-2 text-sm">
-        {[
-          "React & Next.js",
-          "Node.js & Express",
-          "TypeScript",
-          "PostgreSQL & MongoDB",
-        ].map((tech) => (
+        {technologies.map((tech) => (
           <li key={tech}>
             <a
               href="#"

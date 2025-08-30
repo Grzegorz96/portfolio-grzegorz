@@ -1,7 +1,12 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { MotionA, MotionDiv } from "@/components/motion";
 
-export function Profile() {
+interface ProfileProps {
+  name: string;
+  description: string;
+}
+
+export function Profile({ name, description }: ProfileProps) {
   return (
     <MotionDiv
       initial={{ opacity: 0, y: 30 }}
@@ -10,11 +15,10 @@ export function Profile() {
       viewport={{ once: true }}
     >
       <h3 className="text-lg font-semibold mb-4 text-foreground neon-text">
-        Jan Kowalski
+        {name}
       </h3>
       <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-        Fullstack Developer specjalizujący się w nowoczesnych technologiach
-        webowych i futurystycznych interfejsach użytkownika.
+        {description}
       </p>
       <div className="flex gap-3">
         {[

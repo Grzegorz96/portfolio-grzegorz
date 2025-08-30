@@ -6,6 +6,7 @@
       "about": "O mnie",
       "skills": "Umiejętności",
       "projects": "Projekty",
+      "faq": "FAQ",
       "contact": "Kontakt"
     },
     "actions": {
@@ -19,31 +20,212 @@
         "label": "Zmień język",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
       },
-      "resume": {
-        "label": "Curriculum"
+      "resume": "Curriculum"
+    }
+  },
+  "Hero": {
+    "content": {
+      "badge": "Dostępny do projektów",
+      "heading": "Rozwiń swoją",
+      "headingWords": [
+        "Przewagę",
+        "Platformę",
+        "Architekturę",
+        "Wizję",
+        "Obecność",
+        "Innowacje"
+      ],
+      "description": "Tworzenie wyjątkowych doświadczeń cyfrowych poprzez innowacyjny design i nowoczesne technologie."
+    },
+    "scrollDown": "Przewiń w dół"
+  },
+  "Home": {
+    "content": {
+      "badge": "Dostępny do nowych projektów",
+      "heading": "Grzegorz Strzeszewski",
+      "subHeading": "Fullstack Developer &",
+      "subHeadingWords": [
+        "UI/UX Enthusiast",
+        "Software Engineer",
+        "Problem Solver"
+      ],
+      "description": "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii. Specjalizuję się w React, Node.js oraz bazach danych, podchodząc futurystycznie do UX/UI i budując skalowalne rozwiązania od frontendu do backendu."
+    },
+    "actionButtons": {
+      "contact": "Skontaktuj się",
+      "github": "GitHub"
+    },
+    "stats": {
+      "cards": {
+        "experience": {
+          "years": "3+",
+          "description": "Lat Doświadczenia",
+          "subDescription": "Full-Stack Dev"
+        },
+        "projects": {
+          "count": "15+",
+          "description": "Ukończonych Projektów",
+          "subDescription": "Pomyślnie"
+        }
+      },
+      "trustIndicators": {
+        "rating": "5.0 Ocena",
+        "successRate": "100% Wskaźnik sukcesu"
       }
     }
   },
-  "Sections": {
-    "home": {
-      "title": "Grzegorz Strzeszewski",
-      "subtitle": "Fullstack Developer",
-      "description": "Jestem pasjonatem programowania, który tworzy nowoczesne aplikacje web. Specjalizuję się w React, Node.js i TypeScript, budując skalowalne rozwiązania od frontend'u po backend."
+  "Contact": {
+    "heading": "Pracujmy Razem",
+    "subHeading": "Gotowy, żeby ożywić swoje pomysły? Skontaktuj się ze mną i porozmawiajmy o tym, jak mogę Ci pomóc stworzyć coś wyjątkowego.",
+    "info": {
+      "heading": "Skontaktuj się",
+      "subHeading": "Potrzebujesz programisty do swojego projektu? Masz pytania dotyczące współpracy? Napisz do mnie - odpowiem w ciągu 24 godzin."
     },
-    "about": {
-      "title": "O mnie",
-      "description": "Jestem pasjonatem programowania z wieloletnim doświadczeniem w tworzeniu aplikacji webowych"
+    "form": {
+      "title": "Wyślij Wiadomość",
+      "name": "Twoje Imię",
+      "email": "Twój Email",
+      "subject": "Temat",
+      "message": "Twoja Wiadomość",
+      "send": "Wyślij Wiadomość"
+    }
+  },
+  "About": {
+    "title": "O mnie",
+    "mainTitle": "Kilka słów o mnie",
+    "description": "Jestem programistą fullstack z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych systemów. Specjalizuję się w technologiach JavaScript/TypeScript, React, Node.js i Python, pracując z bazami danych PostgreSQL, MongoDB i Redis oraz wykorzystując AWS i Docker w projektach produkcyjnych. Moje podejście skupia się na tworzeniu czystego, łatwego w utrzymaniu kodu i optymalizacji wydajności."
+  },
+  "Skills": {
+    "title": "Umiejętności Techniczne",
+    "description": "Kompleksowy przegląd moich umiejętności technicznych i poziomów zaawansowania w różnych domenach technologicznych",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Bazy Danych",
+      "devops": "DevOps & Cloud",
+      "testing": "Testowanie",
+      "tools": "Narzędzia"
+    },
+    "levels": {
+      "beginner": "Początkujący",
+      "intermediate": "Średniozaawansowany",
+      "advanced": "Zaawansowany",
+      "expert": "Ekspert"
+    }
+  },
+  "Projects": {
+    "title": "Changelog z mojej podróży",
+    "description": "Timeline mojej drogi jako fullstack developer - od pierwszych eksperymentów po zaawansowane aplikacje produkcyjne. Każdy projekt to krok w rozwoju umiejętności frontend, backend i DevOps.",
+    "years": {
+      "2024": {
+        "title": "2024",
+        "subtitle": "Rok innowacji i zaawansowanych technologii",
+        "description": "W 2024 roku skupiłem się na tworzeniu zaawansowanych aplikacji wykorzystujących najnowsze technologie. Każdy projekt to krok naprzód w mojej karierze jako fullstack developera."
+      },
+      "2023": {
+        "title": "2023",
+        "subtitle": "Rok rozwoju i eksperymentów",
+        "description": "2023 był rokiem intensywnego rozwoju i eksperymentowania z różnymi technologiami. Stworzyłem aplikacje, które rozwiązywały realne problemy użytkowników."
+      },
+      "2022": {
+        "title": "2022",
+        "subtitle": "Początki i pierwsze kroki",
+        "description": "Rok 2022 to czas moich pierwszych komercyjnych projektów jako fullstack developer. Każdy projekt był lekcją i krokiem w kierunku doskonałości."
+      }
     },
     "projects": {
-      "title": "Moje projekty",
-      "description": "Oto niektóre z moich najlepszych prac"
+      "ecommerce": {
+        "title": "Platforma E-commerce",
+        "description": "Pełna platforma e-commerce z systemem płatności, zarządzaniem produktami i panelem administracyjnym."
+      },
+      "analytics": {
+        "title": "Dashboard Analityczny",
+        "description": "Dashboard analityczny z wizualizacją danych, raportami i eksportem do różnych formatów."
+      },
+      "taskManagement": {
+        "title": "Aplikacja Zarządzania Zadaniami",
+        "description": "Aplikacja do zarządzania zadaniami z funkcjami współpracy zespołowej i raportowaniem."
+      },
+      "chatApp": {
+        "title": "Aplikacja Czatu w Czasie Rzeczywistym",
+        "description": "Aplikacja czatu w czasie rzeczywistym z obsługą pokoi, plików i powiadomień."
+      },
+      "portfolio": {
+        "title": "Strona Portfolio",
+        "description": "Nowoczesna strona portfolio z animacjami, dark mode i pełną responsywnością."
+      },
+      "fitnessApp": {
+        "title": "Aplikacja Mobilna Fitness",
+        "description": "Aplikacja mobilna do treningów z AI-powered recommendations i social features."
+      }
+    },
+    "status": {
+      "completed": "Ukończony",
+      "inProgress": "W trakcie"
+    },
+    "actions": {
+      "code": "Kod",
+      "demo": "Demo"
+    },
+    "badges": {
+      "featured": "Featured"
+    }
+  },
+  "FAQ": {
+    "title": "Często Zadawane Pytania",
+    "description": "Wszystko co musisz wiedzieć o mojej pracy i jak mogę pomóc w Twoim projekcie",
+    "questions": {
+      "q1": {
+        "question": "Jakie technologie wykorzystujesz w projektach?",
+        "answer": "Specjalizuję się w JavaScript/TypeScript, React, Next.js, Node.js (NestJS, Express) i Python. Pracuję z bazami danych PostgreSQL, MongoDB, Redis oraz wykorzystuję AWS, Docker i inne narzędzia DevOps."
+      },
+      "q2": {
+        "question": "Czy możesz pracować nad projektami zdalnie?",
+        "answer": "Tak, mam doświadczenie w pracy zdalnej i współpracy z międzynarodowymi zespołami. Używam nowoczesnych narzędzi komunikacji i zarządzania projektami."
+      },
+      "q3": {
+        "question": "Jakie masz doświadczenie w architekturze systemów?",
+        "answer": "Mam doświadczenie w implementacji architektur Mikrousług, Event-Driven, Clean Architecture i Domain-Driven Design. Projektuję skalowalne systemy z myślą o wydajności i łatwości utrzymania."
+      },
+      "q4": {
+        "question": "Czy oferujesz wsparcie po wdrożeniu?",
+        "answer": "Oczywiście! Oferuję pełne wsparcie techniczne, monitoring systemu, aktualizacje bezpieczeństwa i konsultacje w zakresie rozwoju aplikacji."
+      },
+      "q5": {
+        "question": "Jak długo trwa typowy projekt?",
+        "answer": "Czas realizacji zależy od złożoności projektu. Małe aplikacje to 2-4 tygodnie, średnie projekty 1-3 miesiące, a duże systemy 3-6 miesięcy. Zawsze dostarczam szczegółowy harmonogram na początku współpracy."
+      }
+    }
+  },
+  "Footer": {
+    "profile": {
+      "name": "Grzegorz Strzeszewski",
+      "description": "Fullstack Developer specjalizujący się w nowoczesnych technologiach webowych i futurystycznych interfejsach użytkownika."
+    },
+    "services": {
+      "title": "Usługi",
+      "webDevelopment": "Rozwój aplikacji webowych",
+      "uiuxDesign": "Projektowanie UI/UX",
+      "technicalConsulting": "Konsultacje techniczne",
+      "performanceOptimization": "Optymalizacja wydajności"
+    },
+    "technologies": {
+      "title": "Technologie",
+      "reactNextjs": "React & Next.js",
+      "nodejsExpress": "Node.js & Express",
+      "typescript": "TypeScript",
+      "databases": "PostgreSQL & MongoDB"
     },
     "contact": {
       "title": "Kontakt",
-      "description": "Skontaktuj się ze mną",
-      "email": "Email",
-      "message": "Wiadomość",
-      "send": "Wyślij"
+      "location": "Warszawa, Polska",
+      "phone": "+48 784 020 902",
+      "available": "Dostępny na projekty"
+    },
+    "bottom": {
+      "copyright": "© 2025 Grzegorz Strzeszewski. Wszystkie prawa zastrzeżone.",
+      "privacyPolicy": "Polityka prywatności",
+      "termsOfService": "Warunki użytkowania"
     }
   },
   "Metadata": {

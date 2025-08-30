@@ -6,6 +6,7 @@
       "about": "Chi sono",
       "skills": "Competenze",
       "projects": "Progetti",
+      "faq": "FAQ",
       "contact": "Contatti"
     },
     "actions": {
@@ -19,8 +20,180 @@
         "label": "Cambia lingua",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Sconosciuto}}"
       },
-      "resume": {
-        "label": "Curriculum"
+      "resume": "Curriculum"
+    }
+  },
+  "Hero": {
+    "content": {
+      "badge": "Disponibile per progetti",
+      "heading": "Eleva il tuo",
+      "headingWords": [
+        "Vantaggio",
+        "Piattaforma",
+        "Architettura",
+        "Visione",
+        "Presenza",
+        "Innovazione"
+      ],
+      "description": "Creare esperienze digitali eccezionali tramite design innovativo e tecnologia all'avanguardia."
+    },
+    "scrollDown": "Scorri in basso"
+  },
+  "Home": {
+    "content": {
+      "badge": "Disponibile per nuovi progetti",
+      "heading": "Grzegorz Strzeszewski",
+      "subHeading": "Fullstack Developer &",
+      "subHeadingWords": [
+        "UI/UX Enthusiast",
+        "Software Engineer",
+        "Problem Solver"
+      ],
+      "description": "Realizzo applicazioni web moderne utilizzando le tecnologie più recenti. Sono specializzato in React, Node.js e database, con un approccio futuristico alla UX/UI e costruendo soluzioni scalabili dal frontend al backend."
+    },
+    "actionButtons": {
+      "contact": "Contattami",
+      "github": "GitHub"
+    },
+    "stats": {
+      "cards": {
+        "experience": {
+          "years": "3+",
+          "description": "Anni di esperienza",
+          "subDescription": "Full-Stack Dev"
+        },
+        "projects": {
+          "count": "15+",
+          "description": "Progetti completati",
+          "subDescription": "Con successo"
+        }
+      },
+      "trustIndicators": {
+        "rating": "5.0 Valutazione",
+        "successRate": "100% Tasso di successo"
+      }
+    }
+  },
+  "Contact": {
+    "heading": "Lasciati aiutare",
+    "subHeading": "Sei pronto a portare le tue idee al vivere? Contattami e parliamo di come posso aiutarti a creare qualcosa di straordinario.",
+    "info": {
+      "heading": "Contattami",
+      "subHeading": "Cerchi un programmatore per il tuo progetto? Hai domande sulla collaborazione? Scrivimi - risponderò entro 24 ore."
+    },
+    "form": {
+      "title": "Invia un messaggio",
+      "name": "Il tuo nome",
+      "email": "La tua email",
+      "subject": "Oggetto",
+      "message": "Il tuo messaggio",
+      "send": "Invia messaggio"
+    }
+  },
+  "About": {
+    "title": "Su di me",
+    "mainTitle": "Alcune parole su di me",
+    "description": "Sono uno sviluppatore fullstack con oltre 3 anni di esperienza nella creazione di sistemi scalabili. Mi specializzo in tecnologie JavaScript/TypeScript, React, Node.js e Python, lavoro con database PostgreSQL, MongoDB e Redis e utilizzo AWS e Docker in progetti di produzione. Il mio approccio si concentra sulla creazione di codice pulito e manutenibile e sull'ottimizzazione delle prestazioni."
+  },
+  "Skills": {
+    "title": "Competenze Tecniche",
+    "description": "Panoramica completa delle mie competenze tecniche e livelli di competenza in diversi domini tecnologici",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "devops": "DevOps & Cloud",
+      "testing": "Testing",
+      "tools": "Strumenti"
+    },
+    "levels": {
+      "beginner": "Principiante",
+      "intermediate": "Intermedio",
+      "advanced": "Avanzato",
+      "expert": "Esperto"
+    }
+  },
+  "Projects": {
+    "title": "Changelog del mio viaggio",
+    "description": "Timeline del mio percorso come sviluppatore fullstack - dai primi esperimenti alle applicazioni di produzione avanzate. Ogni progetto è un passo avanti nello sviluppo delle competenze frontend, backend e DevOps.",
+    "years": {
+      "2024": {
+        "title": "2024",
+        "subtitle": "Anno di innovazione e tecnologie avanzate",
+        "description": "Nel 2024 mi sono concentrato sulla creazione di applicazioni avanzate utilizzando le tecnologie più recenti. Ogni progetto è un passo avanti nella mia carriera come sviluppatore fullstack."
+      },
+      "2023": {
+        "title": "2023",
+        "subtitle": "Anno di sviluppo e sperimentazione",
+        "description": "Il 2023 è stato un anno di sviluppo intensivo e sperimentazione con varie tecnologie. Ho creato applicazioni che risolvevano problemi reali degli utenti."
+      },
+      "2022": {
+        "title": "2022",
+        "subtitle": "Inizi e primi passi",
+        "description": "Il 2022 è stato il momento dei miei primi progetti commerciali come sviluppatore fullstack. Ogni progetto è stata una lezione e un passo verso l'eccellenza."
+      }
+    },
+    "projects": {
+      "ecommerce": {
+        "title": "Piattaforma E-commerce",
+        "description": "Piattaforma e-commerce completa con sistema di pagamento, gestione prodotti e pannello amministrativo."
+      },
+      "analytics": {
+        "title": "Dashboard Analitico",
+        "description": "Dashboard analitico con visualizzazione dati, report ed esportazione in vari formati."
+      },
+      "taskManagement": {
+        "title": "App di Gestione Attività",
+        "description": "Applicazione per la gestione delle attività con funzionalità di collaborazione di squadra e reporting."
+      },
+      "chatApp": {
+        "title": "App Chat in Tempo Reale",
+        "description": "Applicazione chat in tempo reale con supporto per stanze, file e notifiche."
+      },
+      "portfolio": {
+        "title": "Sito Portfolio",
+        "description": "Sito portfolio moderno con animazioni, modalità scura e piena responsività."
+      },
+      "fitnessApp": {
+        "title": "App Fitness Mobile",
+        "description": "Applicazione fitness mobile con raccomandazioni AI-powered e funzionalità social."
+      }
+    },
+    "status": {
+      "completed": "Completato",
+      "inProgress": "In corso"
+    },
+    "actions": {
+      "code": "Codice",
+      "demo": "Demo"
+    },
+    "badges": {
+      "featured": "In evidenza"
+    }
+  },
+  "FAQ": {
+    "title": "Domande Frequenti",
+    "description": "Tutto quello che devi sapere sul mio lavoro e come posso aiutarti con il tuo progetto",
+    "questions": {
+      "q1": {
+        "question": "Quali tecnologie utilizzi nei progetti?",
+        "answer": "Mi specializzo in JavaScript/TypeScript, React, Next.js, Node.js (NestJS, Express) e Python. Lavoro con database PostgreSQL, MongoDB, Redis e utilizzo AWS, Docker e altri strumenti DevOps."
+      },
+      "q2": {
+        "question": "Puoi lavorare sui progetti da remoto?",
+        "answer": "Sì, ho esperienza nel lavoro remoto e nella collaborazione con team internazionali. Utilizzo strumenti moderni di comunicazione e gestione dei progetti."
+      },
+      "q3": {
+        "question": "Che esperienza hai nell'architettura dei sistemi?",
+        "answer": "Ho esperienza nell'implementazione di architetture Microservizi, Event-Driven, Clean Architecture e Domain-Driven Design. Progetto sistemi scalabili con attenzione alle prestazioni e alla manutenibilità."
+      },
+      "q4": {
+        "question": "Offri supporto post-deployment?",
+        "answer": "Certo! Offro supporto tecnico completo, monitoraggio del sistema, aggiornamenti di sicurezza e consulenze sullo sviluppo dell'applicazione."
+      },
+      "q5": {
+        "question": "Quanto tempo richiede un progetto tipico?",
+        "answer": "La durata del progetto dipende dalla complessità. Le applicazioni piccole richiedono 2-4 settimane, i progetti medi 1-3 mesi e i sistemi grandi 3-6 mesi. Fornisco sempre un programma dettagliato all'inizio della collaborazione."
       }
     }
   },
@@ -34,26 +207,35 @@
     "view": "Visualizza",
     "close": "Chiudi"
   },
-  "Pages": {
-    "home": {
-      "title": "Benvenuto nel mio portfolio",
-      "subtitle": "Sviluppatore professionale",
-      "description": "Creo applicazioni web moderne utilizzando le tecnologie più recenti"
+  "Footer": {
+    "profile": {
+      "name": "Grzegorz Strzeszewski",
+      "description": "Sviluppatore Fullstack specializzato in tecnologie web moderne e interfacce utente futuristiche."
     },
-    "about": {
-      "title": "Chi sono",
-      "description": "Sono un programmatore appassionato con diversi anni di esperienza nella creazione di applicazioni web"
+    "services": {
+      "title": "Servizi",
+      "webDevelopment": "Sviluppo Applicazioni Web",
+      "uiuxDesign": "Progettazione UI/UX",
+      "technicalConsulting": "Consulenza Tecnica",
+      "performanceOptimization": "Ottimizzazione Prestazioni"
     },
-    "projects": {
-      "title": "I miei progetti",
-      "description": "Ecco alcuni dei miei migliori lavori"
+    "technologies": {
+      "title": "Tecnologie",
+      "reactNextjs": "React & Next.js",
+      "nodejsExpress": "Node.js & Express",
+      "typescript": "TypeScript",
+      "databases": "PostgreSQL & MongoDB"
     },
     "contact": {
-      "title": "Contatti",
-      "description": "Contattami",
-      "email": "Email",
-      "message": "Messaggio",
-      "send": "Invia"
+      "title": "Contatto",
+      "location": "Varsavia, Polonia",
+      "phone": "+48 784 020 902",
+      "available": "Disponibile per progetti"
+    },
+    "bottom": {
+      "copyright": "© 2025 Grzegorz Strzeszewski. Tutti i diritti riservati.",
+      "privacyPolicy": "Politica sulla Privacy",
+      "termsOfService": "Termini di Servizio"
     }
   },
   "Metadata": {

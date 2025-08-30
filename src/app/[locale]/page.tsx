@@ -1,15 +1,16 @@
 import { getTranslations } from "next-intl/server";
 import { type Metadata } from "next";
-import { FloatingDock } from "@/components/floading-dock";
 import { BackgroundBeams } from "@/components/background-beams";
-import { TechMarquee } from "@/components/tech-marquee";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 import {
-  AboutSection,
+  HeroSection,
+  HomeSection,
   ContactSection,
   ProjectsSection,
+  AboutSection,
+  FAQSection,
   SkillsSection,
-  HeroSection,
 } from "./_components";
 
 export async function generateMetadata({
@@ -26,19 +27,18 @@ export async function generateMetadata({
   };
 }
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
+    <>
       <BackgroundBeams />
-
       <HeroSection />
+      <HomeSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <TechMarquee />
+      <InfiniteMovingCards speed="slow" className="w-full" />
+      <FAQSection />
       <ContactSection />
-
-      {/* <FloatingDock /> */}
-    </div>
+    </>
   );
 }
