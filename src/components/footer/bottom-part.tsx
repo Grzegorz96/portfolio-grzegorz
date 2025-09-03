@@ -1,3 +1,5 @@
+import { Separator } from "@/components/ui/separator";
+
 interface BottomPartProps {
   copyright: string;
   privacyPolicy: string;
@@ -10,7 +12,8 @@ export function BottomPart({
   termsOfService,
 }: BottomPartProps) {
   return (
-    <div className="border-t border-primary/20 pt-8">
+    <div className="pt-8">
+      <Separator className="mb-8 bg-primary/20" />
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-muted-foreground text-sm">{copyright}</p>
         <div className="flex gap-6 text-sm">

@@ -12,7 +12,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 scroll-mt-16 border-1 border-purple-500"
+      className="py-20 min-h-screen px-4 sm:px-6 lg:px-8 relative z-10 border-1 border-purple-500"
     >
       {/* Background glow effect */}
       <div className="w-[150px] h-[150px] absolute top-[100px] left-[15%] origin-center rotate-45 bg-primary/8 blur-[50px] z-0" />

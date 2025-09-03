@@ -1,6 +1,5 @@
 {
   "Header": {
-    "logo": "Portfolio",
     "navigation": {
       "home": "Главная",
       "about": "Обо мне",
@@ -9,18 +8,17 @@
       "faq": "FAQ",
       "contact": "Контакты"
     },
-    "actions": {
+    "settings": {
       "theme": {
-        "select": "Выбрать тему",
+        "label": "Тема",
         "light": "Светлая",
         "dark": "Тёмная",
         "system": "Системная"
       },
       "language": {
-        "label": "Выбрать язык",
-        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Неизвестно}}"
-      },
-      "resume": "Резюме"
+        "label": "Язык",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} jp {🇯🇵 日本語} pl {🇵🇱 Polski} other {Неизвестно}}"
+      }
     }
   },
   "Hero": {

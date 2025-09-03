@@ -1,6 +1,5 @@
 {
   "Header": {
-    "logo": "Portfolio",
     "navigation": {
       "home": "Home",
       "about": "About",
@@ -9,18 +8,17 @@
       "faq": "FAQ",
       "contact": "Contact"
     },
-    "actions": {
+    "settings": {
       "theme": {
-        "select": "Select theme",
+        "label": "Theme",
         "light": "Light",
         "dark": "Dark",
         "system": "System"
       },
       "language": {
-        "label": "Change language",
-        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unknown}}"
-      },
-      "resume": "Resume"
+        "label": "Language",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} jp {🇯🇵 日本語} pl {🇵🇱 Polski} other {Unknown}}"
+      }
     }
   },
   "Hero": {

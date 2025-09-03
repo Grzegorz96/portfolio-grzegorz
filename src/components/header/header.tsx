@@ -12,11 +12,13 @@ export function Header() {
           {/* Logo */}
           <Logo />
 
-          {/* Desktop Navigation */}
-          <Navigation />
+          {/* Center Navigation */}
+          <div className="hidden md:block">
+            <Navigation />
+          </div>
 
           {/* Desktop Controls */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-3">
             {/* Theme Selector */}
             <ThemeToggle />
 

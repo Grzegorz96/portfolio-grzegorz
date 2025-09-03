@@ -36,7 +36,7 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 scroll-mt-16 border-1 border-amber-100"
+      className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 border-1 border-amber-100"
     >
       {/* Background glow effect */}
       <div className="w-[300px] h-[500px] absolute top-[150px] left-1/2 -translate-x-1/2 origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[100px] z-0" />

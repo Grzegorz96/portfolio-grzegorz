@@ -1,6 +1,5 @@
 {
   "Header": {
-    "logo": "Portfolio",
     "navigation": {
       "home": "Strona główna",
       "about": "O mnie",
@@ -9,18 +8,17 @@
       "faq": "FAQ",
       "contact": "Kontakt"
     },
-    "actions": {
+    "settings": {
       "theme": {
-        "select": "Wybierz motyw",
+        "label": "Motyw",
         "light": "Jasny",
         "dark": "Ciemny",
         "system": "Systemowy"
       },
       "language": {
-        "label": "Zmień język",
-        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} ja {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
-      },
-      "resume": "Curriculum"
+        "label": "Język",
+        "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} jp {🇯🇵 日本語} pl {🇵🇱 Polski} other {Nieznany}}"
+      }
     }
   },
   "Hero": {

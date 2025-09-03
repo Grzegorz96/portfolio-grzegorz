@@ -1,6 +1,7 @@
 import { BottomPart } from "./bottom-part";
 import { useTranslations } from "next-intl";
 import { Profile, Services, Technologies, Contact } from "./top-part";
+import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -20,7 +21,8 @@ export function Footer() {
   ];
 
   return (
-    <footer className="py-16 px-4 sm:px-6 lg:px-8 border-t border-primary/20 relative z-10 mt-20">
+    <footer className="py-16 px-4 sm:px-6 lg:px-8 relative z-10 mt-20">
+      <Separator className="mb-16 bg-primary/20" />
       <div className="max-w-6xl mx-auto">
         {/* Top Part */}
         <div className="grid md:grid-cols-4 gap-8 mb-12">

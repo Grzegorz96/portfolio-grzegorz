@@ -11,7 +11,7 @@ export function HomeSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center scroll-mt-16 border-1 border-green-500"
+      className="relative min-h-screen flex items-center justify-center border-1 border-green-500"
     >
       <BackgroundElements />
 
