@@ -1,37 +1,16 @@
-import { Logo } from "./logo";
 import { Navigation } from "./navigation";
-import { ResumeButton } from "./resume-button";
-import { ThemeToggle } from "./theme-toggle";
-import { LanguageToggle } from "./language-toggle";
+import { SettingsTrigger, SettingsContent } from "./settings";
+import { DropdownMenu } from "@/components/ui/dropdown-menu";
 
 export function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-transform duration-300">
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Logo />
+    <header className="fixed bottom-0 sm:bottom-auto sm:top-0 left-1/2 -translate-x-1/2 z-50 my-6 flex items-center gap-4 bg-background/5 border border-border/50 backdrop-blur-xl py-1 px-1 rounded-full shadow-lg shadow-black/5 dark:shadow-black/20">
+      <Navigation />
 
-          {/* Center Navigation */}
-          <div className="hidden md:block">
-            <Navigation />
-          </div>
-
-          {/* Desktop Controls */}
-          <div className="hidden md:flex items-center space-x-3">
-            {/* Theme Selector */}
-            <ThemeToggle />
-
-            {/* Language Selector */}
-            <LanguageToggle />
-
-            {/* Resume Button */}
-            <ResumeButton />
-          </div>
-
-          {/* Mobile Menu */}
-        </div>
-      </div>
+      <DropdownMenu modal={false}>
+        <SettingsTrigger />
+        <SettingsContent />
+      </DropdownMenu>
     </header>
   );
 }

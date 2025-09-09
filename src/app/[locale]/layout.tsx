@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import { Navigation } from "@/components/header/demo/navigation";
+import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -42,8 +42,8 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <Providers>
-          <Navigation />
-          <main className="min-h-screen">{children}</main>
+          <Header />
+          <main className="min-h-screen overflow-x-clip">{children}</main>
           <Footer />
         </Providers>
       </body>
