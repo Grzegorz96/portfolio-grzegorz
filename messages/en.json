@@ -72,43 +72,94 @@
       }
     }
   },
-  "Contact": {
-    "heading": "Let's Work Together",
-    "subHeading": "Ready to bring your ideas to life? Get in touch and let's discuss how I can help you build something amazing.",
-    "info": {
-      "heading": "Get in Touch",
-      "subHeading": "Looking for a developer for your project? Have questions about collaboration? Write to me - I'll respond within 24 hours."
+  "About": {
+    "title": "Some words about me",
+    "description": "I am a fullstack developer with over 3 years of experience in creating scalable systems. My approach focuses on creating clean, maintainable code and optimizing performance across the entire stack.",
+    "portfolioButton": "View Projects",
+    "services": {
+      "interior": {
+        "title": "Passion for Innovation",
+        "description": "I'm driven by the thrill of turning complex problems into elegant solutions. Every project is an opportunity to push boundaries and explore new possibilities in web development."
+      },
+      "exterior": {
+        "title": "Continuous Learning",
+        "description": "The tech world evolves rapidly, and so do I. I'm always experimenting with new frameworks, attending conferences, and contributing to open-source projects to stay ahead of the curve."
+      },
+      "design": {
+        "title": "Quality Over Speed",
+        "description": "While I appreciate fast delivery, I never compromise on code quality. Clean, well-documented, and maintainable code is my standard, ensuring long-term success for every project."
+      },
+      "decoration": {
+        "title": "Client Success Focus",
+        "description": "Your success is my success. I take time to understand your business goals and translate them into technical solutions that drive real value and growth."
+      },
+      "planning": {
+        "title": "Future-Ready Solutions",
+        "description": "I build applications that not only meet today's requirements but are also prepared for tomorrow's challenges. Scalability, performance, and maintainability are built into every solution."
+      },
+      "execution": {
+        "title": "Collaborative Approach",
+        "description": "I believe in working closely with clients and teams to deliver exceptional results. Clear communication, regular updates, and transparent processes are key to successful project delivery."
+      }
     },
-    "form": {
-      "title": "Send a Message",
-      "name": "Your Name",
-      "email": "Your Email",
-      "subject": "Subject",
-      "message": "Your Message",
-      "send": "Send Message"
+    "stats": {
+      "technologies": "Technologies Mastered",
+      "performance": "Performance Optimization",
+      "degrees": "Engineering Degrees",
+      "availability": "Hours Available"
     }
   },
-  "About": {
-    "title": "About Me",
-    "mainTitle": "Some words about me",
-    "description": "I am a fullstack developer with over 3 years of experience in creating scalable systems. I specialize in JavaScript/TypeScript, React, Node.js and Python technologies, working with PostgreSQL, MongoDB and Redis databases and using AWS and Docker in production projects. My approach focuses on creating clean, maintainable code and optimizing performance."
-  },
   "Skills": {
-    "title": "Technical Skills",
-    "description": "Comprehensive overview of my technical expertise and proficiency levels across different technology domains",
+    "title": "My Technical Expertise",
+    "description": "Comprehensive overview of my technical skills and proficiency levels across different technology domains",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Databases",
-      "devops": "DevOps & Cloud",
-      "testing": "Testing",
-      "tools": "Tools"
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Modern React applications with Next.js, TypeScript, and Tailwind CSS",
+        "hoverDescription": "Transform your ideas into stunning, interactive web applications. I create pixel-perfect UIs that not only look amazing but also provide seamless user experiences across all devices. From complex state management to smooth animations, I ensure your frontend is both beautiful and performant.",
+        "hoverSubDescription": "Ready to build your next amazing frontend? Let's create something extraordinary together."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Node.js, NestJS, Express, Python, Flask, GraphQL, JWT, OAuth2",
+        "hoverDescription": "Architect and develop powerful server-side solutions that scale with your business. I design RESTful APIs, implement real-time features with WebSockets, and ensure your backend can handle thousands of concurrent users while maintaining security and performance.",
+        "hoverSubDescription": "Need a robust backend for your application? Let's architect the perfect solution."
+      },
+      "database": {
+        "title": "Databases",
+        "description": "PostgreSQL, MongoDB, Redis, MySQL, TypeORM, Prisma",
+        "hoverDescription": "Design and optimize database solutions that power your applications. Whether you need complex relational data with PostgreSQL or flexible document storage with MongoDB, I ensure your data layer is fast, secure, and ready to grow with your business needs.",
+        "hoverSubDescription": "Looking for optimal data management? Let's design the perfect database architecture."
+      },
+      "devops": {
+        "title": "Cloud & DevOps",
+        "description": "AWS, Docker, Vercel, Netlify, CI/CD, Microservices",
+        "hoverDescription": "Deploy and manage your applications in the cloud with confidence. I set up automated deployment pipelines, configure monitoring and logging, and ensure your applications are always available and performing at their best. From development to production, I handle the entire DevOps lifecycle.",
+        "hoverSubDescription": "Ready to scale your application? Let's deploy it to the cloud with confidence."
+      },
+      "testing": {
+        "title": "Testing & Quality",
+        "description": "Jest, Supertest, Unit Testing, Code Review, Clean Code",
+        "hoverDescription": "Ensure your code is bulletproof with comprehensive testing strategies. I write thorough unit tests, integration tests, and end-to-end tests that catch bugs before they reach production. Quality code means fewer bugs, easier maintenance, and happier users.",
+        "hoverSubDescription": "Want bulletproof code? Let's implement comprehensive testing strategies together."
+      },
+      "tools": {
+        "title": "Development Tools",
+        "description": "Git, GitHub, Postman, ESLint, Prettier, VSCode, GitHub Copilot",
+        "hoverDescription": "Streamline your development workflow with the right tools and processes. I set up automated code formatting, linting, and testing pipelines that ensure consistent code quality. From Git workflows to CI/CD automation, I help you work faster and more efficiently.",
+        "hoverSubDescription": "Need to optimize your development workflow? Let's set up the perfect toolchain."
+      }
     },
-    "levels": {
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced",
-      "expert": "Expert"
+    "progress": {
+      "title": "Technology Stack",
+      "subtitle": "Core Technologies",
+      "description": "My primary technology stack and tools I use daily for building modern web applications",
+      "feedback": "Customer feedback integrated at every stage",
+      "improvement": "Continuous improvement"
+    },
+    "cta": {
+      "title": "Ready to Build",
+      "description": "Let's create something amazing together"
     }
   },
   "Projects": {
@@ -195,15 +246,21 @@
       }
     }
   },
-  "Common": {
-    "getStarted": "Get Started",
-    "loading": "Loading...",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "view": "View",
-    "close": "Close"
+  "Contact": {
+    "heading": "Let's Work Together",
+    "subHeading": "Ready to bring your ideas to life? Get in touch and let's discuss how I can help you build something amazing.",
+    "info": {
+      "heading": "Get in Touch",
+      "subHeading": "Looking for a developer for your project? Have questions about collaboration? Write to me - I'll respond within 24 hours."
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
   },
   "Footer": {
     "profile": {

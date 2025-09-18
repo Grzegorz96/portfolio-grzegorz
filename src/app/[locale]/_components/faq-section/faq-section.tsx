@@ -34,12 +34,9 @@ export function FAQSection() {
   ];
 
   return (
-    <section
-      id="faq"
-      className="py-20 px-4 sm:px-6 lg:px-8 relative z-10 border-1 border-amber-100"
-    >
+    <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 relative z-10">
       {/* Background glow effect */}
-      <div className="w-[300px] h-[500px] absolute top-[150px] left-1/2 -translate-x-1/2 origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[100px] z-0" />
+      {/* <div className="w-[300px] h-[500px] absolute top-[150px] left-1/2 -translate-x-1/2 origin-top-left rotate-[-33.39deg] bg-primary/10 blur-[100px] z-0" /> */}
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { type Metadata } from "next";
-import { BackgroundBeams } from "@/components/background-beams";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { Marquee } from "@/components/ui/marquee";
+import { marqueeItems } from "@/lib/data";
 
 import {
   HeroSection,
@@ -12,6 +12,7 @@ import {
   FAQSection,
   SkillsSection,
 } from "./_components";
+import { BackgroundBeams } from "@/components/background-beams";
 
 export async function generateMetadata({
   params,
@@ -30,13 +31,22 @@ export async function generateMetadata({
 export default function LandingPage() {
   return (
     <>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
       <HeroSection />
       <HomeSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <InfiniteMovingCards speed="slow" className="w-full" />
+      <Marquee speed={90}>
+        {Object.entries(marqueeItems).map(([name, Logo]) => (
+          <div
+            key={name}
+            className="relative h-16 w-fit mx-8 flex items-center justify-center"
+          >
+            <Logo />
+          </div>
+        ))}
+      </Marquee>
       <FAQSection />
       <ContactSection />
     </>

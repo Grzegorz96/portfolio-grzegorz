@@ -74,7 +74,7 @@ export function SettingsContent() {
         <DropdownMenuItem
           key={option.value}
           onClick={() => setTheme(option.value)}
-          className="cursor-pointer flex items-center justify-between focus:bg-accent/50 hover:bg-accent/50 transition-colors duration-200 rounded-md"
+          className="cursor-pointer flex items-center justify-between focus:bg-muted/50 hover:bg-muted/50 rounded-md"
         >
           <div className="flex items-center gap-2">
             <option.icon className={`h-4 w-4 ${option.iconColor}`} />
@@ -96,7 +96,7 @@ export function SettingsContent() {
           key={localeCode}
           onClick={() => onLanguageChange(localeCode)}
           disabled={isPending}
-          className="cursor-pointer flex items-center justify-between focus:bg-accent/50 hover:bg-accent/50 transition-colors duration-200 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+          className="cursor-pointer flex items-center justify-between focus:bg-muted/50 hover:bg-muted/50 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <div className="flex items-center gap-2">
             <Flag locale={localeCode} className="w-6 h-4 rounded-sm" />

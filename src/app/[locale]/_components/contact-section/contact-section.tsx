@@ -1,29 +1,19 @@
 import { MotionH2, MotionDiv } from "@/components/motion";
-import { Elipse } from "./elipse";
-import { Heading } from "./heading";
-import { SubHeading } from "./sub-heading";
 import { Info } from "./info";
 import { Form } from "./form";
+import { Elipse } from "./elipse";
 import { useTranslations } from "next-intl";
 
 export function ContactSection() {
   const t = useTranslations("Contact");
 
   return (
-    <section
-      id="contact"
-      className="py-20 min-h-screen px-4 sm:px-6 lg:px-8 relative z-10 border-1 border-purple-500"
-    >
-      {/* Background glow effect */}
-      <div className="w-[150px] h-[150px] absolute top-[100px] left-[15%] origin-center rotate-45 bg-primary/8 blur-[50px] z-0" />
-      <div className="w-[100px] h-[100px] absolute bottom-[100px] right-[20%] origin-center -rotate-30 bg-primary/6 blur-[40px] z-0" />
-      <div className="w-[80px] h-[80px] absolute top-[300px] left-[25%] origin-center rotate-15 bg-primary/5 blur-[30px] z-0" />
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header */}
-        <div className="mx-auto max-w-[540px] mb-16">
+    <section className="w-full pt-20 md:pt-60 lg:pt-60 pb-10 md:pb-20 px-5 relative flex flex-col justify-center items-center overflow-visible">
+      <Elipse />
+      <div className="relative z-10 flex flex-col justify-start items-center gap-9 max-w-4xl mx-auto">
+        <div className="flex flex-col justify-start items-center gap-4 text-center">
           <MotionH2
-            className="from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px] relative z-10 pb-2"
+            className="text-foreground text-4xl md:text-5xl lg:text-[68px] font-semibold leading-tight md:leading-tight lg:leading-[76px] break-words max-w-[435px]"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -31,20 +21,18 @@ export function ContactSection() {
           >
             {t("heading")}
           </MotionH2>
-
           <MotionDiv
-            className="mt-5 text-center"
+            className="text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-muted-foreground text-sm md:text-base font-medium leading-[18.20px] md:leading-relaxed break-words max-w-2xl">
               {t("subHeading")}
             </p>
           </MotionDiv>
         </div>
-
         {/* Contact Content */}
         <div className="grid md:grid-cols-2 gap-12 w-full max-w-6xl mx-auto">
           <Form formLabels={t.raw("form")} />

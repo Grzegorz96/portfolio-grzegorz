@@ -11,12 +11,12 @@ export function HomeSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center border-1 border-green-500"
+      className="relative min-h-screen flex items-center justify-center"
     >
       <BackgroundElements />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 sm:gap-12 lg:gap-24">
           {/* Left Side - Content */}
           <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl lg:max-w-3xl *:w-full gap-8">

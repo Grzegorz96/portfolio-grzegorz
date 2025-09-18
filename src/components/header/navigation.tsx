@@ -26,7 +26,7 @@ export function Navigation() {
   ];
 
   return (
-    <NavigationMenu>
+    <NavigationMenu className="flex items-center gap-4 bg-background/5 border border-border/50 backdrop-blur-xl py-1 px-1 rounded-full shadow-lg shadow-black/5 dark:shadow-black/20">
       <NavigationMenuList className="text-nowrap">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -59,10 +59,10 @@ export function Navigation() {
                       mass: 0.8,
                     }}
                   >
-                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-t-full">
-                      <div className="absolute w-12 h-6 bg-primary/20 rounded-full blur-md -top-2 -left-2" />
-                      <div className="absolute w-8 h-6 bg-primary/20 rounded-full blur-md -top-1" />
-                      <div className="absolute w-4 h-4 bg-primary/20 rounded-full blur-sm top-0 left-2" />
+                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full">
+                      <div className="absolute w-12 h-6 bg-primary/20 rounded-full blur-md -bottom-2 -left-2" />
+                      <div className="absolute w-8 h-6 bg-primary/20 rounded-full blur-md -bottom-1" />
+                      <div className="absolute w-4 h-4 bg-primary/20 rounded-full blur-sm bottom-0 left-2" />
                     </div>
                   </motion.div>
                 )}

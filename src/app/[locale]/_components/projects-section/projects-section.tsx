@@ -15,7 +15,7 @@ export function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="relative min-h-screen border-1 border-green-500"
+      className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-8"
       ref={containerRef}
     >
       <Heading />

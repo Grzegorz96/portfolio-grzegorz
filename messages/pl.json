@@ -72,43 +72,94 @@
       }
     }
   },
-  "Contact": {
-    "heading": "Pracujmy Razem",
-    "subHeading": "Gotowy, żeby ożywić swoje pomysły? Skontaktuj się ze mną i porozmawiajmy o tym, jak mogę Ci pomóc stworzyć coś wyjątkowego.",
-    "info": {
-      "heading": "Skontaktuj się",
-      "subHeading": "Potrzebujesz programisty do swojego projektu? Masz pytania dotyczące współpracy? Napisz do mnie - odpowiem w ciągu 24 godzin."
-    },
-    "form": {
-      "title": "Wyślij Wiadomość",
-      "name": "Twoje Imię",
-      "email": "Twój Email",
-      "subject": "Temat",
-      "message": "Twoja Wiadomość",
-      "send": "Wyślij Wiadomość"
-    }
-  },
   "About": {
-    "title": "O mnie",
-    "mainTitle": "Kilka słów o mnie",
-    "description": "Jestem programistą fullstack z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych systemów. Specjalizuję się w technologiach JavaScript/TypeScript, React, Node.js i Python, pracując z bazami danych PostgreSQL, MongoDB i Redis oraz wykorzystując AWS i Docker w projektach produkcyjnych. Moje podejście skupia się na tworzeniu czystego, łatwego w utrzymaniu kodu i optymalizacji wydajności."
+    "title": "Kilka słów o mnie",
+    "description": "Jestem fullstack developerem z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych systemów. Moje podejście skupia się na tworzeniu czystego, łatwego w utrzymaniu kodu i optymalizacji wydajności w całym stosie technologicznym.",
+    "portfolioButton": "Zobacz Projekty",
+    "services": {
+      "interior": {
+        "title": "Pasja do Innowacji",
+        "description": "Napędza mnie radość z przekształcania złożonych problemów w eleganckie rozwiązania. Każdy projekt to okazja do przekraczania granic i odkrywania nowych możliwości w rozwoju webowym."
+      },
+      "exterior": {
+        "title": "Ciągłe Uczenie Się",
+        "description": "Świat technologii szybko się zmienia, a ja razem z nim. Zawsze eksperymentuję z nowymi frameworkami, uczestniczę w konferencjach i przyczyniam się do projektów open-source, aby pozostać na czele."
+      },
+      "design": {
+        "title": "Jakość Przed Szybkością",
+        "description": "Choć doceniam szybkie dostarczanie, nigdy nie kompromituję jakości kodu. Czysty, dobrze udokumentowany i łatwy w utrzymaniu kod to mój standard, zapewniający długoterminowy sukces każdego projektu."
+      },
+      "decoration": {
+        "title": "Skupienie na Sukcesie Klienta",
+        "description": "Twój sukces to mój sukces. Poświęcam czas na zrozumienie Twoich celów biznesowych i przekształcanie ich w rozwiązania techniczne, które napędzają prawdziwą wartość i wzrost."
+      },
+      "planning": {
+        "title": "Rozwiązania na Przyszłość",
+        "description": "Tworzę aplikacje, które nie tylko spełniają dzisiejsze wymagania, ale są również przygotowane na jutrzejsze wyzwania. Skalowalność, wydajność i łatwość utrzymania są wbudowane w każde rozwiązanie."
+      },
+      "execution": {
+        "title": "Podejście Współpracujące",
+        "description": "Wierzę w ścisłą współpracę z klientami i zespołami, aby dostarczać wyjątkowe rezultaty. Jasna komunikacja, regularne aktualizacje i przejrzyste procesy są kluczem do udanej realizacji projektu."
+      }
+    },
+    "stats": {
+      "technologies": "Opanowanych Technologii",
+      "performance": "Optymalizacji Wydajności",
+      "degrees": "Stopnie Inżynierskie",
+      "availability": "Godziny Dostępności"
+    }
   },
   "Skills": {
     "title": "Umiejętności Techniczne",
     "description": "Kompleksowy przegląd moich umiejętności technicznych i poziomów zaawansowania w różnych domenach technologicznych",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Bazy Danych",
-      "devops": "DevOps & Cloud",
-      "testing": "Testowanie",
-      "tools": "Narzędzia"
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Tworzę nowoczesne, responsywne interfejsy użytkownika z wykorzystaniem najnowszych technologii frontendowych",
+        "hoverDescription": "Przekształć swoje pomysły w oszałamiające, interaktywne aplikacje webowe. Tworzę idealne interfejsy użytkownika, które nie tylko wyglądają niesamowicie, ale także zapewniają płynne doświadczenia użytkownika na wszystkich urządzeniach. Od złożonego zarządzania stanem po płynne animacje, zapewniam, że Twój frontend jest zarówno piękny, jak i wydajny.",
+        "hoverSubDescription": "Gotowy na budowę swojego następnego niesamowitego frontendu? Stwórzmy coś niezwykłego razem."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Projektuję i rozwijam skalowalne systemy backendowe z wykorzystaniem Node.js i nowoczesnych frameworków",
+        "hoverDescription": "Projektuję i rozwijam potężne rozwiązania serwerowe, które skalują się wraz z Twoim biznesem. Tworzę RESTful API, implementuję funkcje czasu rzeczywistego z WebSockets i zapewniam, że Twój backend może obsłużyć tysiące jednoczesnych użytkowników przy zachowaniu bezpieczeństwa i wydajności.",
+        "hoverSubDescription": "Potrzebujesz solidnego backendu dla swojej aplikacji? Zaprojektujmy idealne rozwiązanie."
+      },
+      "database": {
+        "title": "Databases",
+        "description": "Projektuję i optymalizuję architektury bazodanowe dla wydajności i skalowalności",
+        "hoverDescription": "Projektuję i optymalizuję rozwiązania bazodanowe, które napędzają Twoje aplikacje. Niezależnie od tego, czy potrzebujesz złożonych danych relacyjnych z PostgreSQL, czy elastycznego przechowywania dokumentów z MongoDB, zapewniam, że Twoja warstwa danych jest szybka, bezpieczna i gotowa do rozwoju wraz z potrzebami biznesowymi.",
+        "hoverSubDescription": "Szukasz optymalnego zarządzania danymi? Zaprojektujmy idealną architekturę bazy danych."
+      },
+      "devops": {
+        "title": "Cloud & DevOps",
+        "description": "Projektuję i wdrażam rozwiązania chmurowe zapewniające wysoką dostępność i skalowalność",
+        "hoverDescription": "Wdrażaj i zarządzaj swoimi aplikacjami w chmurze z pewnością siebie. Konfiguruję zautomatyzowane potoki wdrażania, ustawiam monitorowanie i logowanie oraz zapewniam, że Twoje aplikacje są zawsze dostępne i działają najlepiej. Od rozwoju do produkcji, obsługuję cały cykl życia DevOps.",
+        "hoverSubDescription": "Gotowy na skalowanie swojej aplikacji? Wdróżmy ją w chmurze z pewnością siebie."
+      },
+      "testing": {
+        "title": "Testing & Quality",
+        "description": "Implementuję kompleksowe strategie testowania i procesy zapewnienia jakości kodu",
+        "hoverDescription": "Zapewnij, że Twój kod jest kuloodporny dzięki kompleksowym strategiom testowania. Piszę dokładne testy jednostkowe, testy integracyjne i testy end-to-end, które wyłapują błędy zanim dotrą do produkcji. Jakościowy kod oznacza mniej błędów, łatwiejszą konserwację i szczęśliwszych użytkowników.",
+        "hoverSubDescription": "Chcesz kuloodporny kod? Zaimplementujmy razem kompleksowe strategie testowania."
+      },
+      "tools": {
+        "title": "Development Tools",
+        "description": "Wykorzystuję nowoczesne narzędzia deweloperskie do zwiększenia produktywności i jakości kodu",
+        "hoverDescription": "Usprawnij swój przepływ pracy deweloperskiej odpowiednimi narzędziami i procesami. Konfiguruję zautomatyzowane formatowanie kodu, linting i potoki testowe, które zapewniają spójną jakość kodu. Od przepływów Git po automatyzację CI/CD, pomagam Ci pracować szybciej i wydajniej.",
+        "hoverSubDescription": "Potrzebujesz zoptymalizować swój przepływ pracy deweloperskiej? Skonfigurujmy idealny zestaw narzędzi."
+      }
     },
-    "levels": {
-      "beginner": "Początkujący",
-      "intermediate": "Średniozaawansowany",
-      "advanced": "Zaawansowany",
-      "expert": "Ekspert"
+    "progress": {
+      "title": "Technology Stack",
+      "subtitle": "Główne Technologie",
+      "description": "Mój główny stos technologiczny i narzędzia, których używam codziennie do budowania nowoczesnych aplikacji webowych",
+      "feedback": "Opinie klientów integrowane na każdym etapie",
+      "improvement": "Ciągłe ulepszanie"
+    },
+    "cta": {
+      "title": "Gotowy do Budowy",
+      "description": "Stwórzmy coś niesamowitego razem"
     }
   },
   "Projects": {
@@ -193,6 +244,22 @@
         "question": "Jak długo trwa typowy projekt?",
         "answer": "Czas realizacji zależy od złożoności projektu. Małe aplikacje to 2-4 tygodnie, średnie projekty 1-3 miesiące, a duże systemy 3-6 miesięcy. Zawsze dostarczam szczegółowy harmonogram na początku współpracy."
       }
+    }
+  },
+  "Contact": {
+    "heading": "Pracujmy Razem",
+    "subHeading": "Gotowy, żeby ożywić swoje pomysły? Skontaktuj się ze mną i porozmawiajmy o tym, jak mogę Ci pomóc stworzyć coś wyjątkowego.",
+    "info": {
+      "heading": "Skontaktuj się",
+      "subHeading": "Potrzebujesz programisty do swojego projektu? Masz pytania dotyczące współpracy? Napisz do mnie - odpowiem w ciągu 24 godzin."
+    },
+    "form": {
+      "title": "Wyślij Wiadomość",
+      "name": "Twoje Imię",
+      "email": "Twój Email",
+      "subject": "Temat",
+      "message": "Twoja Wiadomość",
+      "send": "Wyślij Wiadomość"
     }
   },
   "Footer": {
