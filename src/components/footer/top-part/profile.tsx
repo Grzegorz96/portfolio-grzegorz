@@ -1,5 +1,7 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
-import { MotionA, MotionDiv } from "@/components/motion";
+import { MotionDiv } from "@/components/motion";
+import { staggerItemVariants } from "@/lib/animations";
+import Link from "next/link";
 
 interface ProfileProps {
   name: string;
@@ -8,12 +10,7 @@ interface ProfileProps {
 
 export function Profile({ name, description }: ProfileProps) {
   return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
-    >
+    <MotionDiv variants={staggerItemVariants}>
       <h3 className="text-lg font-semibold mb-4 text-foreground neon-text">
         {name}
       </h3>
@@ -27,15 +24,16 @@ export function Profile({ name, description }: ProfileProps) {
           { icon: Twitter, href: "#" },
           { icon: Mail, href: "#" },
         ].map((social, index) => (
-          <MotionA
+          <Link
             key={index}
             href={social.href}
             className="p-2 rounded-full glass-effect border border-primary/20 hover:border-primary/40 transition-all duration-300 group"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
+            aria-label={social.icon.displayName || "Social link"}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <social.icon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
-          </MotionA>
+          </Link>
         ))}
       </div>
     </MotionDiv>

@@ -2,7 +2,8 @@ export function Elipse() {
   return (
     <div className="absolute inset-0 top-[-90px]">
       <svg
-        className="w-full h-full"
+        // className="w-full h-[400px] md:h-[500px] lg:h-[600px]"
+        className="w-full h-fit"
         viewBox="0 0 1388 825"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +52,6 @@ export function Elipse() {
             fill="url(#paint3_linear_182_1049)"
           />
         </g>
-        {/* top element */}
         <defs>
           <filter
             id="filter0_f_182_1049"
@@ -82,22 +82,18 @@ export function Elipse() {
             y2="273.562"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="hsl(var(--background))" stopOpacity="0" />
+            <stop stopColor="var(--background)" stopOpacity="0" />
             <stop
               offset="0.2"
-              stopColor="hsl(var(--background))"
+              stopColor="var(--background)"
               stopOpacity="0.8"
             />
             <stop
               offset="0.8"
-              stopColor="hsl(var(--background))"
+              stopColor="var(--background)"
               stopOpacity="0.8"
             />
-            <stop
-              offset="1"
-              stopColor="hsl(var(--background))"
-              stopOpacity="0"
-            />
+            <stop offset="1" stopColor="var(--background)" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint1_radial_182_1049"
@@ -107,13 +103,9 @@ export function Elipse() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(683.482 245.884) rotate(-3.78676) scale(469.009 248.4)"
           >
-            <stop offset="0.1294" stopColor="hsl(var(--primary-dark))" />
-            <stop offset="0.2347" stopColor="hsl(var(--primary))" />
-            <stop
-              offset="0.3"
-              stopColor="hsl(var(--primary))"
-              stopOpacity="0"
-            />
+            <stop offset="0.1294" stopColor="var(--secondary-foreground)" />
+            <stop offset="0.2347" stopColor="var(--primary)" />
+            <stop offset="0.3" stopColor="var(--primary)" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint2_linear_182_1049"
@@ -134,8 +126,8 @@ export function Elipse() {
             y2="261.866"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="hsl(var(--background))" />
-            <stop offset="1" stopColor="hsl(var(--background))" />
+            <stop stopColor="var(--background)" />
+            <stop offset="1" stopColor="var(--background)" />
           </linearGradient>
         </defs>
       </svg>

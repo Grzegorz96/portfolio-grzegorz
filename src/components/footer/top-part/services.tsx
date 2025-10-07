@@ -1,4 +1,5 @@
-import { MotionDiv } from "../../motion";
+import { MotionDiv } from "@/components/motion";
+import { staggerItemVariants } from "@/lib/animations";
 
 interface ServicesProps {
   title: string;
@@ -7,12 +8,7 @@ interface ServicesProps {
 
 export function Services({ title, services }: ServicesProps) {
   return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.1 }}
-      viewport={{ once: true }}
-    >
+    <MotionDiv variants={staggerItemVariants}>
       <h3 className="text-lg font-semibold mb-4 text-foreground">{title}</h3>
       <ul className="space-y-2 text-sm">
         {services.map((service) => (

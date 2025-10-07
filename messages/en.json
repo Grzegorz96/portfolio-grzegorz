@@ -121,31 +121,31 @@
       },
       "backend": {
         "title": "Backend Development",
-        "description": "Node.js, NestJS, Express, Python, Flask, GraphQL, JWT, OAuth2",
+        "description": "Robust server-side solutions with Node.js, NestJS, and Python frameworks",
         "hoverDescription": "Architect and develop powerful server-side solutions that scale with your business. I design RESTful APIs, implement real-time features with WebSockets, and ensure your backend can handle thousands of concurrent users while maintaining security and performance.",
         "hoverSubDescription": "Need a robust backend for your application? Let's architect the perfect solution."
       },
       "database": {
         "title": "Databases",
-        "description": "PostgreSQL, MongoDB, Redis, MySQL, TypeORM, Prisma",
+        "description": "Scalable data solutions with PostgreSQL, MongoDB, and modern ORMs",
         "hoverDescription": "Design and optimize database solutions that power your applications. Whether you need complex relational data with PostgreSQL or flexible document storage with MongoDB, I ensure your data layer is fast, secure, and ready to grow with your business needs.",
         "hoverSubDescription": "Looking for optimal data management? Let's design the perfect database architecture."
       },
       "devops": {
         "title": "Cloud & DevOps",
-        "description": "AWS, Docker, Vercel, Netlify, CI/CD, Microservices",
+        "description": "Cloud deployment and automation with AWS, Docker, and CI/CD pipelines",
         "hoverDescription": "Deploy and manage your applications in the cloud with confidence. I set up automated deployment pipelines, configure monitoring and logging, and ensure your applications are always available and performing at their best. From development to production, I handle the entire DevOps lifecycle.",
         "hoverSubDescription": "Ready to scale your application? Let's deploy it to the cloud with confidence."
       },
       "testing": {
         "title": "Testing & Quality",
-        "description": "Jest, Supertest, Unit Testing, Code Review, Clean Code",
+        "description": "Comprehensive testing strategies with Jest, unit tests, and code quality assurance",
         "hoverDescription": "Ensure your code is bulletproof with comprehensive testing strategies. I write thorough unit tests, integration tests, and end-to-end tests that catch bugs before they reach production. Quality code means fewer bugs, easier maintenance, and happier users.",
         "hoverSubDescription": "Want bulletproof code? Let's implement comprehensive testing strategies together."
       },
       "tools": {
         "title": "Development Tools",
-        "description": "Git, GitHub, Postman, ESLint, Prettier, VSCode, GitHub Copilot",
+        "description": "Optimized development workflow with Git, modern IDEs, and automation tools",
         "hoverDescription": "Streamline your development workflow with the right tools and processes. I set up automated code formatting, linting, and testing pipelines that ensure consistent code quality. From Git workflows to CI/CD automation, I help you work faster and more efficiently.",
         "hoverSubDescription": "Need to optimize your development workflow? Let's set up the perfect toolchain."
       }

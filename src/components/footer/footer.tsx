@@ -2,6 +2,8 @@ import { BottomPart } from "./bottom-part";
 import { useTranslations } from "next-intl";
 import { Profile, Services, Technologies, Contact } from "./top-part";
 import { Separator } from "@/components/ui/separator";
+import { MotionDiv } from "../motion";
+import { staggerVariants } from "@/lib/animations";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -25,7 +27,13 @@ export function Footer() {
       <Separator className="mb-16 bg-primary/20" />
       <div className="max-w-6xl mx-auto">
         {/* Top Part */}
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <MotionDiv
+          variants={staggerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-4 gap-8 mb-6"
+        >
           <Profile
             name={t("profile.name")}
             description={t("profile.description")}
@@ -41,7 +49,7 @@ export function Footer() {
             phone={t("contact.phone")}
             available={t("contact.available")}
           />
-        </div>
+        </MotionDiv>
         <BottomPart
           copyright={t("bottom.copyright")}
           privacyPolicy={t("bottom.privacyPolicy")}

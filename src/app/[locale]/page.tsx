@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { type Metadata } from "next";
 import { Marquee } from "@/components/ui/marquee";
 import { marqueeItems } from "@/lib/data";
+import { AnimatedSection } from "@/components/animated-section";
 
 import {
   HeroSection,
@@ -12,7 +13,6 @@ import {
   FAQSection,
   SkillsSection,
 } from "./_components";
-import { BackgroundBeams } from "@/components/background-beams";
 
 export async function generateMetadata({
   params,
@@ -31,12 +31,18 @@ export async function generateMetadata({
 export default function LandingPage() {
   return (
     <>
-      {/* <BackgroundBeams /> */}
       <HeroSection />
       <HomeSection />
       <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
+      <AnimatedSection
+        id="skills"
+        delay={0.3}
+        className="relative z-10 max-w-[1320px] mx-auto scroll-mt-16"
+      >
+        <SkillsSection />
+      </AnimatedSection>
+
+      {/* <ProjectsSection /> */}
       <Marquee speed={90}>
         {Object.entries(marqueeItems).map(([name, Logo]) => (
           <div
@@ -47,8 +53,12 @@ export default function LandingPage() {
           </div>
         ))}
       </Marquee>
-      <FAQSection />
-      <ContactSection />
+      <AnimatedSection delay={0.3}>
+        <FAQSection />
+      </AnimatedSection>
+      <AnimatedSection delay={0.5}>
+        <ContactSection />
+      </AnimatedSection>
     </>
   );
 }

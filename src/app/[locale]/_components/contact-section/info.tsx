@@ -1,4 +1,3 @@
-import { MotionDiv } from "@/components/motion";
 import { Mail, Linkedin, Github } from "lucide-react";
 import Link from "next/link";
 
@@ -31,44 +30,35 @@ export function Info({
   subHeading: string;
 }) {
   return (
-    <MotionDiv
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay: 0.6 }}
-      viewport={{ once: true }}
-      className="space-y-8"
-    >
-      <h3 className="text-xl font-semibold mb-6 text-foreground">{heading}</h3>
-      <p className="text-muted-foreground mb-8 leading-relaxed">{subHeading}</p>
-      <div className="space-y-4">
-        {contactInfo.map((contact, index) => (
-          <MotionDiv
-            key={contact.label}
-            className="flex items-center gap-4"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.7,
-              delay: 0.2 * index,
-            }}
-            viewport={{ once: true }}
-          >
-            <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-              <contact.icon className="w-5 h-5 text-primary" />
-            </div>
-            <div>
-              <p className="text-muted-foreground text-sm">{contact.label}</p>
+    <div className="h-full flex flex-col justify-between">
+      <div className="space-y-4 mb-6">
+        <h3 className="text-2xl font-semibold text-foreground">{heading}</h3>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          {subHeading}
+        </p>
+      </div>
 
-              <Link
-                href={contact.href}
-                className="text-foreground font-medium hover:text-accent transition-colors duration-200"
-              >
-                {contact.value}
-              </Link>
+      <div className="flex flex-col gap-4">
+        {contactInfo.map((contact) => (
+          <Link
+            key={contact.label}
+            href={contact.href}
+            className="group flex items-center gap-3 p-3 bg-card/50 backdrop-blur-sm rounded-xl border border-border hover:bg-card transition-colors duration-300"
+          >
+            <div className="w-10 h-10 bg-primary/5 group-hover:bg-primary/10 rounded-full flex items-center justify-center transition-colors duration-300 flex-shrink-0">
+              <contact.icon className="w-4 h-4 text-primary" />
             </div>
-          </MotionDiv>
+            <div className="min-w-0 flex-1">
+              <p className="text-muted-foreground text-xs font-medium">
+                {contact.label}
+              </p>
+              <p className="font-medium text-sm truncate group-hover:text-primary transition-colors">
+                {contact.value}
+              </p>
+            </div>
+          </Link>
         ))}
       </div>
-    </MotionDiv>
+    </div>
   );
 }

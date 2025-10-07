@@ -1,5 +1,6 @@
 import { MapPin, Phone, Calendar } from "lucide-react";
 import { MotionDiv } from "@/components/motion";
+import { staggerItemVariants } from "@/lib/animations";
 
 interface ContactProps {
   title: string;
@@ -10,12 +11,7 @@ interface ContactProps {
 
 export function Contact({ title, location, phone, available }: ContactProps) {
   return (
-    <MotionDiv
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.3 }}
-      viewport={{ once: true }}
-    >
+    <MotionDiv variants={staggerItemVariants}>
       <h3 className="text-lg font-semibold mb-4 text-foreground">{title}</h3>
       <div className="space-y-3 text-sm">
         <div className="flex items-center gap-2">
