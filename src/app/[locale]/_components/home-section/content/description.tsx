@@ -1,15 +1,7 @@
-import { MotionP } from "@/components/motion";
-
 export function Description({ description }: { description: string }) {
   return (
-    <MotionP
-      className="text-lg md:text-xl text-muted-foreground leading-relaxed"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 0.6 }}
-      viewport={{ once: true }}
-    >
+    <p className="text-base md:text-lg text-muted-foreground font-normal leading-relaxed">
       {description}
-    </MotionP>
+    </p>
   );
 }

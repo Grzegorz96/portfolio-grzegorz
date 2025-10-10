@@ -1,16 +1,9 @@
-import { MotionDiv } from "@/components/motion";
 import Next from "next/image";
 
 export function Photo() {
   return (
     <div className="order-1 lg:order-2 flex items-center justify-center relative">
-      <MotionDiv
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="relative group"
-      >
+      <div className="relative group">
         {/* Background Glow */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/15 to-accent/15 rounded-3xl blur-2xl scale-110 group-hover:scale-125 transition-transform duration-500" />
 
@@ -50,7 +43,7 @@ export function Photo() {
           className="absolute bottom-6 left-12 w-1.5 h-1.5 bg-accent/60 rounded-full animate-pulse"
           style={{ animationDelay: "2.5s" }}
         />
-      </MotionDiv>
+      </div>
     </div>
   );
 }

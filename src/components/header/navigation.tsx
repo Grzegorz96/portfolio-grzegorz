@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Home, User, Code, Briefcase, HelpCircle, Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import {
@@ -17,19 +16,18 @@ export function Navigation() {
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
   const navItems = [
-    { name: t("home"), url: "#home", icon: Home },
-    { name: t("about"), url: "#about", icon: User },
-    { name: t("skills"), url: "#skills", icon: Code },
-    { name: t("projects"), url: "#projects", icon: Briefcase },
-    { name: t("faq"), url: "#faq", icon: HelpCircle },
-    { name: t("contact"), url: "#contact", icon: Mail },
+    { name: t("home"), url: "#home" },
+    { name: t("about"), url: "#about" },
+    { name: t("skills"), url: "#skills" },
+    { name: t("projects"), url: "#projects" },
+    { name: t("faq"), url: "#faq" },
+    { name: t("contact"), url: "#contact" },
   ];
 
   return (
-    <NavigationMenu className="flex items-center gap-4 bg-background/5 border border-border/50 backdrop-blur-xl py-1 px-1 rounded-full shadow-lg shadow-black/5 dark:shadow-black/20">
+    <NavigationMenu className="flex items-center gap-4 mx-4">
       <NavigationMenuList className="text-nowrap">
         {navItems.map((item) => {
-          const Icon = item.icon;
           const isActive = activeTab === item.name;
 
           return (
@@ -38,15 +36,12 @@ export function Navigation() {
                 href={item.url}
                 onClick={() => setActiveTab(item.name)}
                 className={cn(
-                  "relative cursor-pointer text-sm font-medium px-6 py-2 rounded-full transition-colors duration-200",
-                  "text-muted-foreground hover:text-foregroun",
+                  "relative cursor-pointer text-sm font-medium px-5 py-2 rounded-full transition-colors duration-200",
+                  "text-muted-foreground hover:text-foreground",
                   isActive && "text-primary"
                 )}
               >
-                <span className="hidden md:inline">{item.name}</span>
-                <span className="md:hidden">
-                  <Icon size={18} strokeWidth={2.5} />
-                </span>
+                {item.name}
                 {isActive && (
                   <motion.div
                     layoutId="lamp"

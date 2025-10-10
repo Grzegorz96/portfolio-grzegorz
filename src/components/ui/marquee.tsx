@@ -5,7 +5,7 @@ interface MarqueeProps {
 
 export function Marquee({ children, speed = 30 }: MarqueeProps) {
   return (
-    <div className="relative overflow-hidden py-12">
+    <div className="overflow-hidden py-12 relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16 border-2 border-blue-500">
       <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10 pointer-events-none" />
 
       <div className="relative z-20 max-w-7xl mx-auto overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">

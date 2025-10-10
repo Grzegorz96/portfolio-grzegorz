@@ -154,8 +154,12 @@
   }
 }
 
-@layer components {
-  .stats-card {
-    @apply relative backdrop-blur-xl bg-white/[0.03] border border-white/[0.08] rounded-xl p-2.5 sm:p-3 hover:bg-white/[0.06] hover:border-white/[0.12] transition-all duration-300 hover:scale-105;
-  }
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }

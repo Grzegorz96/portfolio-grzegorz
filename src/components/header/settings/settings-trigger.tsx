@@ -6,7 +6,7 @@ import { MotionDiv } from "@/components/motion";
 export function SettingsTrigger() {
   return (
     <DropdownMenuTrigger asChild>
-      <Button className="relative cursor-pointer h-8 w-8 rounded-full bg-background/50 border border-border/30 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-background/80 group">
+      <Button className="relative cursor-pointer h-10 w-10 rounded-full bg-background/50 border border-border/30 backdrop-blur-sm flex items-center justify-center transition-all duration-300 hover:bg-background/80 group">
         <MotionDiv
           className="group-data-[state=open]:rotate-180 transition-transform duration-300"
           layout

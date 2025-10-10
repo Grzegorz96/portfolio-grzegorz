@@ -1,5 +1,3 @@
-import { MotionDiv } from "@/components/motion";
-
 interface CardsProps {
   experience: {
     years: string;
@@ -15,16 +13,10 @@ interface CardsProps {
 
 export function Cards({ experience, projects }: CardsProps) {
   return (
-    <MotionDiv
-      className="grid grid-cols-2 gap-3 w-full sm:gap-4 mx-auto lg:mx-0"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay: 1.0 }}
-      viewport={{ once: true }}
-    >
-      <div className="group stats-card">
+    <div className="grid grid-cols-2 gap-3 w-full sm:gap-4 mx-auto lg:mx-0">
+      <div className="group w-full bg-card/50 backdrop-blur-sm shadow-lg overflow-hidden rounded-xl border border-border transition-all duration-500 ease-out cursor-pointer hover:bg-card">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.02] to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <div className="relative z-10 flex items-start justify-between">
+        <div className="relative z-10 flex items-start justify-between px-4 py-3">
           <div>
             <div className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 mb-1">
               {experience.years}
@@ -47,9 +39,9 @@ export function Cards({ experience, projects }: CardsProps) {
         </div>
       </div>
 
-      <div className="group stats-card">
+      <div className="group w-full bg-card/50 backdrop-blur-sm shadow-lg overflow-hidden rounded-xl border border-border transition-all duration-500 ease-out cursor-pointer hover:bg-card">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/[0.02] to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        <div className="relative z-10 flex items-start justify-between">
+        <div className="relative z-10 flex items-start justify-between px-4 py-3">
           <div>
             <div className="text-lg sm:text-xl font-bold text-foreground group-hover:text-accent transition-colors duration-300 mb-1">
               {projects.count}
@@ -71,6 +63,6 @@ export function Cards({ experience, projects }: CardsProps) {
           </div>
         </div>
       </div>
-    </MotionDiv>
+    </div>
   );
 }

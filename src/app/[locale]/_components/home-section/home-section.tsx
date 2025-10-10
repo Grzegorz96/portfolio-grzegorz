@@ -1,5 +1,5 @@
 import { StatusBadge, Heading, SubHeading, Description } from "./content";
-import { Cards, TrustIndicators } from "./stats";
+import { Cards } from "./stats";
 import { Photo } from "./photo";
 import { ActionButtons } from "./action-buttons";
 import { BackgroundElements } from "./background-elements";
@@ -9,10 +9,7 @@ export function HomeSection() {
   const t = useTranslations("Home");
 
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center"
-    >
+    <section className="relative min-h-screen flex items-center justify-center">
       <BackgroundElements />
 
       {/* Main Content */}
@@ -35,24 +32,18 @@ export function HomeSection() {
               github={t("actionButtons.github")}
             />
             {/* Stats */}
-            <div className="flex flex-col gap-8">
-              <Cards
-                experience={{
-                  years: t("stats.cards.experience.years"),
-                  description: t("stats.cards.experience.description"),
-                  subDescription: t("stats.cards.experience.subDescription"),
-                }}
-                projects={{
-                  count: t("stats.cards.projects.count"),
-                  description: t("stats.cards.projects.description"),
-                  subDescription: t("stats.cards.projects.subDescription"),
-                }}
-              />
-              <TrustIndicators
-                rating={t("stats.trustIndicators.rating")}
-                successRate={t("stats.trustIndicators.successRate")}
-              />
-            </div>
+            <Cards
+              experience={{
+                years: t("stats.cards.experience.years"),
+                description: t("stats.cards.experience.description"),
+                subDescription: t("stats.cards.experience.subDescription"),
+              }}
+              projects={{
+                count: t("stats.cards.projects.count"),
+                description: t("stats.cards.projects.description"),
+                subDescription: t("stats.cards.projects.subDescription"),
+              }}
+            />
           </div>
 
           {/* Right Side - Photo */}

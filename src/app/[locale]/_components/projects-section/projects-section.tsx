@@ -14,15 +14,14 @@ export function ProjectsSection() {
 
   return (
     <section
-      id="projects"
-      className="relative min-h-screen py-24 px-4 sm:px-6 lg:px-8"
+      className="border-2 border-red-500 relative py-24 px-4 sm:px-6 lg:px-8"
       ref={containerRef}
     >
       <Heading />
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {timelineData.map((item, index) => (
-          <TimelineContent key={index} item={item} index={index} />
+          <TimelineContent key={index} item={item} />
         ))}
 
         <TimeLineProgress

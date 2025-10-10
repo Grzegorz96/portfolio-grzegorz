@@ -32,17 +32,32 @@ export default function LandingPage() {
   return (
     <>
       <HeroSection />
-      <HomeSection />
-      <AboutSection />
+      <AnimatedSection id="home" delay={0.5} className="relative z-10 mt-16">
+        <HomeSection />
+      </AnimatedSection>
+      <AnimatedSection
+        id="about"
+        delay={0.5}
+        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
+      >
+        <AboutSection />
+      </AnimatedSection>
       <AnimatedSection
         id="skills"
-        delay={0.3}
-        className="relative z-10 max-w-[1320px] mx-auto scroll-mt-16"
+        delay={0.5}
+        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
       >
         <SkillsSection />
       </AnimatedSection>
 
-      {/* <ProjectsSection /> */}
+      <AnimatedSection
+        id="projects"
+        delay={0.5}
+        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
+      >
+        <ProjectsSection />
+      </AnimatedSection>
+
       <Marquee speed={90}>
         {Object.entries(marqueeItems).map(([name, Logo]) => (
           <div
@@ -53,10 +68,19 @@ export default function LandingPage() {
           </div>
         ))}
       </Marquee>
-      <AnimatedSection delay={0.3}>
+
+      <AnimatedSection
+        id="faq"
+        delay={0.5}
+        className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16 border-2 border-blue-500"
+      >
         <FAQSection />
       </AnimatedSection>
-      <AnimatedSection delay={0.5}>
+      <AnimatedSection
+        id="contact"
+        delay={0.5}
+        className="relative z-10 max-w-[1320px] mx-auto mt-8 md:mt-16 border-2 border-blue-500"
+      >
         <ContactSection />
       </AnimatedSection>
     </>

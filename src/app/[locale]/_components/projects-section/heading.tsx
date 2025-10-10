@@ -1,31 +1,18 @@
-import { MotionH2, MotionDiv } from "@/components/motion";
 import { useTranslations } from "next-intl";
 
 export function Heading() {
   const t = useTranslations("Projects");
 
   return (
-    <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-      <MotionH2
-        className="from-foreground/60 via-foreground to-foreground/60 dark:from-muted-foreground/55 dark:via-foreground dark:to-muted-foreground/55 bg-gradient-to-r bg-clip-text text-center text-4xl font-semibold tracking-tighter text-transparent md:text-[54px] md:leading-[60px] relative z-10 pb-2"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        {t("title")}
-      </MotionH2>
-      <MotionDiv
-        className="mt-5 text-center"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-      >
-        <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+    <div className="self-stretch py-8 md:py-14 flex flex-col justify-center items-center gap-2 z-10">
+      <div className="flex flex-col justify-start items-center gap-4">
+        <h2 className="w-full max-w-[800px] text-center text-foreground text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-tight">
+          {t("title")}
+        </h2>
+        <p className="w-full max-w-[700px] text-center text-muted-foreground text-base md:text-lg font-normal leading-relaxed">
           {t("description")}
         </p>
-      </MotionDiv>
+      </div>
     </div>
   );
 }
