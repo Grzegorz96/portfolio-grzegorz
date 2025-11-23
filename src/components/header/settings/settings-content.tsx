@@ -62,7 +62,7 @@ export function SettingsContent() {
     <DropdownMenuContent
       align="end"
       className="w-56 bg-background/95 border border-border/50 backdrop-blur-xl shadow-xl shadow-black/10 dark:shadow-black/30 z-[9999]"
-      sideOffset={10}
+      sideOffset={15}
       avoidCollisions={true}
     >
       <DropdownMenuLabel className="flex items-center gap-2">

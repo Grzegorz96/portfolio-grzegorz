@@ -6,13 +6,14 @@ import { AnimatedSection } from "@/components/animated-section";
 
 import {
   HeroSection,
-  HomeSection,
   ContactSection,
-  ProjectsSection,
   AboutSection,
+  ProjectsSection,
   FAQSection,
   SkillsSection,
 } from "./_components";
+
+import { AboutSection2 } from "./_components/about-section-2";
 
 export async function generateMetadata({
   params,
@@ -32,20 +33,14 @@ export default function LandingPage() {
   return (
     <>
       <HeroSection />
-      <AnimatedSection id="home" delay={0.5} className="relative z-10 mt-16">
-        <HomeSection />
+      <AnimatedSection id="about" delay={0.5} className="relative z-10 mt-16">
+        <AboutSection2 />
       </AnimatedSection>
-      <AnimatedSection
-        id="about"
-        delay={0.5}
-        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
-      >
-        <AboutSection />
-      </AnimatedSection>
+
       <AnimatedSection
         id="skills"
         delay={0.5}
-        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
+        className="relative z-10 max-w-[1320px] mx-auto mt-16"
       >
         <SkillsSection />
       </AnimatedSection>
@@ -53,7 +48,7 @@ export default function LandingPage() {
       <AnimatedSection
         id="projects"
         delay={0.5}
-        className="relative z-10 max-w-[1320px] mx-auto mt-16 border-2 border-blue-500"
+        className="relative z-10 max-w-[1320px] mx-auto mt-16"
       >
         <ProjectsSection />
       </AnimatedSection>

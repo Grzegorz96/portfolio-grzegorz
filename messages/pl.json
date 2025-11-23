@@ -1,7 +1,6 @@
 {
   "Header": {
     "navigation": {
-      "home": "Strona główna",
       "about": "O mnie",
       "skills": "Umiejętności",
       "projects": "Projekty",
@@ -37,7 +36,7 @@
     },
     "scrollDown": "Przewiń w dół"
   },
-  "Home": {
+  "About": {
     "content": {
       "badge": "Dostępny do nowych projektów",
       "heading": "Grzegorz Strzeszewski",
@@ -47,7 +46,7 @@
         "Software Engineer",
         "Problem Solver"
       ],
-      "description": "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii. Specjalizuję się w React, Node.js oraz bazach danych, podchodząc futurystycznie do UX/UI i budując skalowalne rozwiązania od frontendu do backendu."
+      "description": "Tworzę nowoczesne aplikacje webowe z wykorzystaniem najnowszych technologii. Specjalizuję się w React, Node.js oraz bazach danych, podchodząc futurystycznie do UX/UI i budując skalowalne rozwiązania od frontendu do backendu. Moje podejście skupia się na tworzeniu czystego, łatwego w utrzymaniu kodu oraz optymalizacji wydajności w całym stosie technologicznym."
     },
     "actionButtons": {
       "contact": "Skontaktuj się",
@@ -65,48 +64,7 @@
           "description": "Ukończonych Projektów",
           "subDescription": "Pomyślnie"
         }
-      },
-      "trustIndicators": {
-        "rating": "5.0 Ocena",
-        "successRate": "100% Wskaźnik sukcesu"
       }
-    }
-  },
-  "About": {
-    "title": "Kilka słów o mnie",
-    "description": "Jestem fullstack developerem z ponad 3-letnim doświadczeniem w tworzeniu skalowalnych systemów. Moje podejście skupia się na tworzeniu czystego, łatwego w utrzymaniu kodu i optymalizacji wydajności w całym stosie technologicznym.",
-    "portfolioButton": "Zobacz Projekty",
-    "services": {
-      "interior": {
-        "title": "Pasja do Innowacji",
-        "description": "Napędza mnie radość z przekształcania złożonych problemów w eleganckie rozwiązania. Każdy projekt to okazja do przekraczania granic i odkrywania nowych możliwości w rozwoju webowym."
-      },
-      "exterior": {
-        "title": "Ciągłe Uczenie Się",
-        "description": "Świat technologii szybko się zmienia, a ja razem z nim. Zawsze eksperymentuję z nowymi frameworkami, uczestniczę w konferencjach i przyczyniam się do projektów open-source, aby pozostać na czele."
-      },
-      "design": {
-        "title": "Jakość Przed Szybkością",
-        "description": "Choć doceniam szybkie dostarczanie, nigdy nie kompromituję jakości kodu. Czysty, dobrze udokumentowany i łatwy w utrzymaniu kod to mój standard, zapewniający długoterminowy sukces każdego projektu."
-      },
-      "decoration": {
-        "title": "Skupienie na Sukcesie Klienta",
-        "description": "Twój sukces to mój sukces. Poświęcam czas na zrozumienie Twoich celów biznesowych i przekształcanie ich w rozwiązania techniczne, które napędzają prawdziwą wartość i wzrost."
-      },
-      "planning": {
-        "title": "Rozwiązania na Przyszłość",
-        "description": "Tworzę aplikacje, które nie tylko spełniają dzisiejsze wymagania, ale są również przygotowane na jutrzejsze wyzwania. Skalowalność, wydajność i łatwość utrzymania są wbudowane w każde rozwiązanie."
-      },
-      "execution": {
-        "title": "Podejście Współpracujące",
-        "description": "Wierzę w ścisłą współpracę z klientami i zespołami, aby dostarczać wyjątkowe rezultaty. Jasna komunikacja, regularne aktualizacje i przejrzyste procesy są kluczem do udanej realizacji projektu."
-      }
-    },
-    "stats": {
-      "technologies": "Opanowanych Technologii",
-      "performance": "Optymalizacji Wydajności",
-      "degrees": "Stopnie Inżynierskie",
-      "availability": "Godziny Dostępności"
     }
   },
   "Skills": {
@@ -115,109 +73,105 @@
     "categories": {
       "frontend": {
         "title": "Frontend Development",
-        "description": "Tworzę nowoczesne, responsywne interfejsy użytkownika z wykorzystaniem najnowszych technologii frontendowych",
-        "hoverDescription": "Przekształć swoje pomysły w oszałamiające, interaktywne aplikacje webowe. Tworzę idealne interfejsy użytkownika, które nie tylko wyglądają niesamowicie, ale także zapewniają płynne doświadczenia użytkownika na wszystkich urządzeniach. Od złożonego zarządzania stanem po płynne animacje, zapewniam, że Twój frontend jest zarówno piękny, jak i wydajny.",
-        "hoverSubDescription": "Gotowy na budowę swojego następnego niesamowitego frontendu? Stwórzmy coś niezwykłego razem."
+        "description": "Tworzę nowoczesne, responsywne interfejsy użytkownika z wykorzystaniem najnowszych technologii frontendowych"
       },
       "backend": {
         "title": "Backend Development",
-        "description": "Projektuję i rozwijam skalowalne systemy backendowe z wykorzystaniem Node.js i nowoczesnych frameworków",
-        "hoverDescription": "Projektuję i rozwijam potężne rozwiązania serwerowe, które skalują się wraz z Twoim biznesem. Tworzę RESTful API, implementuję funkcje czasu rzeczywistego z WebSockets i zapewniam, że Twój backend może obsłużyć tysiące jednoczesnych użytkowników przy zachowaniu bezpieczeństwa i wydajności.",
-        "hoverSubDescription": "Potrzebujesz solidnego backendu dla swojej aplikacji? Zaprojektujmy idealne rozwiązanie."
+        "description": "Projektuję i rozwijam skalowalne systemy backendowe z wykorzystaniem Node.js i nowoczesnych frameworków"
       },
       "database": {
         "title": "Databases",
-        "description": "Projektuję i optymalizuję architektury bazodanowe dla wydajności i skalowalności",
-        "hoverDescription": "Projektuję i optymalizuję rozwiązania bazodanowe, które napędzają Twoje aplikacje. Niezależnie od tego, czy potrzebujesz złożonych danych relacyjnych z PostgreSQL, czy elastycznego przechowywania dokumentów z MongoDB, zapewniam, że Twoja warstwa danych jest szybka, bezpieczna i gotowa do rozwoju wraz z potrzebami biznesowymi.",
-        "hoverSubDescription": "Szukasz optymalnego zarządzania danymi? Zaprojektujmy idealną architekturę bazy danych."
+        "description": "Projektuję i optymalizuję architektury bazodanowe dla wydajności i skalowalności"
       },
       "devops": {
         "title": "Cloud & DevOps",
-        "description": "Projektuję i wdrażam rozwiązania chmurowe zapewniające wysoką dostępność i skalowalność",
-        "hoverDescription": "Wdrażaj i zarządzaj swoimi aplikacjami w chmurze z pewnością siebie. Konfiguruję zautomatyzowane potoki wdrażania, ustawiam monitorowanie i logowanie oraz zapewniam, że Twoje aplikacje są zawsze dostępne i działają najlepiej. Od rozwoju do produkcji, obsługuję cały cykl życia DevOps.",
-        "hoverSubDescription": "Gotowy na skalowanie swojej aplikacji? Wdróżmy ją w chmurze z pewnością siebie."
+        "description": "Projektuję i wdrażam rozwiązania chmurowe zapewniające wysoką dostępność i skalowalność"
       },
       "testing": {
         "title": "Testing & Quality",
-        "description": "Implementuję kompleksowe strategie testowania i procesy zapewnienia jakości kodu",
-        "hoverDescription": "Zapewnij, że Twój kod jest kuloodporny dzięki kompleksowym strategiom testowania. Piszę dokładne testy jednostkowe, testy integracyjne i testy end-to-end, które wyłapują błędy zanim dotrą do produkcji. Jakościowy kod oznacza mniej błędów, łatwiejszą konserwację i szczęśliwszych użytkowników.",
-        "hoverSubDescription": "Chcesz kuloodporny kod? Zaimplementujmy razem kompleksowe strategie testowania."
+        "description": "Implementuję kompleksowe strategie testowania i procesy zapewnienia jakości kodu"
       },
       "tools": {
         "title": "Development Tools",
-        "description": "Wykorzystuję nowoczesne narzędzia deweloperskie do zwiększenia produktywności i jakości kodu",
-        "hoverDescription": "Usprawnij swój przepływ pracy deweloperskiej odpowiednimi narzędziami i procesami. Konfiguruję zautomatyzowane formatowanie kodu, linting i potoki testowe, które zapewniają spójną jakość kodu. Od przepływów Git po automatyzację CI/CD, pomagam Ci pracować szybciej i wydajniej.",
-        "hoverSubDescription": "Potrzebujesz zoptymalizować swój przepływ pracy deweloperskiej? Skonfigurujmy idealny zestaw narzędzi."
+        "description": "Wykorzystuję nowoczesne narzędzia deweloperskie do zwiększenia produktywności i jakości kodu"
       }
     },
-    "progress": {
-      "title": "Technology Stack",
-      "subtitle": "Główne Technologie",
-      "description": "Mój główny stos technologiczny i narzędzia, których używam codziennie do budowania nowoczesnych aplikacji webowych",
-      "feedback": "Opinie klientów integrowane na każdym etapie",
-      "improvement": "Ciągłe ulepszanie"
-    },
     "cta": {
-      "title": "Gotowy do Budowy",
-      "description": "Stwórzmy coś niesamowitego razem"
+      "title": "Gotowy na Współpracę?",
+      "subtitle": "Pracujmy Razem",
+      "description": "Przemień swoje pomysły w rzeczywistość z nowoczesnymi technologiami webowymi",
+      "button": "Zatrudnij Mnie"
     }
   },
   "Projects": {
     "title": "Changelog z mojej podróży",
-    "description": "Timeline mojej drogi jako fullstack developer - od pierwszych eksperymentów po zaawansowane aplikacje produkcyjne. Każdy projekt to krok w rozwoju umiejętności frontend, backend i DevOps.",
-    "years": {
-      "2024": {
-        "title": "2024",
-        "subtitle": "Rok innowacji i zaawansowanych technologii",
-        "description": "W 2024 roku skupiłem się na tworzeniu zaawansowanych aplikacji wykorzystujących najnowsze technologie. Każdy projekt to krok naprzód w mojej karierze jako fullstack developera."
+    "description": "Moja droga od pierwszych projektów po zaawansowane aplikacje produkcyjne.",
+    "entries": {
+      "teamcraft": {
+        "domain": "Muzea 3D",
+        "date": "Styczeń 2025",
+        "title": "TimeVoyager - Muzeum Wirtualne 3D",
+        "description": "Zaawansowana aplikacja wirtualnego muzeum 3D z funkcjami czasu rzeczywistego, interaktywnymi wystawami i immersyjnym doświadczeniem użytkownika zbudowana z Three.js i nowoczesnych technologii webowych.",
+        "features": {
+          "f1": "Stworzenie złożonego muzeum wirtualnego 3D z Three.js",
+          "f2": "Implementacja interaktywnych funkcji czasu rzeczywistego",
+          "f3": "Utworzenie immersyjnej nawigacji użytkownika",
+          "f4": "Rozwój responsywnych wizualizacji 3D"
+        },
+        "button": "Zobacz Projekt"
       },
-      "2023": {
-        "title": "2023",
-        "subtitle": "Rok rozwoju i eksperymentów",
-        "description": "2023 był rokiem intensywnego rozwoju i eksperymentowania z różnymi technologiami. Stworzyłem aplikacje, które rozwiązywały realne problemy użytkowników."
+      "meteofy": {
+        "domain": "Serwisy Pogodowe",
+        "date": "Grudzień 2024",
+        "title": "Meteofy - Serwis Pogodowy",
+        "description": "Kompleksowa aplikacja serwisu pogodowego z danymi czasu rzeczywistego, prognozami i interaktywnymi mapami. Zbudowana z React i nowoczesnych API backendowych.",
+        "features": {
+          "f1": "Integracja danych pogodowych w czasie rzeczywistym",
+          "f2": "Interaktywne mapy i prognozy",
+          "f3": "Śledzenie wielu lokalizacji",
+          "f4": "Implementacja responsywnego designu"
+        },
+        "button": "Zobacz Projekt"
       },
-      "2022": {
-        "title": "2022",
-        "subtitle": "Początki i pierwsze kroki",
-        "description": "Rok 2022 to czas moich pierwszych komercyjnych projektów jako fullstack developer. Każdy projekt był lekcją i krokiem w kierunku doskonałości."
+      "shoper": {
+        "domain": "E-commerce",
+        "date": "Marzec 2024",
+        "title": "Shoper - Platforma Ogłoszeń",
+        "description": "Platforma ogłoszeń full-stack z autentykacją, systemem płatności i wiadomościami w czasie rzeczywistym. Zbudowana z Pythona, Flask i React.",
+        "features": {
+          "f1": "Autentykacja i autoryzacja użytkowników",
+          "f2": "Integracja systemu płatności",
+          "f3": "System wiadomości w czasie rzeczywistym",
+          "f4": "Zaawansowane wyszukiwanie i filtry"
+        },
+        "button": "Zobacz Projekt"
+      },
+      "millionaire": {
+        "domain": "Gry",
+        "date": "Luty 2024",
+        "title": "Millionaire - Aplikacja Quizowa",
+        "description": "Interaktywna aplikacja quizowa inspirowana Milionerami z wieloma trybami gry, tabelą wyników i angażującym UI.",
+        "features": {
+          "f1": "Wielu trybów gry i poziomów trudności",
+          "f2": "System tabeli wyników",
+          "f3": "Płynne animacje i przejścia",
+          "f4": "Responsywny design mobilny"
+        },
+        "button": "Zobacz Projekt"
+      },
+      "saper": {
+        "domain": "Gry",
+        "date": "Czerwiec 2023",
+        "title": "Saper - Gra",
+        "description": "Klasyczna implementacja gry Saper z nowoczesnym UI, różnymi poziomami trudności i śledzeniem najlepszych wyników.",
+        "features": {
+          "f1": "Klasyczne mechaniki gry",
+          "f2": "Wiele poziomów trudności",
+          "f3": "Śledzenie najlepszych wyników",
+          "f4": "Nowoczesny responsywny UI"
+        },
+        "button": "Zobacz Projekt"
       }
-    },
-    "projects": {
-      "ecommerce": {
-        "title": "Platforma E-commerce",
-        "description": "Pełna platforma e-commerce z systemem płatności, zarządzaniem produktami i panelem administracyjnym."
-      },
-      "analytics": {
-        "title": "Dashboard Analityczny",
-        "description": "Dashboard analityczny z wizualizacją danych, raportami i eksportem do różnych formatów."
-      },
-      "taskManagement": {
-        "title": "Aplikacja Zarządzania Zadaniami",
-        "description": "Aplikacja do zarządzania zadaniami z funkcjami współpracy zespołowej i raportowaniem."
-      },
-      "chatApp": {
-        "title": "Aplikacja Czatu w Czasie Rzeczywistym",
-        "description": "Aplikacja czatu w czasie rzeczywistym z obsługą pokoi, plików i powiadomień."
-      },
-      "portfolio": {
-        "title": "Strona Portfolio",
-        "description": "Nowoczesna strona portfolio z animacjami, dark mode i pełną responsywnością."
-      },
-      "fitnessApp": {
-        "title": "Aplikacja Mobilna Fitness",
-        "description": "Aplikacja mobilna do treningów z AI-powered recommendations i social features."
-      }
-    },
-    "status": {
-      "completed": "Ukończony",
-      "inProgress": "W trakcie"
-    },
-    "actions": {
-      "code": "Kod",
-      "demo": "Demo"
-    },
-    "badges": {
-      "featured": "Featured"
     }
   },
   "FAQ": {

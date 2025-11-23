@@ -8,6 +8,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Providers } from "@/components/providers";
 
+import { Header2 } from "@/components/header-2/header-2";
+
 type LayoutProps = Readonly<{
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
@@ -42,7 +44,8 @@ export default async function RootLayout({ children, params }: LayoutProps) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <Providers>
-          <Header />
+          <Header2 />
+          {/* <Header /> */}
           <main className="min-h-screen overflow-x-clip">{children}</main>
           <Footer />
         </Providers>

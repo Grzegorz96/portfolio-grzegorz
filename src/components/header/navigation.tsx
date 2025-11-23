@@ -16,7 +16,6 @@ export function Navigation() {
   const [activeTab, setActiveTab] = useState<string | null>(null);
 
   const navItems = [
-    { name: t("home"), url: "#home" },
     { name: t("about"), url: "#about" },
     { name: t("skills"), url: "#skills" },
     { name: t("projects"), url: "#projects" },
@@ -25,7 +24,8 @@ export function Navigation() {
   ];
 
   return (
-    <NavigationMenu className="flex items-center gap-4 mx-4">
+    // <NavigationMenu className="flex items-center gap-4 mx-4">
+    <NavigationMenu className="absolute inset-0 m-auto hidden size-fit lg:block">
       <NavigationMenuList className="text-nowrap">
         {navItems.map((item) => {
           const isActive = activeTab === item.name;

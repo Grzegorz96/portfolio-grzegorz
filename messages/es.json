@@ -1,7 +1,6 @@
 {
   "Header": {
     "navigation": {
-      "home": "Inicio",
       "about": "Acerca de",
       "skills": "Habilidades",
       "projects": "Proyectos",
@@ -37,7 +36,7 @@
     },
     "scrollDown": "Desplazar hacia abajo"
   },
-  "Home": {
+  "About": {
     "content": {
       "badge": "Disponible para nuevos proyectos",
       "heading": "Grzegorz Strzeszewski",
@@ -65,10 +64,6 @@
           "description": "Proyectos completados",
           "subDescription": "Con éxito"
         }
-      },
-      "trustIndicators": {
-        "rating": "5.0 Evaluación",
-        "successRate": "100% Tasa de éxito"
       }
     }
   },
@@ -88,85 +83,111 @@
       "send": "Enviar mensaje"
     }
   },
-  "About": {
-    "title": "Sobre mí",
-    "mainTitle": "Algunas palabras sobre mí",
-    "description": "Soy un desarrollador fullstack con más de 3 años de experiencia en la creación de sistemas escalables. Me especializo en tecnologías JavaScript/TypeScript, React, Node.js y Python, trabajo con bases de datos PostgreSQL, MongoDB y Redis, y utilizo AWS y Docker en proyectos de producción. Mi enfoque se centra en crear código limpio y mantenible y optimizar el rendimiento."
-  },
   "Skills": {
     "title": "Habilidades Técnicas",
     "description": "Visión general completa de mi experiencia técnica y niveles de competencia en diferentes dominios tecnológicos",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Bases de datos",
-      "devops": "DevOps & Cloud",
-      "testing": "Testing",
-      "tools": "Herramientas"
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Aplicaciones React modernas con Next.js, TypeScript y Tailwind CSS"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Soluciones robustas del lado del servidor con Node.js, NestJS y frameworks de Python"
+      },
+      "database": {
+        "title": "Bases de Datos",
+        "description": "Soluciones de datos escalables con PostgreSQL, MongoDB y ORMs modernos"
+      },
+      "devops": {
+        "title": "Cloud & DevOps",
+        "description": "Despliegue en la nube y automatización con AWS, Docker y pipelines CI/CD"
+      },
+      "testing": {
+        "title": "Testing & Calidad",
+        "description": "Estrategias de testing integrales con Jest, pruebas unitarias y aseguramiento de calidad de código"
+      },
+      "tools": {
+        "title": "Development Tools",
+        "description": "Flujo de trabajo de desarrollo optimizado con Git, IDEs modernos y herramientas de automatización"
+      }
     },
-    "levels": {
-      "beginner": "Principiante",
-      "intermediate": "Intermedio",
-      "advanced": "Avanzado",
-      "expert": "Experto"
+    "cta": {
+      "title": "¿Listo para Colaborar?",
+      "subtitle": "Trabajemos juntos",
+      "description": "Transforma tus ideas en realidad con tecnologías web modernas",
+      "button": "Contrátame"
     }
   },
   "Projects": {
     "title": "Changelog de mi viaje",
-    "description": "Timeline de mi camino como desarrollador fullstack - desde los primeros experimentos hasta aplicaciones de producción avanzadas. Cada proyecto es un paso adelante en el desarrollo de habilidades frontend, backend y DevOps.",
-    "years": {
-      "2024": {
-        "title": "2024",
-        "subtitle": "Año de innovación y tecnologías avanzadas",
-        "description": "En 2024 me enfoqué en crear aplicaciones avanzadas utilizando las tecnologías más recientes. Cada proyecto es un paso adelante en mi carrera como desarrollador fullstack."
+    "description": "Mi camino desde los primeros proyectos hasta aplicaciones de producción avanzadas.",
+    "entries": {
+      "teamcraft": {
+        "domain": "Museos 3D",
+        "date": "Enero 2025",
+        "title": "TimeVoyager - Museo Virtual 3D",
+        "description": "Aplicación avanzada de museo virtual 3D con funciones en tiempo real, exposiciones interactivas y experiencia de usuario inmersiva construida con Three.js y tecnologías web modernas.",
+        "features": {
+          "f1": "Construí un museo virtual 3D complejo con Three.js",
+          "f2": "Implementé funciones interactivas en tiempo real",
+          "f3": "Creé navegación de usuario inmersiva",
+          "f4": "Desarrollé visualización 3D responsiva"
+        },
+        "button": "Ver Proyecto"
       },
-      "2023": {
-        "title": "2023",
-        "subtitle": "Año de desarrollo y experimentación",
-        "description": "2023 fue un año de desarrollo intensivo y experimentación con varias tecnologías. Creé aplicaciones que resolvían problemas reales de los usuarios."
+      "meteofy": {
+        "domain": "Servicios Meteorológicos",
+        "date": "Diciembre 2024",
+        "title": "Meteofy - Servicio Meteorológico",
+        "description": "Aplicación completa de servicio meteorológico con datos en tiempo real, pronósticos y mapas interactivos. Construida con React moderno y APIs de backend.",
+        "features": {
+          "f1": "Integración de datos meteorológicos en tiempo real",
+          "f2": "Mapas y pronósticos interactivos",
+          "f3": "Seguimiento de múltiples ubicaciones",
+          "f4": "Implementación de diseño responsivo"
+        },
+        "button": "Ver Proyecto"
       },
-      "2022": {
-        "title": "2022",
-        "subtitle": "Comienzos y primeros pasos",
-        "description": "2022 fue el momento de mis primeros proyectos comerciales como desarrollador fullstack. Cada proyecto fue una lección y un paso hacia la excelencia."
+      "shoper": {
+        "domain": "E-commerce",
+        "date": "Marzo 2024",
+        "title": "Shoper - Plataforma de Clasificados",
+        "description": "Plataforma de clasificados full-stack con autenticación, sistema de pagos y mensajería en tiempo real. Construida con Python, Flask y React.",
+        "features": {
+          "f1": "Autenticación y autorización de usuarios",
+          "f2": "Integración de sistema de pagos",
+          "f3": "Sistema de mensajería en tiempo real",
+          "f4": "Búsqueda avanzada y filtros"
+        },
+        "button": "Ver Proyecto"
+      },
+      "millionaire": {
+        "domain": "Juegos",
+        "date": "Febrero 2024",
+        "title": "Millionaire - Aplicación de Quiz",
+        "description": "Aplicación de quiz interactiva inspirada en ¿Quién quiere ser millonario? con múltiples modos de juego, tablas de clasificación y UI atractiva.",
+        "features": {
+          "f1": "Múltiples modos de juego y niveles de dificultad",
+          "f2": "Sistema de tabla de clasificación",
+          "f3": "Animaciones y transiciones suaves",
+          "f4": "Diseño móvil responsivo"
+        },
+        "button": "Ver Proyecto"
+      },
+      "saper": {
+        "domain": "Juegos",
+        "date": "Junio 2023",
+        "title": "Juego Saper",
+        "description": "Implementación del clásico juego Buscaminas con UI moderna, diferentes niveles de dificultad y seguimiento de puntuación alta.",
+        "features": {
+          "f1": "Mecánicas de juego clásicas",
+          "f2": "Múltiples niveles de dificultad",
+          "f3": "Seguimiento de puntuación alta",
+          "f4": "UI moderna y responsiva"
+        },
+        "button": "Ver Proyecto"
       }
-    },
-    "projects": {
-      "ecommerce": {
-        "title": "Plataforma E-commerce",
-        "description": "Plataforma e-commerce completa con sistema de pagos, gestión de productos y panel administrativo."
-      },
-      "analytics": {
-        "title": "Dashboard Analítico",
-        "description": "Dashboard analítico con visualización de datos, reportes y exportación a varios formatos."
-      },
-      "taskManagement": {
-        "title": "App de Gestión de Tareas",
-        "description": "Aplicación de gestión de tareas con funciones de colaboración en equipo y reportes."
-      },
-      "chatApp": {
-        "title": "App de Chat en Tiempo Real",
-        "description": "Aplicación de chat en tiempo real con soporte para salas, archivos y notificaciones."
-      },
-      "portfolio": {
-        "title": "Sitio Portfolio",
-        "description": "Sitio portfolio moderno con animaciones, modo oscuro y completa responsividad."
-      },
-      "fitnessApp": {
-        "title": "App Fitness Mobile",
-        "description": "Aplicación fitness mobile con recomendaciones AI-powered y funciones sociales."
-      }
-    },
-    "status": {
-      "completed": "Completado",
-      "inProgress": "En progreso"
-    },
-    "actions": {
-      "code": "Código",
-      "demo": "Demo"
-    },
-    "badges": {
-      "featured": "Destacado"
     }
   },
   "FAQ": {

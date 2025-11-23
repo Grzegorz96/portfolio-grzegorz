@@ -1,7 +1,6 @@
 {
   "Header": {
     "navigation": {
-      "home": "ホーム",
       "about": "私について",
       "skills": "スキル",
       "projects": "プロジェクト",
@@ -37,7 +36,7 @@
     },
     "scrollDown": "下にスクロール"
   },
-  "Home": {
+  "About": {
     "content": {
       "badge": "新規プロジェクト対応可能",
       "heading": "Grzegorz Strzeszewski",
@@ -65,10 +64,6 @@
           "description": "完了したプロジェクト",
           "subDescription": "成功"
         }
-      },
-      "trustIndicators": {
-        "rating": "5.0 評価",
-        "successRate": "100% 成功率"
       }
     }
   },
@@ -88,85 +83,111 @@
       "send": "メッセージを送信"
     }
   },
-  "About": {
-    "title": "私について",
-    "mainTitle": "私について少し",
-    "description": "私は3年以上のスケーラブルなシステム構築経験を持つフルスタック開発者です。JavaScript/TypeScript、React、Node.js、Python技術を専門とし、PostgreSQL、MongoDB、Redisデータベースで作業し、本番プロジェクトでAWSとDockerを使用しています。私のアプローチは、クリーンで保守しやすいコードの作成とパフォーマンスの最適化に焦点を当てています。"
-  },
   "Skills": {
     "title": "技術スキル",
     "description": "様々な技術分野における私の技術的専門知識と習熟度レベルの包括的な概要",
     "categories": {
-      "frontend": "フロントエンド",
-      "backend": "バックエンド",
-      "database": "データベース",
-      "devops": "DevOps & クラウド",
-      "testing": "テスト",
-      "tools": "ツール"
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "Next.js、TypeScript、Tailwind CSSを使用した最新のReactアプリケーション"
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "Node.js、NestJS、Pythonフレームワークを使用した堅牢なサーバーサイドソリューション"
+      },
+      "database": {
+        "title": "データベース",
+        "description": "PostgreSQL、MongoDB、最新のORMを使用したスケーラブルなデータソリューション"
+      },
+      "devops": {
+        "title": "Cloud & DevOps",
+        "description": "AWS、Docker、CI/CDパイプラインを使用したクラウドデプロイと自動化"
+      },
+      "testing": {
+        "title": "Testing & 品質",
+        "description": "Jest、ユニットテスト、コード品質保証による包括的なテスト戦略"
+      },
+      "tools": {
+        "title": "Development Tools",
+        "description": "Git、最新のIDE、自動化ツールを使用した最適化された開発ワークフロー"
+      }
     },
-    "levels": {
-      "beginner": "初心者",
-      "intermediate": "中級",
-      "advanced": "上級",
-      "expert": "エキスパート"
+    "cta": {
+      "title": "コラボレーションする準備はできていますか？",
+      "subtitle": "一緒に働きましょう",
+      "description": "現代のウェブテクノロジーであなたのアイデアを現実に変えましょう",
+      "button": "私を雇う"
     }
   },
   "Projects": {
     "title": "私の旅のチェンジログ",
-    "description": "フルスタック開発者としての私の道のりのタイムライン - 最初の実験から高度な本番アプリケーションまで。各プロジェクトは、フロントエンド、バックエンド、DevOpsのスキル開発における前進の一歩です。",
-    "years": {
-      "2024": {
-        "title": "2024",
-        "subtitle": "革新と先進技術の年",
-        "description": "2024年、私は最新技術を活用した高度なアプリケーションの作成に注力しました。各プロジェクトは、フルスタック開発者としての私のキャリアにおける前進の一歩です。"
+    "description": "最初のプロジェクトから高度な本番アプリケーションへの私の旅路。",
+    "entries": {
+      "teamcraft": {
+        "domain": "3D博物館",
+        "date": "2025年1月",
+        "title": "TimeVoyager - 3D仮想博物館",
+        "description": "Three.jsと最新のWeb技術で構築された、リアルタイム機能、インタラクティブな展示、没入感のあるユーザー体験を備えた高度な3D仮想博物館アプリケーション。",
+        "features": {
+          "f1": "Three.jsで複雑な3D仮想博物館を構築",
+          "f2": "リアルタイムのインタラクティブ機能を実装",
+          "f3": "没入感のあるユーザーナビゲーションを作成",
+          "f4": "レスポンシブな3D可視化を開発"
+        },
+        "button": "プロジェクトを見る"
       },
-      "2023": {
-        "title": "2023",
-        "subtitle": "開発と実験の年",
-        "description": "2023年は、様々な技術による集中的な開発と実験の年でした。ユーザーの実際の問題を解決するアプリケーションを作成しました。"
+      "meteofy": {
+        "domain": "天気サービス",
+        "date": "2024年12月",
+        "title": "Meteofy - 天気サービス",
+        "description": "リアルタイムデータ、予報、インタラクティブな地図を備えた包括的な天気サービスアプリケーション。モダンなReactとバックエンドAPIで構築。",
+        "features": {
+          "f1": "リアルタイム天気データ統合",
+          "f2": "インタラクティブな地図と予報",
+          "f3": "複数地点の追跡",
+          "f4": "レスポンシブデザインの実装"
+        },
+        "button": "プロジェクトを見る"
       },
-      "2022": {
-        "title": "2022",
-        "subtitle": "始まりと最初の一歩",
-        "description": "2022年は、フルスタック開発者としての私の最初の商業プロジェクトの時でした。各プロジェクトは教訓であり、卓越性への一歩でした。"
+      "shoper": {
+        "domain": "Eコマース",
+        "date": "2024年3月",
+        "title": "Shoper - 掲示板プラットフォーム",
+        "description": "認証、決済システム、リアルタイムメッセージングを備えたフルスタックの掲示板プラットフォーム。Python、Flask、Reactで構築。",
+        "features": {
+          "f1": "ユーザー認証と認可",
+          "f2": "決済システム統合",
+          "f3": "リアルタイムメッセージングシステム",
+          "f4": "高度な検索とフィルター"
+        },
+        "button": "プロジェクトを見る"
+      },
+      "millionaire": {
+        "domain": "ゲーム",
+        "date": "2024年2月",
+        "title": "Millionaire - クイズアプリケーション",
+        "description": "複数のゲームモード、リーダーボード、魅力的なUIを備えた「誰が百萬長者になりたいか」にインスパイアされたインタラクティブなクイズアプリケーション。",
+        "features": {
+          "f1": "複数のゲームモードと難易度レベル",
+          "f2": "リーダーボードシステム",
+          "f3": "スムーズなアニメーションとトランジション",
+          "f4": "レスポンシブなモバイルデザイン"
+        },
+        "button": "プロジェクトを見る"
+      },
+      "saper": {
+        "domain": "ゲーム",
+        "date": "2023年6月",
+        "title": "Saper Game",
+        "description": "モダンなUI、異なる難易度レベル、ハイスコア追跡を備えたクラシックなマインスイーパーゲームの実装。",
+        "features": {
+          "f1": "クラシックなゲームメカニクス",
+          "f2": "複数の難易度レベル",
+          "f3": "ハイスコア追跡",
+          "f4": "モダンでレスポンシブなUI"
+        },
+        "button": "プロジェクトを見る"
       }
-    },
-    "projects": {
-      "ecommerce": {
-        "title": "Eコマースプラットフォーム",
-        "description": "決済システム、商品管理、管理パネルを備えた完全なEコマースプラットフォーム。"
-      },
-      "analytics": {
-        "title": "分析ダッシュボード",
-        "description": "データ可視化、レポート、様々な形式へのエクスポートを備えた分析ダッシュボード。"
-      },
-      "taskManagement": {
-        "title": "タスク管理アプリ",
-        "description": "チーム協力機能とレポート機能を備えたタスク管理アプリケーション。"
-      },
-      "chatApp": {
-        "title": "リアルタイムチャットアプリ",
-        "description": "ルーム、ファイル、通知をサポートするリアルタイムチャットアプリケーション。"
-      },
-      "portfolio": {
-        "title": "ポートフォリオサイト",
-        "description": "アニメーション、ダークモード、完全なレスポンシブ性を備えたモダンなポートフォリオサイト。"
-      },
-      "fitnessApp": {
-        "title": "モバイルフィットネスアプリ",
-        "description": "AI駆動の推奨事項とソーシャル機能を備えたモバイルフィットネスアプリケーション。"
-      }
-    },
-    "status": {
-      "completed": "完了",
-      "inProgress": "進行中"
-    },
-    "actions": {
-      "code": "コード",
-      "demo": "デモ"
-    },
-    "badges": {
-      "featured": "注目"
     }
   },
   "FAQ": {

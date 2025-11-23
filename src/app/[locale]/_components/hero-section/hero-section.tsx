@@ -8,7 +8,10 @@ export function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center">
+    <section
+      className="relative min-h-screen flex items-center justify-center"
+      id="home"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.05] via-transparent to-accent/[0.05] blur-3xl" />
 
       <div className="absolute inset-0">

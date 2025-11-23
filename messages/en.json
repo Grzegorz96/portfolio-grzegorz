@@ -1,7 +1,6 @@
 {
   "Header": {
     "navigation": {
-      "home": "Home",
       "about": "About",
       "skills": "Skills",
       "projects": "Projects",
@@ -37,7 +36,7 @@
     },
     "scrollDown": "Scroll down"
   },
-  "Home": {
+  "About": {
     "content": {
       "badge": "Available for new projects",
       "heading": "Grzegorz Strzeszewski",
@@ -65,48 +64,7 @@
           "description": "Projects Done",
           "subDescription": "Successfully"
         }
-      },
-      "trustIndicators": {
-        "rating": "5.0 Rating",
-        "successRate": "100% Success Rate"
       }
-    }
-  },
-  "About": {
-    "title": "Some words about me",
-    "description": "I am a fullstack developer with over 3 years of experience in creating scalable systems. My approach focuses on creating clean, maintainable code and optimizing performance across the entire stack.",
-    "portfolioButton": "View Projects",
-    "services": {
-      "interior": {
-        "title": "Passion for Innovation",
-        "description": "I'm driven by the thrill of turning complex problems into elegant solutions. Every project is an opportunity to push boundaries and explore new possibilities in web development."
-      },
-      "exterior": {
-        "title": "Continuous Learning",
-        "description": "The tech world evolves rapidly, and so do I. I'm always experimenting with new frameworks, attending conferences, and contributing to open-source projects to stay ahead of the curve."
-      },
-      "design": {
-        "title": "Quality Over Speed",
-        "description": "While I appreciate fast delivery, I never compromise on code quality. Clean, well-documented, and maintainable code is my standard, ensuring long-term success for every project."
-      },
-      "decoration": {
-        "title": "Client Success Focus",
-        "description": "Your success is my success. I take time to understand your business goals and translate them into technical solutions that drive real value and growth."
-      },
-      "planning": {
-        "title": "Future-Ready Solutions",
-        "description": "I build applications that not only meet today's requirements but are also prepared for tomorrow's challenges. Scalability, performance, and maintainability are built into every solution."
-      },
-      "execution": {
-        "title": "Collaborative Approach",
-        "description": "I believe in working closely with clients and teams to deliver exceptional results. Clear communication, regular updates, and transparent processes are key to successful project delivery."
-      }
-    },
-    "stats": {
-      "technologies": "Technologies Mastered",
-      "performance": "Performance Optimization",
-      "degrees": "Engineering Degrees",
-      "availability": "Hours Available"
     }
   },
   "Skills": {
@@ -115,109 +73,105 @@
     "categories": {
       "frontend": {
         "title": "Frontend Development",
-        "description": "Modern React applications with Next.js, TypeScript, and Tailwind CSS",
-        "hoverDescription": "Transform your ideas into stunning, interactive web applications. I create pixel-perfect UIs that not only look amazing but also provide seamless user experiences across all devices. From complex state management to smooth animations, I ensure your frontend is both beautiful and performant.",
-        "hoverSubDescription": "Ready to build your next amazing frontend? Let's create something extraordinary together."
+        "description": "Modern React applications with Next.js, TypeScript, and Tailwind CSS"
       },
       "backend": {
         "title": "Backend Development",
-        "description": "Robust server-side solutions with Node.js, NestJS, and Python frameworks",
-        "hoverDescription": "Architect and develop powerful server-side solutions that scale with your business. I design RESTful APIs, implement real-time features with WebSockets, and ensure your backend can handle thousands of concurrent users while maintaining security and performance.",
-        "hoverSubDescription": "Need a robust backend for your application? Let's architect the perfect solution."
+        "description": "Robust server-side solutions with Node.js, NestJS, and Python frameworks"
       },
       "database": {
         "title": "Databases",
-        "description": "Scalable data solutions with PostgreSQL, MongoDB, and modern ORMs",
-        "hoverDescription": "Design and optimize database solutions that power your applications. Whether you need complex relational data with PostgreSQL or flexible document storage with MongoDB, I ensure your data layer is fast, secure, and ready to grow with your business needs.",
-        "hoverSubDescription": "Looking for optimal data management? Let's design the perfect database architecture."
+        "description": "Scalable data solutions with PostgreSQL, MongoDB, and modern ORMs"
       },
       "devops": {
         "title": "Cloud & DevOps",
-        "description": "Cloud deployment and automation with AWS, Docker, and CI/CD pipelines",
-        "hoverDescription": "Deploy and manage your applications in the cloud with confidence. I set up automated deployment pipelines, configure monitoring and logging, and ensure your applications are always available and performing at their best. From development to production, I handle the entire DevOps lifecycle.",
-        "hoverSubDescription": "Ready to scale your application? Let's deploy it to the cloud with confidence."
+        "description": "Cloud deployment and automation with AWS, Docker, and CI/CD pipelines"
       },
       "testing": {
         "title": "Testing & Quality",
-        "description": "Comprehensive testing strategies with Jest, unit tests, and code quality assurance",
-        "hoverDescription": "Ensure your code is bulletproof with comprehensive testing strategies. I write thorough unit tests, integration tests, and end-to-end tests that catch bugs before they reach production. Quality code means fewer bugs, easier maintenance, and happier users.",
-        "hoverSubDescription": "Want bulletproof code? Let's implement comprehensive testing strategies together."
+        "description": "Comprehensive testing strategies with Jest, unit tests, and code quality assurance"
       },
       "tools": {
         "title": "Development Tools",
-        "description": "Optimized development workflow with Git, modern IDEs, and automation tools",
-        "hoverDescription": "Streamline your development workflow with the right tools and processes. I set up automated code formatting, linting, and testing pipelines that ensure consistent code quality. From Git workflows to CI/CD automation, I help you work faster and more efficiently.",
-        "hoverSubDescription": "Need to optimize your development workflow? Let's set up the perfect toolchain."
+        "description": "Optimized development workflow with Git, modern IDEs, and automation tools"
       }
     },
-    "progress": {
-      "title": "Technology Stack",
-      "subtitle": "Core Technologies",
-      "description": "My primary technology stack and tools I use daily for building modern web applications",
-      "feedback": "Customer feedback integrated at every stage",
-      "improvement": "Continuous improvement"
-    },
     "cta": {
-      "title": "Ready to Build",
-      "description": "Let's create something amazing together"
+      "title": "Ready to Collaborate?",
+      "subtitle": "Let's Work Together",
+      "description": "Transform your ideas into reality with modern web technologies",
+      "button": "Hire Me"
     }
   },
   "Projects": {
     "title": "Changelog from my journey",
-    "description": "Timeline of my journey as a fullstack developer - from first experiments to advanced production applications. Each project is a step forward in developing frontend, backend and DevOps skills.",
-    "years": {
-      "2024": {
-        "title": "2024",
-        "subtitle": "Year of innovation and advanced technologies",
-        "description": "In 2024, I focused on creating advanced applications using the latest technologies. Each project is a step forward in my career as a fullstack developer."
+    "description": "My journey from first projects to advanced production applications.",
+    "entries": {
+      "teamcraft": {
+        "domain": "3D Museums",
+        "date": "January 2025",
+        "title": "TimeVoyager - 3D Virtual Museum",
+        "description": "Advanced 3D virtual museum application with real-time features, interactive exhibitions, and immersive user experience built with Three.js and modern web technologies.",
+        "features": {
+          "f1": "Built complex 3D virtual museum with Three.js",
+          "f2": "Implemented real-time interactive features",
+          "f3": "Created immersive user navigation",
+          "f4": "Developed responsive 3D visualization"
+        },
+        "button": "View Project"
       },
-      "2023": {
-        "title": "2023",
-        "subtitle": "Year of development and experimentation",
-        "description": "2023 was a year of intensive development and experimentation with various technologies. I created applications that solved real user problems."
+      "meteofy": {
+        "domain": "Weather Services",
+        "date": "December 2024",
+        "title": "Meteofy - Weather Service",
+        "description": "Comprehensive weather service application with real-time data, forecasts, and interactive maps. Built with modern React and backend APIs.",
+        "features": {
+          "f1": "Real-time weather data integration",
+          "f2": "Interactive maps and forecasts",
+          "f3": "Multiple location tracking",
+          "f4": "Responsive design implementation"
+        },
+        "button": "View Project"
       },
-      "2022": {
-        "title": "2022",
-        "subtitle": "Beginnings and first steps",
-        "description": "2022 was the time of my first commercial projects as a fullstack developer. Each project was a lesson and a step towards excellence."
+      "shoper": {
+        "domain": "E-commerce",
+        "date": "March 2024",
+        "title": "Shoper - Classifieds Platform",
+        "description": "Full-stack classifieds platform with authentication, payment system, and real-time messaging. Built with Python, Flask, and React.",
+        "features": {
+          "f1": "User authentication and authorization",
+          "f2": "Payment system integration",
+          "f3": "Real-time messaging system",
+          "f4": "Advanced search and filters"
+        },
+        "button": "View Project"
+      },
+      "millionaire": {
+        "domain": "Games",
+        "date": "February 2024",
+        "title": "Millionaire - Quiz Application",
+        "description": "Interactive quiz application inspired by Who Wants to Be a Millionaire with multiple game modes, leaderboards, and engaging UI.",
+        "features": {
+          "f1": "Multiple game modes and difficulty levels",
+          "f2": "Leaderboard system",
+          "f3": "Smooth animations and transitions",
+          "f4": "Responsive mobile design"
+        },
+        "button": "View Project"
+      },
+      "saper": {
+        "domain": "Games",
+        "date": "June 2023",
+        "title": "Saper Game",
+        "description": "Classic Minesweeper game implementation with modern UI, different difficulty levels, and high score tracking.",
+        "features": {
+          "f1": "Classic game mechanics",
+          "f2": "Multiple difficulty levels",
+          "f3": "High score tracking",
+          "f4": "Modern responsive UI"
+        },
+        "button": "View Project"
       }
-    },
-    "projects": {
-      "ecommerce": {
-        "title": "E-commerce Platform",
-        "description": "Full e-commerce platform with payment system, product management and admin panel."
-      },
-      "analytics": {
-        "title": "Analytics Dashboard",
-        "description": "Analytics dashboard with data visualization, reports and export to various formats."
-      },
-      "taskManagement": {
-        "title": "Task Management App",
-        "description": "Task management application with team collaboration features and reporting."
-      },
-      "chatApp": {
-        "title": "Real-time Chat App",
-        "description": "Real-time chat application with room support, files and notifications."
-      },
-      "portfolio": {
-        "title": "Portfolio Website",
-        "description": "Modern portfolio website with animations, dark mode and full responsiveness."
-      },
-      "fitnessApp": {
-        "title": "Mobile Fitness App",
-        "description": "Mobile fitness application with AI-powered recommendations and social features."
-      }
-    },
-    "status": {
-      "completed": "Completed",
-      "inProgress": "In Progress"
-    },
-    "actions": {
-      "code": "Code",
-      "demo": "Demo"
-    },
-    "badges": {
-      "featured": "Featured"
     }
   },
   "FAQ": {

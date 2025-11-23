@@ -1,13 +1,15 @@
 import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 
 import { useTranslations } from "next-intl";
 
 import { Frontend, Backend, Databases, DevOps, Tools, Testing } from "./images";
-import { NewReleasePromo } from "@/components/ui/something";
+import { CTA } from "./cta";
 
 export function SkillsSection() {
   const t = useTranslations("Skills");
@@ -29,8 +31,6 @@ export function SkillsSection() {
         "Leaflet",
       ],
       description: t("categories.frontend.description"),
-      hoverDescription: t("categories.frontend.hoverDescription"),
-      hoverSubDescription: t("categories.frontend.hoverSubDescription"),
     },
     {
       icon: <Backend />,
@@ -48,8 +48,6 @@ export function SkillsSection() {
         "Stripe",
       ],
       description: t("categories.backend.description"),
-      hoverDescription: t("categories.backend.hoverDescription"),
-      hoverSubDescription: t("categories.backend.hoverSubDescription"),
     },
     {
       icon: <Databases />,
@@ -64,16 +62,12 @@ export function SkillsSection() {
         "Prisma",
       ],
       description: t("categories.database.description"),
-      hoverDescription: t("categories.database.hoverDescription"),
-      hoverSubDescription: t("categories.database.hoverSubDescription"),
     },
     {
       icon: <DevOps />,
       title: t("categories.devops.title"),
       skills: ["AWS", "Docker", "Vercel", "Netlify", "CI/CD", "Microservices"],
       description: t("categories.devops.description"),
-      hoverDescription: t("categories.devops.hoverDescription"),
-      hoverSubDescription: t("categories.devops.hoverSubDescription"),
     },
     {
       icon: <Testing />,
@@ -86,8 +80,6 @@ export function SkillsSection() {
         "Clean Code",
       ],
       description: t("categories.testing.description"),
-      hoverDescription: t("categories.testing.hoverDescription"),
-      hoverSubDescription: t("categories.testing.hoverSubDescription"),
     },
     {
       icon: <Tools />,
@@ -102,8 +94,6 @@ export function SkillsSection() {
         "GitHub Copilot",
       ],
       description: t("categories.tools.description"),
-      hoverDescription: t("categories.tools.hoverDescription"),
-      hoverSubDescription: t("categories.tools.hoverSubDescription"),
     },
   ];
 
@@ -123,58 +113,46 @@ export function SkillsSection() {
         </div>
         <div className="self-stretch grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 z-10">
           {stackCategories.map((item) => (
-            <HoverCard key={item.title}>
-              <HoverCardTrigger asChild>
-                <div className="overflow-hidden rounded-2xl border border-white/20 flex flex-col justify-start items-start relative group">
-                  {/* Background */}
-                  <div className="absolute inset-0 rounded-2xl bg-card" />
-                  {/* Additional subtle gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl" />
+            <Card
+              key={item.title}
+              className="overflow-hidden rounded-2xl border-white/20 flex flex-col justify-start items-start relative group shadow-none gap-0 bg-transparent self-stretch p-6 z-10 h-full"
+            >
+              {/* Background */}
+              <div className="absolute inset-0 rounded-2xl bg-card" />
+              {/* Additional subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl" />
 
-                  <div className="self-stretch p-6 flex flex-col justify-between items-start relative z-10 h-full">
-                    <div className="flex flex-col justify-start items-start flex-1">
-                      <p className="self-stretch text-foreground text-lg font-normal leading-7">
-                        {item.title} <br />
-                        <span className="text-muted-foreground">
-                          {item.description}
-                        </span>
-                      </p>
-
-                      <div className="flex flex-wrap gap-1 justify-start mt-4 w-full">
-                        {item.skills.map((skill, skillIndex) => (
-                          <span
-                            key={skillIndex}
-                            className="inline-block px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="self-stretch h-68 relative -mt-0.5 z-10">
-                      {item.icon}
-                    </div>
-                  </div>
+              <CardHeader className="p-0 px-0 gap-0 flex flex-col items-start self-stretch w-full flex-1 relative">
+                <CardTitle className="leading-7 font-normal mb-0 p-0 text-lg text-foreground self-stretch w-full">
+                  {item.title}
+                </CardTitle>
+                <CardDescription className="text-lg leading-7 font-normal p-0 text-muted-foreground mt-0 mb-0 w-full">
+                  {item.description}
+                </CardDescription>
+                <div className="flex flex-wrap gap-1 justify-start mt-4 w-full">
+                  {item.skills.map((skill, skillIndex) => (
+                    <span
+                      key={skillIndex}
+                      className="inline-block px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-              </HoverCardTrigger>
-              <HoverCardContent className="w-[calc(var(--radix-hover-card-trigger-width)-20px)] shadow-lg border border-border rounded-xl">
-                <div className="space-y-3">
-                  <h4 className="text-base font-medium text-foreground">
-                    {item.title}
-                  </h4>
-                  <p className="text-sm font-normal text-muted-foreground leading-6">
-                    {item.hoverDescription}
-                  </p>
-                  <p className="text-xs text-primary font-medium">
-                    {item.hoverSubDescription}
-                  </p>
-                </div>
-              </HoverCardContent>
-            </HoverCard>
+              </CardHeader>
+
+              <CardContent className="self-stretch h-68 relative -mt-0.5 z-10 p-0">
+                {item.icon}
+              </CardContent>
+            </Card>
           ))}
         </div>
-        <NewReleasePromo />
+        <CTA
+          title={t("cta.title")}
+          subtitle={t("cta.subtitle")}
+          description={t("cta.description")}
+          buttonText={t("cta.button")}
+        />
       </div>
     </section>
   );
