@@ -27,6 +27,9 @@
 - Recent history mixes `feat:`/`Feature:`/`Refactor:` prefixes. Standardize on lowercase Conventional Commit-style (`feat:`, `fix:`, `chore:`, `refactor:`) with imperative summaries (e.g., `feat: add faq accordion transitions`).
 - For PRs: include a brief change summary, screenshots or GIFs for visual updates (desktop + mobile), mention impacted routes/locales, and link related issues/tasks. Note any follow-up work or tech debt.
 
+## AI & Documentation
+- When using AI tools (Cursor, Windsurf, Codex, etc.) with the installed Context7 MCP server, fetch docs through it and match the version to this repo (Next.js 15 / React 19). Avoid preview versions (e.g., Next 16) unless explicitly needed.
+
 ## Localization & Content Tips
 - Keep string keys stable across `messages/*.json`; update all locales when adding or changing keys.
 - When introducing locale-aware components, rely on helpers in `src/i18n` and keep locale-specific props minimal to avoid divergence.
