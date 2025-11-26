@@ -3,7 +3,6 @@ import React, { Fragment } from "react";
 import { X } from "lucide-react";
 
 interface IDEEditorProps {
-  className?: string;
   photoSrc?: string;
 }
 
@@ -320,7 +319,7 @@ export function IDEEditor({ photoSrc = "/portret.png" }: IDEEditorProps) {
           style={{
             flex: 1,
             display: "grid",
-            gridTemplateColumns: "240px 1fr 360px",
+            gridTemplateColumns: "minmax(60px, 220px) minmax(80px, 1fr) 340px",
             gridTemplateRows: "30px 1fr 300px",
             overflow: "hidden",
             minHeight: 0,

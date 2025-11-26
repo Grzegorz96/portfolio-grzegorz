@@ -33,6 +33,11 @@ export default function LandingPage() {
   return (
     <>
       <HeroSection />
+
+      <AnimatedSection id="about" delay={0.5} className="relative z-10 mt-16">
+        <AboutSection />
+      </AnimatedSection>
+
       <AnimatedSection id="about" delay={0.5} className="relative z-10 mt-16">
         <AboutSection2 />
       </AnimatedSection>
