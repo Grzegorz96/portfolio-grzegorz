@@ -17,7 +17,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { useParams, useSearchParams } from "next/navigation";
 import { useState, useTransition } from "react";
-import { Flag } from "./settings/flag";
+import { Flag } from "../header-2/settings/flag";
 
 export function MobileHeader() {
   const t = useTranslations("Header");

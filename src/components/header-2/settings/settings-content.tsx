@@ -37,7 +37,7 @@ export function SettingsContent() {
   return (
     <DropdownMenuContent
       align="end"
-      className="w-56 bg-background/95 border border-border/50 backdrop-blur-xl shadow-xl shadow-black/10 dark:shadow-black/30 z-[9999]"
+      className="w-56 bg-background/95 border border-border/50 backdrop-blur-xl shadow-xl shadow-black/10 z-[9999]"
       sideOffset={15}
       avoidCollisions={true}
     >
@@ -57,9 +57,7 @@ export function SettingsContent() {
             <Flag locale={localeCode} className="w-6 h-4 rounded-sm" />
             <span>{t("language.locale", { locale: localeCode })}</span>
           </div>
-          {locale === localeCode && (
-            <Check className="h-4 w-4 text-foreground" />
-          )}
+          {locale === localeCode && <Check className="h-4 w-4 text-primary" />}
         </DropdownMenuItem>
       ))}
     </DropdownMenuContent>

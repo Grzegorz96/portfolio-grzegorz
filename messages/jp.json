@@ -8,12 +8,6 @@
       "contact": "お問い合わせ"
     },
     "settings": {
-      "theme": {
-        "label": "テーマ",
-        "light": "ライト",
-        "dark": "ダーク",
-        "system": "システム"
-      },
       "language": {
         "label": "言語",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} jp {🇯🇵 日本語} pl {🇵🇱 Polski} other {不明}}"

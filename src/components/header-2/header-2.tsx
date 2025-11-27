@@ -1,26 +1,36 @@
 "use client";
 
-import { Cpu } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Cpu, Menu, X, Check, Languages } from "lucide-react";
+import { useState, useEffect, useTransition } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
 import { DropdownMenu } from "../ui/dropdown-menu";
-import { SettingsTrigger } from "../header/settings/settings-trigger";
-import { SettingsContent } from "../header/settings/settings-content";
+import { SettingsTrigger } from "./settings/settings-trigger";
+import { SettingsContent } from "./settings/settings-content";
+import { Flag } from "./settings/flag";
 import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuItem,
   NavigationMenuLink,
 } from "../ui/navigation-menu";
-import { useTranslations } from "next-intl";
+import { Locale, useLocale, useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { useRouter, usePathname } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
+import { useParams, useSearchParams } from "next/navigation";
 
 export const Header2 = () => {
   const t = useTranslations("Header.navigation");
+  const tSettings = useTranslations("Header.settings");
   const [menuState, setMenuState] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
+  const searchParams = useSearchParams();
 
   const navItems = [
     { name: t("about"), href: "#about" },
@@ -29,6 +39,16 @@ export const Header2 = () => {
     { name: t("faq"), href: "#faq" },
     { name: t("contact"), href: "#contact" },
   ];
+
+  const handleLocaleChange = (nextLocale: Locale) => {
+    startTransition(() => {
+      const query = Object.fromEntries(searchParams.entries());
+
+      // @ts-expect-error next-intl type helper
+      router.replace({ pathname, params, query }, { locale: nextLocale });
+      setMenuState(false);
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,19 +134,63 @@ export const Header2 = () => {
           </NavigationMenu>
           <div className="bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
             <div className="lg:hidden">
-              <ul className="space-y-6 text-base">
-                {navItems.map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href={item.href}
-                      className="text-muted-foreground hover:text-accent-foreground block duration-200"
-                      onClick={() => setMenuState(false)}
-                    >
-                      <span>{item.name}</span>
-                    </a>
-                  </li>
-                ))}
+              <ul className="space-y-1 text-base">
+                {navItems.map((item, index) => {
+                  const isActive = activeTab === item.name;
+
+                  return (
+                    <li key={index}>
+                      <a
+                        href={item.href}
+                        className={cn(
+                          "block p-2 ",
+                          "text-muted-foreground hover:text-foreground",
+                          isActive && "text-foreground font-semibold"
+                        )}
+                        onClick={() => {
+                          setActiveTab(item.name);
+                          setMenuState(false);
+                        }}
+                      >
+                        <span>{item.name}</span>
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
+              <div className="mt-8 flex flex-col gap-2">
+                <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                  <Languages className="h-4 w-4" />
+                  <span>{tSettings("language.label")}</span>
+                </div>
+                <div className="h-px w-full bg-border/70" />
+                <div className="flex flex-col gap-1 pt-1">
+                  {routing.locales.map((localeCode) => (
+                    <button
+                      key={localeCode}
+                      className="flex w-full items-center justify-between rounded-md p-2 text-sm disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer focus:bg-muted/50 hover:bg-muted/50"
+                      onClick={() => {
+                        handleLocaleChange(localeCode);
+                        setMenuState(false);
+                      }}
+                      disabled={isPending}
+                    >
+                      <div className="flex items-center gap-2">
+                        <Flag
+                          locale={localeCode}
+                          className="w-5 h-4 rounded-sm"
+                        />
+                        <span className="capitalize">
+                          {tSettings("language.locale", { locale: localeCode })}
+                        </span>
+                      </div>
+                      {locale === localeCode && (
+                        <Check className="h-4 w-4 text-primary" aria-hidden />
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

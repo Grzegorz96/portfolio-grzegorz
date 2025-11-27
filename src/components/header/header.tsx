@@ -1,7 +1,7 @@
 "use client";
 
 import { Navigation } from "./navigation";
-import { SettingsTrigger, SettingsContent } from "./settings";
+import { SettingsTrigger, SettingsContent } from "../header-2/settings";
 import { DropdownMenu } from "@/components/ui/dropdown-menu";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
