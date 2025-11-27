@@ -15,11 +15,18 @@ export function AboutSection() {
       {/* Main Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 sm:gap-12 lg:gap-24">
+          {/* Status Badge - Mobile */}
+          <div className="order-1 lg:hidden w-full">
+            <StatusBadge badge={t("content.badge")} />
+          </div>
+
           {/* Left Side - Content */}
           <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left max-w-4xl lg:max-w-3xl *:w-full gap-8">
             {/* Content */}
             <div className="flex flex-col gap-6">
-              <StatusBadge badge={t("content.badge")} />
+              <div className="hidden lg:block">
+                <StatusBadge badge={t("content.badge")} />
+              </div>
               <Heading heading={t("content.heading")} />
               <SubHeading
                 subHeading={t("content.subHeading")}

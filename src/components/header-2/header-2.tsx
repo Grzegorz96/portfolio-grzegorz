@@ -83,14 +83,14 @@ export const Header2 = () => {
                       className={cn(
                         "relative cursor-pointer text-sm font-medium px-5 py-2 rounded-full transition-colors duration-200",
                         "text-muted-foreground hover:text-foreground",
-                        isActive && "text-primary"
+                        isActive && "text-foreground"
                       )}
                     >
                       {item.name}
                       {isActive && (
                         <motion.div
                           layoutId="lamp"
-                          className="absolute inset-0 w-full bg-primary/5 rounded-full -z-10"
+                          className="absolute inset-0 w-full bg-foreground/5 rounded-full -z-10"
                           initial={false}
                           transition={{
                             type: "spring",
@@ -99,10 +99,10 @@ export const Header2 = () => {
                             mass: 0.8,
                           }}
                         >
-                          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-b-full">
-                            <div className="absolute w-12 h-6 bg-primary/20 rounded-full blur-md -bottom-2 -left-2" />
-                            <div className="absolute w-8 h-6 bg-primary/20 rounded-full blur-md -bottom-1" />
-                            <div className="absolute w-4 h-4 bg-primary/20 rounded-full blur-sm bottom-0 left-2" />
+                          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-1 bg-foreground rounded-b-full">
+                            <div className="absolute w-12 h-6 bg-foreground/20 rounded-full blur-md -bottom-2 -left-2" />
+                            <div className="absolute w-8 h-6 bg-foreground/20 rounded-full blur-md -bottom-1" />
+                            <div className="absolute w-4 h-4 bg-foreground/20 rounded-full blur-sm bottom-0 left-2" />
                           </div>
                         </motion.div>
                       )}

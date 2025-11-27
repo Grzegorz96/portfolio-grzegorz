@@ -1,12 +1,6 @@
 import { Search } from "lucide-react";
 
-import {
-  SiPostgresql,
-  SiMongodb,
-  SiRedis,
-  SiSupabase,
-  SiPrisma,
-} from "react-icons/si";
+import { SiMongodb, SiRedis, SiSupabase, SiPrisma } from "react-icons/si";
 
 import { TbBrandMysql } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";

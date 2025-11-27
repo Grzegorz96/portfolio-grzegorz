@@ -8,7 +8,7 @@ export function DevOps() {
     "--deploy-primary-color": "var(--primary)",
     "--deploy-background-color": "var(--background)",
     "--deploy-text-color": "var(--foreground)",
-    "--deploy-text-secondary": "var(--muted-foreground)",
+    "--deploy-text-secondary": "var(--primary-foreground)",
     "--deploy-border-color": "var(--border)",
   } as React.CSSProperties;
 
@@ -128,7 +128,7 @@ export function DevOps() {
           gap: "6.375px",
           padding: "5.1px 10.2px",
           background: "var(--deploy-primary-color)",
-          color: "var(--primary-foreground)",
+          color: "var(--deploy-text-secondary)",
           border: "none",
           cursor: "pointer",
           borderRadius: "8.925px",

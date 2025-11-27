@@ -34,7 +34,7 @@ export default function LandingPage() {
     <>
       <HeroSection />
       <AnimatedSection id="about" delay={0.5} className="relative z-10 mt-16">
-        <AboutSection2 />
+        <AboutSection />
       </AnimatedSection>
 
       <AnimatedSection

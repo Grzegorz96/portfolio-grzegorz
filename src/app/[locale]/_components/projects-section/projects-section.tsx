@@ -13,7 +13,7 @@ export type ProjectEntry = {
   title: string;
   description: string;
   features: string[];
-  image: string;
+  images: string[];
   button: string;
 };
 
@@ -32,7 +32,10 @@ export function ProjectsSection() {
         t("entries.teamcraft.features.f3"),
         t("entries.teamcraft.features.f4"),
       ],
-      image: "/images/projects/teamcraft/pc/1.png",
+      images: [
+        "/images/projects/teamcraft/pc/1.png",
+        "/images/projects/teamcraft/pc/2.png",
+      ],
       button: t("entries.teamcraft.button"),
     },
     {
@@ -46,7 +49,10 @@ export function ProjectsSection() {
         t("entries.meteofy.features.f3"),
         t("entries.meteofy.features.f4"),
       ],
-      image: "/images/projects/meteofy/pc/1.png",
+      images: [
+        "/images/projects/meteofy/pc/1.png",
+        "/images/projects/meteofy/pc/2.png",
+      ],
       button: t("entries.meteofy.button"),
     },
     {
@@ -60,7 +66,10 @@ export function ProjectsSection() {
         t("entries.shoper.features.f3"),
         t("entries.shoper.features.f4"),
       ],
-      image: "/images/projects/shoper/1.png",
+      images: [
+        "/images/projects/shoper/1.png",
+        "/images/projects/shoper/2.png",
+      ],
       button: t("entries.shoper.button"),
     },
     {
@@ -74,7 +83,10 @@ export function ProjectsSection() {
         t("entries.millionaire.features.f3"),
         t("entries.millionaire.features.f4"),
       ],
-      image: "/images/projects/millionaire_webapp/pc/1.png",
+      images: [
+        "/images/projects/millionaire_webapp/pc/1.png",
+        "/images/projects/millionaire_webapp/pc/2.png",
+      ],
       button: t("entries.millionaire.button"),
     },
     {
@@ -88,7 +100,10 @@ export function ProjectsSection() {
         t("entries.saper.features.f3"),
         t("entries.saper.features.f4"),
       ],
-      image: "/images/projects/saper/1.png",
+      images: [
+        "/images/projects/saper/1.png",
+        "/images/projects/saper/2.png",
+      ],
       button: t("entries.saper.button"),
     },
   ];
@@ -110,7 +125,7 @@ export function ProjectsSection() {
           </div>
         </div>
 
-        <div className="w-full max-w-4xl mx-auto relative z-10 space-y-12 md:space-y-16">
+        <div className="w-full mx-auto relative z-10 space-y-12 md:space-y-16">
           {projectEntries.map((entry, index) => (
             <div
               key={index}
@@ -145,15 +160,22 @@ export function ProjectsSection() {
                   </ul>
                 </div>
 
-                <div className="w-full">
-                  <div className="relative aspect-[5/3] rounded-xl overflow-hidden border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300">
-                    <Image
-                      src={entry.image}
-                      alt={`${entry.title} preview`}
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {entry.images.map((imageSrc, imageIndex) => (
+                    <div
+                      key={imageSrc}
+                      className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-border/60 bg-gradient-to-br from-card/80 via-card/60 to-background shadow-lg hover:shadow-xl transition-all duration-300 p-3"
+                    >
+                      <Image
+                        src={imageSrc}
+                        alt={`${entry.title} preview ${imageIndex + 1}`}
+                        fill
+                        className="object-contain drop-shadow-sm"
+                        sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
+                        priority={index === 0 && imageIndex === 0}
+                      />
+                    </div>
+                  ))}
                 </div>
 
                 <Button

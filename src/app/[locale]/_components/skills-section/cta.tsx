@@ -7,19 +7,13 @@ interface CTAProps {
 
 export function CTA({ title, subtitle, description, buttonText }: CTAProps) {
   return (
-    <div className="mx-auto w-full max-w-5xl rounded-[40px] border border-white/20 p-2 shadow-lg mt-12">
-      <div className="relative w-full mx-auto h-[400px] overflow-hidden rounded-[38px] border border-white/20 bg-card p-2 shadow-lg">
+    <div className="mx-auto w-full max-w-5xl rounded-[40px] border border-foreground/20 p-2 shadow-lg mt-12">
+      <div className="relative w-full mx-auto h-[400px] overflow-hidden rounded-[38px] border border-foreground/20 bg-card p-2 shadow-lg">
         {/* Background gradient matching skills cards */}
-        <div className="absolute inset-0 rounded-[38px] bg-gradient-to-br from-white/5 to-transparent" />
+        <div className="absolute inset-0 rounded-[38px] bg-gradient-to-br from-foreground/5 to-transparent" />
 
         {/* Subtle radial glow */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(255, 255, 255, 0.03), transparent 70%)",
-          }}
-        />
+        <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_60%_40%_at_50%_50%,color-mix(in_oklch,var(--foreground)_3%,transparent),transparent_70%)]" />
 
         {/* Film grain overlay */}
         <div
@@ -57,7 +51,7 @@ export function CTA({ title, subtitle, description, buttonText }: CTAProps) {
 
             <div className="flex items-center justify-center">
               <a href="#contact" className="group">
-                <div className="bg-card/80 backdrop-blur-sm flex h-[56px] cursor-pointer items-center gap-2 rounded-full border border-white/20 p-[8px] shadow-xl transition-all hover:shadow-2xl hover:scale-105 hover:border-primary/30">
+                <div className="bg-card/80 flex h-[56px] cursor-pointer items-center gap-2 rounded-full border border-foreground/20 p-[8px] shadow-xl transition-all hover:shadow-2xl hover:border-primary/30">
                   <div className="border-border bg-primary flex h-[43px] items-center justify-center rounded-full border">
                     <p className="mr-3 ml-2 flex items-center justify-center gap-2 text-primary-foreground font-semibold tracking-tight">
                       <svg

@@ -17,7 +17,7 @@ export function AccordionElement({ index, faq }: AccordionElementProps) {
     <AccordionItem
       key={index}
       value={`item-${index}`}
-      className="w-full bg-card/50 backdrop-blur-sm shadow-lg overflow-hidden rounded-xl border border-border transition-all duration-500 ease-out cursor-pointer hover:bg-card"
+      className="w-full bg-card/50 shadow-lg overflow-hidden rounded-xl border border-border transition-all duration-500 ease-out cursor-pointer hover:bg-card"
     >
       <AccordionTrigger className="w-full px-5 py-[18px] pr-4 flex justify-between items-center gap-5 text-left transition-all duration-300 ease-out hover:no-underline cursor-pointer">
         <div className="flex-1 text-foreground text-base font-medium leading-6 break-words">

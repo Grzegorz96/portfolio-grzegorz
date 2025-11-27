@@ -80,7 +80,9 @@ export function SettingsContent() {
             <option.icon className={`h-4 w-4 ${option.iconColor}`} />
             <span>{option.label}</span>
           </div>
-          {theme === option.value && <Check className="h-4 w-4 text-primary" />}
+          {theme === option.value && (
+            <Check className="h-4 w-4 text-foreground" />
+          )}
         </DropdownMenuItem>
       ))}
 
@@ -102,7 +104,9 @@ export function SettingsContent() {
             <Flag locale={localeCode} className="w-6 h-4 rounded-sm" />
             <span>{t("language.locale", { locale: localeCode })}</span>
           </div>
-          {locale === localeCode && <Check className="h-4 w-4 text-primary" />}
+          {locale === localeCode && (
+            <Check className="h-4 w-4 text-foreground" />
+          )}
         </DropdownMenuItem>
       ))}
     </DropdownMenuContent>

@@ -115,12 +115,12 @@ export function SkillsSection() {
           {stackCategories.map((item) => (
             <Card
               key={item.title}
-              className="overflow-hidden rounded-2xl border-white/20 flex flex-col justify-start items-start relative group shadow-none gap-0 bg-transparent self-stretch p-6 z-10 h-full"
+              className="overflow-hidden rounded-2xl border-foreground/20 flex flex-col justify-start items-start relative group shadow-none gap-0 bg-transparent self-stretch p-6 z-10 h-full"
             >
               {/* Background */}
               <div className="absolute inset-0 rounded-2xl bg-card" />
               {/* Additional subtle gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/5 to-transparent rounded-2xl" />
 
               <CardHeader className="p-0 px-0 gap-0 flex flex-col items-start self-stretch w-full flex-1 relative">
                 <CardTitle className="leading-7 font-normal mb-0 p-0 text-lg text-foreground self-stretch w-full">
@@ -133,7 +133,7 @@ export function SkillsSection() {
                   {item.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="inline-block px-2 py-1 text-xs bg-primary/10 text-primary rounded-md border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
+                      className="inline-block px-2 py-1 text-xs bg-primary/10 text-foreground rounded-md border border-foreground/20 hover:bg-primary/20 transition-colors duration-200"
                     >
                       {skill}
                     </span>
