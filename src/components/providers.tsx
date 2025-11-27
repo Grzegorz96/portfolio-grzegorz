@@ -1,4 +1,3 @@
-import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider } from "next-intl";
 import { MotionConfigProvider } from "@/components/motion-config";
 
@@ -9,15 +8,8 @@ interface ProvidersProps {
 export function Providers({ children }: ProvidersProps) {
   return (
     <NextIntlClientProvider>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-        {/* <MotionConfigProvider>{children}</MotionConfigProvider> */}
-      </ThemeProvider>
+      {children}
+      {/* <MotionConfigProvider>{children}</MotionConfigProvider> */}
     </NextIntlClientProvider>
   );
 }

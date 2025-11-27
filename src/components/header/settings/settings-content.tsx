@@ -6,10 +6,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import { Sun, Moon, Monitor, Languages, Check, Palette } from "lucide-react";
+import { Languages, Check } from "lucide-react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { useTheme } from "next-themes";
 import { useLocale, Locale, useTranslations } from "next-intl";
 import { useParams, useSearchParams } from "next/navigation";
 import { useTransition } from "react";
@@ -17,7 +16,6 @@ import { Flag } from "./flag";
 
 export function SettingsContent() {
   const t = useTranslations("Header.settings");
-  const { theme, setTheme } = useTheme();
   const locale = useLocale();
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
@@ -36,28 +34,6 @@ export function SettingsContent() {
     });
   }
 
-  // Theme configuration
-  const themeOptions = [
-    {
-      value: "light" as const,
-      icon: Sun,
-      iconColor: "text-yellow-500",
-      label: t("theme.light"),
-    },
-    {
-      value: "dark" as const,
-      icon: Moon,
-      iconColor: "text-slate-600",
-      label: t("theme.dark"),
-    },
-    {
-      value: "system" as const,
-      icon: Monitor,
-      iconColor: "text-blue-500",
-      label: t("theme.system"),
-    },
-  ];
-
   return (
     <DropdownMenuContent
       align="end"
@@ -65,29 +41,6 @@ export function SettingsContent() {
       sideOffset={15}
       avoidCollisions={true}
     >
-      <DropdownMenuLabel className="flex items-center gap-2">
-        <Palette className="h-4 w-4" />
-        {t("theme.label")}
-      </DropdownMenuLabel>
-      <DropdownMenuSeparator />
-      {themeOptions.map((option) => (
-        <DropdownMenuItem
-          key={option.value}
-          onClick={() => setTheme(option.value)}
-          className="cursor-pointer flex items-center justify-between focus:bg-muted/50 hover:bg-muted/50 rounded-md"
-        >
-          <div className="flex items-center gap-2">
-            <option.icon className={`h-4 w-4 ${option.iconColor}`} />
-            <span>{option.label}</span>
-          </div>
-          {theme === option.value && (
-            <Check className="h-4 w-4 text-foreground" />
-          )}
-        </DropdownMenuItem>
-      ))}
-
-      <DropdownMenuSeparator />
-
       <DropdownMenuLabel className="flex items-center gap-2">
         <Languages className="h-4 w-4" />
         {t("language.label")}
