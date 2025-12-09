@@ -2,8 +2,7 @@ export function Elipse() {
   return (
     <div className="absolute inset-0 top-[-90px]">
       <svg
-        // className="w-full h-[400px] md:h-[500px] lg:h-[600px]"
-        className="w-full h-fit"
+        className="w-full h-[650px] md:h-[700px] lg:h-[800px]"
         viewBox="0 0 1388 825"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +102,7 @@ export function Elipse() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(683.482 245.884) rotate(-3.78676) scale(469.009 248.4)"
           >
-            <stop offset="0.1294" stopColor="var(--secondary-foreground)" />
+            <stop offset="0.1294" stopColor="var(--primary)" />
             <stop offset="0.2347" stopColor="var(--primary)" />
             <stop offset="0.3" stopColor="var(--primary)" stopOpacity="0" />
           </radialGradient>
@@ -115,8 +114,8 @@ export function Elipse() {
             y2="263.369"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopColor="white" stopOpacity="0.1" />
+            <stop stopColor="var(--foreground)" stopOpacity="0" />
+            <stop offset="1" stopColor="var(--foreground)" stopOpacity="0.1" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_182_1049"
