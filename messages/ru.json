@@ -8,12 +8,6 @@
       "contact": "Контакты"
     },
     "settings": {
-      "theme": {
-        "label": "Тема",
-        "light": "Светлая",
-        "dark": "Тёмная",
-        "system": "Системная"
-      },
       "language": {
         "label": "Язык",
         "locale": "{locale, select, de {🇩🇪 Deutsch} en {🇺🇸 English} ru {🇷🇺 Русский} it {🇮🇹 Italiano} es {🇪🇸 Español} fr {🇫🇷 Français} jp {🇯🇵 日本語} pl {🇵🇱 Polski} other {Неизвестно}}"

@@ -88,7 +88,7 @@ export function Form({ formLabels }: FormProps) {
         </div>
         <Button
           type="submit"
-          className="w-full mt-auto bg-primary/5 text-primary hover:bg-primary/10 rounded-full shadow-lg transition-all duration-200"
+          className="w-full mt-auto bg-primary/5 text-foreground hover:bg-primary/10 rounded-full shadow-lg transition-all duration-200"
         >
           {formLabels.send}
         </Button>

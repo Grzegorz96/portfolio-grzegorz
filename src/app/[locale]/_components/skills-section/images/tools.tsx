@@ -5,9 +5,8 @@ export function Tools() {
     "--dt-primary-color": "var(--primary)",
     "--dt-background-color": "var(--background)",
     "--dt-foreground-color": "var(--foreground)",
-    "--dt-muted-foreground-color": "var(--muted-foreground)",
     "--dt-border-color": "var(--border)",
-    "--dt-shadow-color": "color-mix(in oklch, var(--primary) 50%, transparent)",
+    "--dt-shadow-color": "color-mix(in oklch, var(--primary) 20%, transparent)",
     "--dt-gradient-light-gray-start":
       "color-mix(in oklch, var(--foreground) 20%, transparent)",
     "--dt-gradient-light-gray-end": "transparent",
@@ -162,58 +161,17 @@ export function Tools() {
   const VSCodeLogo = (
     <svg
       width="36"
-      height="38"
-      viewBox="0 0 36 38"
+      height="37"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clipPath="url(#clip0_254_68700)">
-        <path
-          d="M21.043 36.4463C20.0985 37.6356 18.1836 36.984 18.1609 35.4653L17.8281 13.2539H32.7631C35.4682 13.2539 36.9769 16.3783 35.2948 18.4969L21.043 36.4463Z"
-          fill="url(#paint0_linear_254_68700)"
-        />
-        <path
-          d="M21.043 36.4463C20.0985 37.6356 18.1836 36.984 18.1609 35.4653L17.8281 13.2539H32.7631C35.4682 13.2539 36.9769 16.3783 35.2948 18.4969L21.043 36.4463Z"
-          fill="url(#paint1_linear_254_68700)"
-          fillOpacity="0.2"
-        />
-        <path
-          d="M14.9668 0.706059C15.9112 -0.483394 17.8261 0.16834 17.8489 1.68697L17.9947 23.8984H3.24665C0.541445 23.8984 -0.967295 20.7739 0.714879 18.6554L14.9668 0.706059Z"
-          fill="var(--dt-primary-color)"
-        />
-      </g>
-      <defs>
-        <linearGradient
-          id="paint0_linear_254_68700"
-          x1="17.8281"
-          y1="18.1787"
-          x2="31.1018"
-          y2="23.7457"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="var(--dt-primary-color)" />
-          <stop offset="1" stopColor="var(--dt-primary-color)" />
-        </linearGradient>
-        <linearGradient
-          id="paint1_linear_254_68700"
-          x1="11.9433"
-          y1="10.1213"
-          x2="17.9968"
-          y2="21.5167"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop />
-          <stop offset="1" stopOpacity="0" />
-        </linearGradient>
-        <clipPath id="clip0_254_68700">
-          <rect
-            width="36"
-            height="37.3211"
-            fill="white"
-            transform="translate(0 0.0224609)"
-          />
-        </clipPath>
-      </defs>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M70.9119 99.3171C72.4869 99.9307 74.2828 99.8914 75.8725 99.1264L96.4608 89.2197C98.6242 88.1787 100 85.9892 100 83.5872V16.4133C100 14.0113 98.6243 11.8218 96.4609 10.7808L75.8725 0.873756C73.7862 -0.130129 71.3446 0.11576 69.5135 1.44695C69.252 1.63711 69.0028 1.84943 68.769 2.08341L29.3551 38.0415L12.1872 25.0096C10.589 23.7965 8.35363 23.8959 6.86933 25.2461L1.36303 30.2549C-0.452552 31.9064 -0.454633 34.7627 1.35853 36.417L16.2471 50.0001L1.35853 63.5832C-0.454633 65.2374 -0.452552 68.0938 1.36303 69.7453L6.86933 74.7541C8.35363 76.1043 10.589 76.2037 12.1872 74.9905L29.3551 61.9587L68.769 97.9167C69.3925 98.5406 70.1246 99.0104 70.9119 99.3171ZM75.0152 27.2989L45.1091 50.0001L75.0152 72.7012V27.2989Z"
+        fill="var(--dt-primary-color)"
+      />
     </svg>
   );
 
@@ -227,7 +185,7 @@ export function Tools() {
 
       // Assign logos to specific positions
       if (row === 0 && col === 3) {
-        item.logoSvg = FigmaLogo;
+        item.logoSvg = VSCodeLogo;
         item.isGradientBg = true;
       } else if (row === 1 && col === 5) {
         item.logoSvg = VercelLogo;
@@ -239,7 +197,7 @@ export function Tools() {
         item.logoSvg = SlackLogo;
         item.isGradientBg = true;
       } else if (row === 3 && col === 5) {
-        item.logoSvg = VSCodeLogo;
+        item.logoSvg = FigmaLogo;
         item.isGradientBg = true;
       }
       return item;

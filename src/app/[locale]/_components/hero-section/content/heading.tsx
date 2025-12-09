@@ -15,7 +15,7 @@ export function Heading({
       transition={{ duration: 1, delay: 0.7 }}
     >
       <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-        <span className="bg-clip-text text-transparent bg-gradient-to-b from-accent to-primary">
+        <span className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-foreground">
           {heading}
         </span>
         <br />

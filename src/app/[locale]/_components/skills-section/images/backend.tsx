@@ -1,16 +1,13 @@
 export function Backend() {
   const themeVars = {
-    "--b-primary-color": "var(--primary))",
+    "--b-primary-color": "var(--primary)",
     "--b-background-editor":
-      "color-mix(in oklch, var(--background) 80%, transparent)",
+      "color-mix(in oklch, var(--background) 90%, transparent)",
     "--b-background-preview":
-      "color-mix(in oklch, var(--background) 80%, transparent)",
-    "--b-text-color": "var(--foreground)",
+      "color-mix(in oklch, var(--background) 90%, transparent)",
     "--b-text-editor": "var(--foreground)",
-    "--b-text-preview": "var(--foreground)",
-    "--b-border-color": "var(--border)",
+    "--b-text-preview": "var(--primary-foreground)",
     "--b-border-main": "var(--border)",
-    "--b-connection-color": "var(--muted-foreground)",
   };
 
   return (
@@ -37,7 +34,7 @@ export function Backend() {
           width: "350px",
           height: "221px",
           background:
-            "linear-gradient(180deg, var(---background-editor) 0%, transparent 100%)",
+            "linear-gradient(180deg, var(--b-background-editor) 0%, transparent 100%)",
           borderRadius: "9.488px",
           border: "1px solid var(--b-border-main)",
           overflow: "hidden",
@@ -243,8 +240,8 @@ export function Backend() {
               alignItems: "center",
               justifyContent: "center",
               gap: "7.907px",
-              background: "var(--foreground)",
-              color: "var(--primary-foreground)",
+              background: "var(--b-primary-color)",
+              color: "var(--b-text-preview)",
               border: "none",
               cursor: "pointer",
               fontWeight: 500,
@@ -265,6 +262,7 @@ export function Backend() {
                 lineHeight: "31.628px",
                 letterSpacing: "-0.6326px",
                 fontWeight: 500,
+                color: "var(--b-text-preview)",
                 textAlign: "left",
                 whiteSpace: "pre",
               }}
@@ -323,11 +321,11 @@ export function Backend() {
                 y2="285.088"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="var(--b-text-color)" stopOpacity="0" />
-                <stop offset="0.5" stopColor="var(--b-text-color)" />
+                <stop stopColor="var(--b-primary-color)" stopOpacity="0" />
+                <stop offset="0.5" stopColor="var(--b-primary-color)" />
                 <stop
                   offset="1"
-                  stopColor="var(--b-text-color)"
+                  stopColor="var(--b-primary-color)"
                   stopOpacity="0"
                 />
               </linearGradient>

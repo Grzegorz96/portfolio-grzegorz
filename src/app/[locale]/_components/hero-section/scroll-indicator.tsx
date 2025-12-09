@@ -18,7 +18,7 @@ export function ScrollIndicator({ scrollDown }: { scrollDown: string }) {
       </div>
 
       {/* Bottom Decorative Line */}
-      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent origin-center" />
+      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-foreground/50 to-transparent origin-center" />
     </MotionDiv>
   );
 }

@@ -6,13 +6,11 @@ export function Frontend() {
     "--f-background-color": "var(--background)",
     "--f-text-color": "var(--foreground)",
     "--f-text-dark": "var(--primary-foreground)",
-    "--f-border-color": "var(--border))",
+    "--f-border-color": "var(--border)",
     "--f-border-main":
       "color-mix(in oklch, var(--foreground) 10%, transparent)",
     "--f-highlight-primary":
       "color-mix(in oklch, var(--primary) 12%, transparent)",
-    "--f-highlight-header":
-      "color-mix(in oklch, var(--accent) 20%, transparent)",
   } as React.CSSProperties;
 
   return (
@@ -47,7 +45,7 @@ export function Frontend() {
         }}
       >
         <div
-          className="border rounded-lg bg-card"
+          className="border rounded-lg"
           style={{
             padding: "7.355px 8.826px",
             height: "100%",
@@ -126,7 +124,7 @@ export function Frontend() {
         }}
       >
         <div
-          className="bg-card border border-border"
+          className="border border-border"
           style={{
             padding: "9.488px",
             height: "100%",

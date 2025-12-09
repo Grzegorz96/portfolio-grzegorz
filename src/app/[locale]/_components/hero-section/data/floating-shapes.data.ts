@@ -4,7 +4,7 @@ export const floatingShapes = [
     width: 600,
     height: 140,
     rotate: 12,
-    gradient: "from-primary/[0.15]",
+    gradient: "from-foreground/15",
     className: "left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]",
   },
   {
@@ -12,7 +12,7 @@ export const floatingShapes = [
     width: 500,
     height: 120,
     rotate: -15,
-    gradient: "from-accent/[0.15]",
+    gradient: "from-primary/15",
     className: "right-[-5%] md:right-[0%] top-[70%] md:top-[75%]",
   },
   {
@@ -20,7 +20,7 @@ export const floatingShapes = [
     width: 300,
     height: 80,
     rotate: -8,
-    gradient: "from-primary/[0.15]",
+    gradient: "from-foreground/15",
     className: "left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]",
   },
   {
@@ -28,7 +28,7 @@ export const floatingShapes = [
     width: 200,
     height: 60,
     rotate: 20,
-    gradient: "from-accent/[0.15]",
+    gradient: "from-primary/15",
     className: "right-[15%] md:right-[20%] top-[10%] md:top-[15%]",
   },
   {
@@ -36,7 +36,7 @@ export const floatingShapes = [
     width: 150,
     height: 40,
     rotate: -25,
-    gradient: "from-primary/[0.15]",
+    gradient: "from-foreground/15",
     className: "left-[20%] md:left-[25%] top-[5%] md:top-[10%]",
   },
 ];

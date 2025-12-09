@@ -3,18 +3,13 @@ import type React from "react";
 export function Testing() {
   // Theme-based CSS variables using global theme
   const themeVars = {
-    "--t-background-color": "var(--background)",
-    "--t-background-glass": "color-mix(in oklch, var(--card) 20%, transparent)",
     "--t-background-gradient-start":
       "color-mix(in oklch, var(--card) 20%, transparent)",
     "--t-background-gradient-end": "transparent",
     "--t-text-primary": "var(--foreground)",
     "--t-text-secondary": "var(--muted-foreground)",
     "--t-border-color": "var(--border)",
-    "--t-border-main": "var(--border)",
-    "--t-shadow-color": "rgba(0, 0, 0, 0.12)", // Keeping as is, common shadow
-    "--t-container-background":
-      "color-mix(in oklch, var(--card) 40%, transparent)",
+    "--t-shadow-color": "rgba(0, 0, 0, 0.12)",
     "--t-container-gradient-start":
       "color-mix(in oklch, var(--card) 40%, transparent)",
 
