@@ -1,7 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { type Metadata } from "next";
-import { Marquee } from "@/components/ui/marquee";
-import { marqueeItems } from "@/lib/data";
 import { AnimatedSection } from "@/components/animated-section";
 
 import {
@@ -14,6 +12,7 @@ import {
 } from "./_components";
 
 import { AboutSection2 } from "./_components/about-section-2";
+import Demo from "./_components/tech-section/demo";
 
 export async function generateMetadata({
   params,
@@ -33,6 +32,7 @@ export default function LandingPage() {
   return (
     <>
       <HeroSection />
+
       <AnimatedSection
         id="about"
         delay={0.5}
@@ -43,6 +43,13 @@ export default function LandingPage() {
 
       <AnimatedSection id="about" delay={0.5} className="relative z-10 mt-16">
         <AboutSection2 />
+      </AnimatedSection>
+
+      <AnimatedSection
+        delay={0.5}
+        className="relative z-10 mt-16 max-w-[1320px] mx-auto border-2"
+      >
+        <Demo />
       </AnimatedSection>
 
       <AnimatedSection
@@ -63,17 +70,6 @@ export default function LandingPage() {
         </AnimatedSection>
       </div>
 
-      <Marquee speed={90}>
-        {Object.entries(marqueeItems).map(([name, Logo]) => (
-          <div
-            key={name}
-            className="relative h-16 w-fit mx-8 flex items-center justify-center"
-          >
-            <Logo />
-          </div>
-        ))}
-      </Marquee>
-
       <AnimatedSection
         id="faq"
         delay={0.5}
@@ -81,6 +77,7 @@ export default function LandingPage() {
       >
         <FAQSection />
       </AnimatedSection>
+
       <AnimatedSection
         id="contact"
         delay={0.5}

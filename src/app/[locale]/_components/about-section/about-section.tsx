@@ -4,6 +4,7 @@ import { Photo } from "./photo";
 import { ActionButtons } from "./action-buttons";
 import { BackgroundElements } from "./background-elements";
 import { useTranslations } from "next-intl";
+import Demo from "../tech-section/demo";
 
 export function AboutSection() {
   const t = useTranslations("About");
@@ -56,6 +57,7 @@ export function AboutSection() {
           {/* Right Side - Photo */}
           <Photo />
         </div>
+        {/* <Demo /> */}
       </div>
     </section>
   );
